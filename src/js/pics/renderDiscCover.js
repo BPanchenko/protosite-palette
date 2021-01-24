@@ -5,7 +5,9 @@ import {
   triangle
 } from '../library.js'
 
-export default function ({ colors }) {
+const COLORS = ['yellow', 'deep-orange', 'green-grey', 'cyan']
+
+export default function ({ colors = COLORS }) {
   colors = parseColors(colors)
   console.assert(colors.length === 4, `Wrong amount of colors: ${JSON.stringify(colors)}`)
 

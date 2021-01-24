@@ -4,9 +4,10 @@ import {
   square
 } from '../library.js'
 
+const COLORS = ['orange', 'pink', 'blue-grey']
 const RADIUS = 1
 
-export default function ({ colors }) {
+export default function ({ colors = COLORS }) {
   colors = parseColors(colors)
   console.assert(colors.length === 3, `Wrong amount of colors: ${JSON.stringify(colors)}`)
 

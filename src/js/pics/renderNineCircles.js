@@ -4,9 +4,10 @@ import {
   parseColors
 } from '../library.js'
 
+const COLORS = ['teal', 'light-green', 'light-green']
 const RADIUS = 0.13
 
-export default function ({ colors }) {
+export default function ({ colors = COLORS }) {
   colors = parseColors(colors)
   console.assert(colors.length === 3, `Wrong amount of colors: ${JSON.stringify(colors)}`)
 
