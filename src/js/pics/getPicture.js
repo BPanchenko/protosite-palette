@@ -1,7 +1,6 @@
 import { THREE } from '../library.js'
 
-export default function ({
-    render,
+export default function (render, {
     width = 200,
     height = 200
 }) {

@@ -28,95 +28,65 @@ class ColorCompositionTemplate extends HTMLElement {
 
   connectedCallback() {
     
-    this.appendChild(getPicture({
-      render: renderTwoSemicircles({
-        colors: ['orange', 'pink', 'blue-grey']
-      })
-    }))
+    this.appendChild(getPicture(renderTwoSemicircles({
+      colors: ['orange', 'pink', 'blue-grey']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderColumns({
-        colors: ['teal', 'amber']
-      })
-    }))
+    this.appendChild(getPicture(renderColumns({
+      colors: ['teal', 'amber']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderFrontSight({
-        colors: ['deep-orange', 'white', 'purple']
-      })
-    }))
+    this.appendChild(getPicture(renderFrontSight({
+      colors: ['deep-orange', 'white', 'purple']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderFilm({
-        colors: ['brown', 'black', 'light-green', 'light-blue']
-      })
-    }))
+    this.appendChild(getPicture(renderFilm({
+      colors: ['brown', 'black', 'light-green', 'light-blue']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderRecord({
-        colors: ['grey', 'cyan', 'lime']
-      })
-    }))
+    this.appendChild(getPicture(renderRecord({
+      colors: ['grey', 'cyan', 'lime']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderSquares({
-        colors: ['white', 'blue', 'green']
-      })
-    }))
+    this.appendChild(getPicture(renderSquares({
+      colors: ['white', 'blue', 'green']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderQuarterCircle({
-        colors: ['indigo', 'violet', 'amber']
-      })
-    }))
+    this.appendChild(getPicture(renderQuarterCircle({
+      colors: ['indigo', 'violet', 'amber']
+    })))
     
-    this.appendChild(getPicture({
-      render: renderPyramid({
-        colors: ['orange', 'lime', 'blue-grey', 'pink']
-      })
-    }))
+    this.appendChild(getPicture(renderPyramid({
+      colors: ['orange', 'lime', 'blue-grey', 'pink']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderNineCircles({
-        colors: ['teal', 'light-green', 'light-green']
-      })
-    }))
+    this.appendChild(getPicture(renderNineCircles({
+      colors: ['teal', 'light-green', 'light-green']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderSixRings({
-        colors: ['light-blue', 'amber', 'purple', 'white']
-      })
-    }))
+    this.appendChild(getPicture(renderSixRings({
+      colors: ['light-blue', 'amber', 'purple', 'white']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderDiscCover({
-        colors: ['yellow', 'deep-orange', 'green-grey', 'cyan']
-      })
-    }))
+    this.appendChild(getPicture(renderDiscCover({
+      colors: ['yellow', 'deep-orange', 'green-grey', 'cyan']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderNineCircles({
-        colors: ['green-grey', 'yellow', 'red']
-      })
-    }))
+    this.appendChild(getPicture(renderNineCircles({
+      colors: ['green-grey', 'yellow', 'red']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderSemicircleAndTwoQuarters({
-        colors: ['indigo', 'green', 'cyan', 'lime']
-      })
-    }))
+    this.appendChild(getPicture(renderSemicircleAndTwoQuarters({
+      colors: ['indigo', 'green', 'cyan', 'lime']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderCircleInSquare({
-        colors: ['blue', 'red', 'yellow']
-      })
-    }))
+    this.appendChild(getPicture(renderCircleInSquare({
+      colors: ['blue', 'red', 'yellow']
+    })))
 
-    this.appendChild(getPicture({
-      render: renderSixCircles({
-        colors: ['green-grey', 'green', 'violet']
-      })
-    }))
+    this.appendChild(getPicture(renderSixCircles({
+      colors: ['green-grey', 'green', 'violet']
+    })))
   }
 
   disconnectedCallback() {
