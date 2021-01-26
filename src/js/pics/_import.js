@@ -15,19 +15,19 @@ import renderSixRings from './renderSixRings.js'
 import renderTwoSemicircles from './renderTwoSemicircles.js'
 
 export {
-  getPicture,
-  renderCircleInSquare,
-  renderColumns,
-  renderDiscCover,
-  renderFilm,
-  renderFrontSight,
-  renderQuarterCircle,
-  renderNineCircles,
-  renderPyramid,
-  renderRecord,
-  renderSemicircleAndTwoQuarters,
-  renderSquares,
-  renderSixCircles,
-  renderSixRings,
-  renderTwoSemicircles
+    getPicture,
+    renderCircleInSquare,
+    renderColumns,
+    renderDiscCover,
+    renderFilm,
+    renderFrontSight,
+    renderQuarterCircle,
+    renderNineCircles,
+    renderPyramid,
+    renderRecord,
+    renderSemicircleAndTwoQuarters,
+    renderSquares,
+    renderSixCircles,
+    renderSixRings,
+    renderTwoSemicircles
 }
