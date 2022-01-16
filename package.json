@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Color Theme",
   "main": "index.js",
+  "files": [
+    "palette.css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-palette.git"
