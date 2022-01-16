@@ -1,0 +1,20 @@
+{
+  "name": "protosite-palette",
+  "version": "1.0.0",
+  "description": "Color Theme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BPanchenko/protosite-palette.git"
+  },
+  "author": {
+    "name": "Boris Panchenko",
+    "email": "boris.v.panchenko@gmail.com",
+    "url": "https://bpanchenko.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BPanchenko/protosite-palette/issues"
+  },
+  "homepage": "https://github.com/BPanchenko/protosite-palette#readme"
+}
