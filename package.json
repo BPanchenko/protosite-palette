@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color Theme",
   "type": "module",
   "main": "index.js",
