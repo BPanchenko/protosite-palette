@@ -2,6 +2,7 @@
   "name": "protosite-palette",
   "version": "1.0.0",
   "description": "Color Theme",
+  "type": "module",
   "main": "index.js",
   "files": [
     "palette.css"
@@ -13,11 +14,16 @@
   "author": {
     "name": "Boris Panchenko",
     "email": "boris.v.panchenko@gmail.com",
-    "url": "https://bpanchenko.ru"
+    "url": "http://bpanchenko.ru"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BPanchenko/protosite-palette/issues"
   },
-  "homepage": "https://github.com/BPanchenko/protosite-palette#readme"
+  "homepage": "https://github.com/BPanchenko/protosite-palette#readme",
+  "devDependencies": {
+    "chroma-js": "2.1.2",
+    "get-css-variables": "0.3.0",
+    "lodash": "4.17.21"
+  }
 }
