@@ -5,20 +5,18 @@ import { getVariables } from "get-css-variables"
 
 const PREFIX = '--clr-'
 
-const text = fs.readFileSync("./palette.css", "utf8")
-const variables = getVariables(text)
-const colors = new Map()
+const text = fs.readFileSync("./colors.css", "utf8")
+const colors = getVariables(text)
+const palette = new Map()
 
-_.toPairs(variables).forEach(p => {
-    let name = p[0]
-    let value = p[1]
-    if (name.includes(PREFIX)) {
-        name = _.camelCase(name.replace(PREFIX, ''))
-        value = chroma(value).hex()
-        colors.set(name, value)
-    }
+_.toPairs(colors).forEach(p => {
+	let name = p[0]
+	let value = p[1]
+	if (name.includes(PREFIX)) {
+		name = _.camelCase(name.replace(PREFIX, ''))
+		value = chroma(value).hex()
+		palette.set(name, value)
+	}
 })
 
-export {
-    colors
-}
+export default palette
