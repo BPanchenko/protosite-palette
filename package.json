@@ -21,6 +21,9 @@
     "url": "https://github.com/BPanchenko/protosite-palette/issues"
   },
   "homepage": "https://github.com/BPanchenko/protosite-palette#readme",
+	"scripts": {
+		"export": "node export.js"
+	},
   "dependencies": {
     "adobe-aco": "0.1.1",
     "chroma-js": "2.1.2",
