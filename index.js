@@ -15,4 +15,7 @@ toPairs(colors).forEach(p => {
 	)
 })
 
-export default palette
+export {
+	colors,
+	palette
+}

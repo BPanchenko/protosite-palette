@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "files": [
-    "colors.css"
+    "assets/colors.css"
   ],
   "repository": {
     "type": "git",
