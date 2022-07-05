@@ -1,7 +1,8 @@
+import camelCase from "lodash/camelCase.js"
 import chroma from "chroma-js"
 import fs from "fs"
 import { getVariables } from "get-css-variables"
-import { toPairs } from "lodash"
+import toPairs from "lodash/toPairs.js"
 
 const PREFIX = '--clr-'
 
@@ -13,9 +14,10 @@ toPairs(colors).forEach(p => {
 	let name = p[0]
 	let value = p[1]
 	if (name.includes(PREFIX)) {
-		name = _.camelCase(name.replace(PREFIX, ''))
-		value = chroma(value).hex()
-		palette.set(name, value)
+		palette.set(
+			camelCase(name.replace(PREFIX, '')),
+			chroma(value).hex()
+		)
 	}
 })
 
