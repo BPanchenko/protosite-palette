@@ -29,6 +29,6 @@ distFile = path.resolve('./assets/colors.aco')
 const acoSwatches = Array.from(colors).map(
 	([name, color]) => [color.rgb(), 'rgb', startCase(name)]
 )
-const acoFile = createAcoFile(acoSwatches)
+const acoFile = createAcoFile(acoSwatches) // there are problems from using package `adobe-aco`
 
 saveAs(new Blob([acoFile]), distFile)
