@@ -9,7 +9,7 @@ import toPairs from "lodash/toPairs.js"
 // import { saveAs } from "file-saver"
 // import startCase from "lodash/startCase.js"
 
-const rawdata = fs.readFileSync("./colors.json")
+const rawdata = fs.readFileSync("./src/colors.json")
 const sourceColors = JSON.parse(rawdata)
 const colors = new Map()
 const palette = new Map()
