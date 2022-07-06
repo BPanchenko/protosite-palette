@@ -1,15 +1,14 @@
 import fs from 'fs'
-import kebabCase from "lodash/kebabCase.js"
+import { getColorData } from './src/utils.js'
+import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
-import chroma from "chroma-js"
-import fs from "fs"
-import toPairs from "lodash/toPairs.js"
+import toPairs from 'lodash/toPairs.js'
 
-// import { createAcoFile } from "adobe-aco"
-// import { saveAs } from "file-saver"
-// import startCase from "lodash/startCase.js"
+// import { createAcoFile } from 'adobe-aco'
+// import { saveAs } from 'file-saver'
+// import startCase from 'lodash/startCase.js'
 
-const rawdata = fs.readFileSync("./src/colors.json")
+const rawdata = fs.readFileSync('./src/colors.json')
 const sourceColors = JSON.parse(rawdata)
 const colors = new Map()
 const palette = new Map()
@@ -19,41 +18,39 @@ toPairs(sourceColors).forEach(p => {
 	let value = p[1]
 	colors.set(
 		name,
-		chroma(value)
+		getColorData(value)
 	)
 	palette.set(
 		name,
-		{
-			color: chroma(value)
-		}
+		getColorData(value, true)
 	)
 })
 
 {
-	const distFile = path.resolve('./assets/colors.css')
+	const FILE = path.resolve('./assets/colors.css')
 	const PREFIX = '--clr-'
 
-	fs.truncateSync(distFile, 0)
-	fs.appendFileSync(distFile, ':root {')
+	fs.truncateSync(FILE, 0)
+	fs.appendFileSync(FILE, ':root {')
 	colors.forEach(
 		(color, name) => fs.appendFileSync(
-			distFile,
-			`\n\t${PREFIX}${kebabCase(name)}: ${color.hex()};`
+			FILE,
+			`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
 		)
 	)
-	fs.appendFileSync(distFile, '\n}')
+	fs.appendFileSync(FILE, '\n}')
 
-	console.log(`${distFile} was updated`)
+	console.log(`${FILE} was updated`)
 }
 
 {
+	const FILE = path.resolve('./assets/colors.aco')
 	/*
 	// there are problems from using package `adobe-aco`
-	const distFile = path.resolve('./assets/colors.aco')
 	const acoSwatches = Array.from(colors).map(
 		([name, color]) => [color.rgb(), 'rgb', startCase(name)]
 	)
 	const acoFile = createAcoFile(acoSwatches)
-	saveAs(new Blob([acoFile]), distFile)
+	saveAs(new Blob([acoFile]), FILE)
 	*/
 }

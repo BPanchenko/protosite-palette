@@ -1,3 +1,5 @@
+import chroma from "chroma-js"
+
 const correlationFunctions = {
 	linear: t => t,
 	// accelerating from zero velocity
@@ -26,6 +28,22 @@ const correlationFunctions = {
 	inOutQuint: t => t<.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t
 }
 
+function getColorData(
+	value,
+	withTones = false,
+	tonesCorrelation = 'inOutCubic'
+) {
+	const color = chroma(value)
+	const data = {
+		rgb: color.rgb(),
+		hex: color.hex(),
+		hsl: color.hsl()
+	}
+	
+	Object.freeze(data)
+	return data
+}
+
 export {
-	correlationFunctions
+	getColorData
 }
