@@ -1,4 +1,4 @@
-export default {
+const correlationFunctions = {
 	linear: t => t,
 	// accelerating from zero velocity
 	inQuad: t => t*t,
@@ -24,4 +24,8 @@ export default {
 	outQuint: t => 1+(--t)*t*t*t*t,
 	// acceleration until halfway, then deceleration 
 	inOutQuint: t => t<.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t
+}
+
+export {
+	correlationFunctions
 }
