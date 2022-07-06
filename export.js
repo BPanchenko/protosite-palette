@@ -1,15 +1,20 @@
+import { colors } from './index.js'
+import { createAcoFile } from "adobe-aco"
 import fs from 'fs'
 import kebabCase from "lodash/kebabCase.js"
-import { palette } from './index.js'
 import path from 'path'
+import { saveAs } from "file-saver"
+import startCase from "lodash/startCase.js"
 
 const PREFIX = '--clr-'
+var distFile
 
-let distFile = path.resolve('./assets/colors.css')
+
+distFile = path.resolve('./assets/colors.css')
 
 fs.truncateSync(distFile, 0)
 fs.appendFileSync(distFile, ':root {')
-palette.forEach(
+colors.forEach(
 	(color, name) => fs.appendFileSync(
 		distFile,
 		`\n\t${PREFIX}${kebabCase(name)}: ${color.hex()};`
@@ -17,3 +22,13 @@ palette.forEach(
 )
 fs.appendFileSync(distFile, '\n}')
 console.log(`${distFile} was updated`)
+
+
+distFile = path.resolve('./assets/colors.aco')
+
+const acoSwatches = Array.from(colors).map(
+	([name, color]) => [color.rgb(), 'rgb', startCase(name)]
+)
+const acoFile = createAcoFile(acoSwatches)
+
+saveAs(new Blob([acoFile]), distFile)
