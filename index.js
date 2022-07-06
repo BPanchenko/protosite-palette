@@ -3,15 +3,22 @@ import fs from "fs"
 import toPairs from "lodash/toPairs.js"
 
 const rawdata = fs.readFileSync("./colors.json")
-const colors = JSON.parse(rawdata)
+const sourceColors = JSON.parse(rawdata)
+const colors = new Map()
 const palette = new Map()
 
-toPairs(colors).forEach(p => {
+toPairs(sourceColors).forEach(p => {
 	let name = p[0]
 	let value = p[1]
-	palette.set(
+	colors.set(
 		name,
 		chroma(value)
+	)
+	palette.set(
+		name,
+		{
+			color: chroma(value)
+		}
 	)
 })
 
