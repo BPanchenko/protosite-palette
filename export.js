@@ -2,11 +2,11 @@ import fs from 'fs'
 import { getColorData } from './src/utils.js'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
+import startCase from 'lodash/startCase.js'
 import toPairs from 'lodash/toPairs.js'
 
 // import { createAcoFile } from 'adobe-aco'
 // import { saveAs } from 'file-saver'
-// import startCase from 'lodash/startCase.js'
 
 const rawdata = fs.readFileSync('./src/colors.json')
 const sourceColors = JSON.parse(rawdata)
@@ -51,6 +51,10 @@ toPairs(sourceColors).forEach(p => {
 	fs.appendFileSync(FILE, ':root {')
 	palette.forEach(
 		(color, name) => {
+			fs.appendFileSync(
+				FILE,
+				`\n\n\t/* ${startCase(name)} */\n`
+			)
 			fs.appendFileSync(
 				FILE,
 				`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`

@@ -31,7 +31,7 @@ const correlationFunctions = {
 function getColorData(
 	value,
 	withTones = false,
-	tonesCorrelation = 'inOutCubic',
+	tonesCorrelation = 'inOutQuad',
 	countTones = 10
 ) {
 	const color = chroma(value)
