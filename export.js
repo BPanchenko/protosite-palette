@@ -44,6 +44,33 @@ toPairs(sourceColors).forEach(p => {
 }
 
 {
+	const FILE = path.resolve('./assets/palette.css')
+	const PREFIX = '--clr-'
+
+	fs.truncateSync(FILE, 0)
+	fs.appendFileSync(FILE, ':root {')
+	palette.forEach(
+		(color, name) => {
+			fs.appendFileSync(
+				FILE,
+				`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
+			)
+			color.tones.forEach(
+				(color, index) => {
+					fs.appendFileSync(
+						FILE,
+						`\n\t${PREFIX}${kebabCase(name)}-${100 * ++index}: ${color.hex};`
+					)
+				}
+			)
+		}
+	)
+	fs.appendFileSync(FILE, '\n}')
+
+	console.log(`${FILE} was updated`)
+}
+
+{
 	const FILE = path.resolve('./assets/colors.aco')
 	/*
 	// there are problems from using package `adobe-aco`
