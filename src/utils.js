@@ -31,13 +31,20 @@ const correlationFunctions = {
 function getColorData(
 	value,
 	withTones = false,
-	tonesCorrelation = 'inOutCubic'
+	tonesCorrelation = 'inOutCubic',
+	countTones = 10
 ) {
 	const color = chroma(value)
 	const data = {
 		rgb: color.rgb(),
 		hex: color.hex(),
 		hsl: color.hsl()
+	}
+
+	if (withTones) {
+		const step = 0.9 / countTones
+		const func = correlationFunctions[tonesCorrelation]
+		data.tones = (new Array(countTones)).fill(1).map((_, index) => func(step * ++index))
 	}
 	
 	Object.freeze(data)
