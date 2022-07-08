@@ -5,7 +5,8 @@
   "type": "module",
   "main": "buildPalette.js",
   "files": [
-    "assets/colors.css"
+    "assets/colors.css",
+    "assets/palette.css"
   ],
   "repository": {
     "type": "git",
