@@ -1,7 +1,7 @@
 import { getColorData } from './src/utils.js'
 import toPairs from 'lodash/toPairs.js'
 
-export default function buildPalette(colors, config) {
+export default function build(colors, config) {
 	const palette = new Map()
 	
 	toPairs(colors).forEach(p => {

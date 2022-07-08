@@ -1,4 +1,4 @@
-import buildPalette from '../index.js'
+import build from '../index.js'
 import fs from 'fs'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
@@ -9,7 +9,7 @@ import startCase from 'lodash/startCase.js'
 
 const rawdata = fs.readFileSync('./src/colors.json')
 const colors = JSON.parse(rawdata)
-const palette = buildPalette(colors)
+const palette = build(colors)
 
 
 {
