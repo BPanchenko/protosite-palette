@@ -12,12 +12,22 @@ const rawdata = fs.readFileSync('./src/colors.json')
 const colors = JSON.parse(rawdata)
 const palette = getPalette(colors)
 
+{
+	const DIR = './assets'
+	if (!fs.existsSync(DIR)){
+		fs.mkdirSync(DIR)
+	}
+}
+
 
 {
 	const FILE = path.resolve('./assets/colors.css')
 	const PREFIX = '--clr-'
 
-	fs.truncateSync(FILE, 0)
+	if (fs.existsSync(FILE)) {
+		fs.truncateSync(FILE, 0)
+	}
+	
 	fs.appendFileSync(FILE, ':root {')
 	palette.forEach(
 		(color, name) => fs.appendFileSync(
@@ -34,7 +44,10 @@ const palette = getPalette(colors)
 	const FILE = path.resolve('./assets/palette.css')
 	const PREFIX = '--clr-'
 
-	fs.truncateSync(FILE, 0)
+	if (fs.existsSync(FILE)) {
+		fs.truncateSync(FILE, 0)
+	}
+	
 	fs.appendFileSync(FILE, ':root {')
 	palette.forEach(
 		(color, name) => {
@@ -65,7 +78,9 @@ const palette = getPalette(colors)
 	const FILE = path.resolve('./assets/palette.js')
 	const SOURCE = './src/palette.js'
 
-	const entries = Array.from(palette).reduce(
+	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
+
+	const ENTRIES = Array.from(palette).reduce(
 		(entries, [name, color]) => {
 			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
 			return entries.concat(color.tones.reduce(
@@ -79,12 +94,13 @@ const palette = getPalette(colors)
 		[]
 	)
 
-	const sourceContent = fs.readFileSync(SOURCE, {encoding:'utf8', flag:'r'})
-
-	fs.truncateSync(FILE, 0)
+	if (fs.existsSync(FILE)) {
+		fs.truncateSync(FILE, 0)
+	}
+	
 	fs.writeFileSync(
 		FILE,
-		sourceContent.replace('/*-entries-*/', entries.join(',') + '\n')
+		CONTENT.replace('/*-entries-*/', ENTRIES.join(',') + '\n')
 	)
 	
 	console.log(`${FILE} was updated`)
