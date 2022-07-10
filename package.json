@@ -1,13 +1,24 @@
 {
   "name": "protosite-palette",
-  "version": "1.1.4",
-  "description": "Color Theme",
-  "type": "module",
-  "main": "build.js",
+  "version": "1.2.5",
+	"type": "module",
+  "main": "index.js",
+	"module": "assets/palette.js",
   "files": [
     "assets/colors.css",
-    "assets/palette.css"
+    "assets/palette.css",
+		"assets/palette.js"
   ],
+  "scripts": {
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "adobe-aco": "0.1.1",
+    "chroma-js": "2.1.2",
+    "file-saver": "2.0.5",
+    "get-css-variables": "0.3.0",
+    "lodash": "4.17.21"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-palette.git"
@@ -21,15 +32,5 @@
   "bugs": {
     "url": "https://github.com/BPanchenko/protosite-palette/issues"
   },
-  "homepage": "https://github.com/BPanchenko/protosite-palette#readme",
-  "scripts": {
-    "export": "node export.js"
-  },
-  "dependencies": {
-    "adobe-aco": "0.1.1",
-    "chroma-js": "2.1.2",
-    "file-saver": "2.0.5",
-    "get-css-variables": "0.3.0",
-    "lodash": "4.17.21"
-  }
+  "homepage": "https://github.com/BPanchenko/protosite-palette#readme"
 }

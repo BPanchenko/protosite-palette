@@ -1,5 +1,6 @@
-import build from '../index.js'
+import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
+import getPalette from './index.js'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
 import startCase from 'lodash/startCase.js'
@@ -9,7 +10,7 @@ import startCase from 'lodash/startCase.js'
 
 const rawdata = fs.readFileSync('./src/colors.json')
 const colors = JSON.parse(rawdata)
-const palette = build(colors)
+const palette = getPalette(colors)
 
 
 {
@@ -57,6 +58,35 @@ const palette = build(colors)
 	)
 	fs.appendFileSync(FILE, '\n}')
 
+	console.log(`${FILE} was updated`)
+}
+
+{
+	const FILE = path.resolve('./assets/palette.js')
+	const SOURCE = './src/palette.js'
+
+	const entries = Array.from(palette).reduce(
+		(entries, [name, color]) => {
+			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
+			return entries.concat(color.tones.reduce(
+				(entries, color, index) => {
+					entries.push(`\n\t['${camelCase(name)}${100 * ++index}', '${color.hex}']`)
+					return entries
+				},
+				[]
+			))
+		},
+		[]
+	)
+
+	const sourceContent = fs.readFileSync(SOURCE, {encoding:'utf8', flag:'r'})
+
+	fs.truncateSync(FILE, 0)
+	fs.writeFileSync(
+		FILE,
+		sourceContent.replace('/*-entries-*/', entries.join(',') + '\n')
+	)
+	
 	console.log(`${FILE} was updated`)
 }
 
