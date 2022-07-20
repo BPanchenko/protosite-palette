@@ -76,7 +76,7 @@ const palette = getPalette(colors)
 
 {
 	const FILE = path.resolve('./assets/palette.js')
-	const SOURCE = './src/palette.js'
+	const SOURCE = './src/module-map.js'
 
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
@@ -90,6 +90,31 @@ const palette = getPalette(colors)
 				},
 				[]
 			))
+		},
+		[]
+	)
+
+	if (fs.existsSync(FILE)) {
+		fs.truncateSync(FILE, 0)
+	}
+	
+	fs.writeFileSync(
+		FILE,
+		CONTENT.replace('/*-entries-*/', ENTRIES.join(',') + '\n')
+	)
+	
+	console.log(`${FILE} was updated`)
+}
+
+{
+	const FILE = path.resolve('./assets/colors.js')
+	const SOURCE = './src/module-map.js'
+
+	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
+
+	const ENTRIES = Array.from(colors).reduce(
+		(entries, [name, color]) => {
+			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
 		},
 		[]
 	)

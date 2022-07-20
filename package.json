@@ -1,11 +1,12 @@
 {
   "name": "protosite-palette",
-  "version": "1.2.5",
+  "version": "1.3.5",
 	"type": "module",
   "main": "index.js",
 	"module": "assets/palette.js",
   "files": [
     "assets/colors.css",
+    "assets/colors.js",
     "assets/palette.css",
 		"assets/palette.js"
   ],
