@@ -76,7 +76,7 @@ const palette = getPalette(colors)
 
 {
 	const FILE = path.resolve('./assets/palette.js')
-	const SOURCE = './src/module-map.js'
+	const SOURCE = './src/blank-map.js'
 
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
@@ -108,7 +108,7 @@ const palette = getPalette(colors)
 
 {
 	const FILE = path.resolve('./assets/colors.js')
-	const SOURCE = './src/module-map.js'
+	const SOURCE = './src/blank-map.js'
 
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
