@@ -112,11 +112,8 @@ const palette = getPalette(colors)
 
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
-	const ENTRIES = Array.from(colors).reduce(
-		(entries, [name, color]) => {
-			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
-		},
-		[]
+	const ENTRIES = Object.entries(colors).map(
+		([name, color]) => `\n\t['${camelCase(name)}', '#${color}']`
 	)
 
 	if (fs.existsSync(FILE)) {
