@@ -8,9 +8,14 @@ import startCase from 'lodash/startCase.js'
 // import { createAcoFile } from 'adobe-aco'
 // import { saveAs } from 'file-saver'
 
-const rawdata = fs.readFileSync('./src/colors.json')
-const colors = JSON.parse(rawdata)
-const palette = getPalette(colors)
+const {
+	colors,
+	correlations
+} = JSON.parse(fs.readFileSync('./data.json'))
+
+const palette = getPalette(
+	colors
+)
 
 {
 	const DIR = './assets'
