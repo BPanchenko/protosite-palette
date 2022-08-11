@@ -1,3 +1,8 @@
+import {
+	accentKeys,
+	toneKeys
+} from "./src/constants.js"
+
 import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
 import getPalette from './index.js'
@@ -25,7 +30,6 @@ const palette = getPalette(
 		fs.mkdirSync(DIR)
 	}
 }
-
 
 {
 	const FILE = path.resolve('./assets/colors.css')
@@ -70,7 +74,15 @@ const palette = getPalette(
 				(color, index) => {
 					fs.appendFileSync(
 						FILE,
-						`\n\t${PREFIX}${kebabCase(name)}-${100 * ++index}: ${color.hex};`
+						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.hex};`
+					)
+				}
+			)
+			color.accents.forEach(
+				(color, index) => {
+					fs.appendFileSync(
+						FILE,
+						`\n\t${PREFIX}${kebabCase(name)}-${accentKeys[index]}: ${color.hex};`
 					)
 				}
 			)
@@ -92,7 +104,13 @@ const palette = getPalette(
 			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
 			return entries.concat(color.tones.reduce(
 				(entries, color, index) => {
-					entries.push(`\n\t['${camelCase(name)}${100 * ++index}', '${color.hex}']`)
+					entries.push(`\n\t['${camelCase(name)}${toneKeys[index]}', '${color.hex}']`)
+					return entries
+				},
+				[]
+			)).concat(color.accents.reduce(
+				(entries, color, index) => {
+					entries.push(`\n\t['${camelCase(name)}${accentKeys[index]}', '${color.hex}']`)
 					return entries
 				},
 				[]
@@ -120,7 +138,7 @@ const palette = getPalette(
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
 	const ENTRIES = Object.entries(colors).map(
-		([name, color]) => `\n\t['${camelCase(name)}', '#${color}']`
+		([name, color]) => `\n\t['${camelCase(name)}', '${color}']`
 	)
 
 	if (fs.existsSync(FILE)) {

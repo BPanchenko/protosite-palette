@@ -19,10 +19,10 @@ function getColorData(
 	}
 
 	if (isFunction(accentFn)) {
-		const step = 2.8 / accentKeys.length
+		const step = 0.8 / accentKeys.length
 		data.accents = accentKeys.map((_, index) => {
 			const factor = accentFn(step * ++index)
-			const tint = color.hue(factor).saturate(factor)
+			const tint = color.set('lab.l', `*${factor}`)
 			return getColorData(tint)
 		})
 	}
