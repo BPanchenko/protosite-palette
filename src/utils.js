@@ -22,7 +22,7 @@ function getColorData(
 		const step = 2.8 / accentKeys.length
 		data.accents = accentKeys.map((_, index) => {
 			const factor = accentFn(step * ++index)
-			// TODO: calc tint
+			const tint = color.hue(factor).saturate(factor)
 			return getColorData(tint)
 		})
 	}

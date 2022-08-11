@@ -14,7 +14,9 @@ const {
 } = JSON.parse(fs.readFileSync('./data.json'))
 
 const palette = getPalette(
-	colors
+	colors,
+	new Function('x', `return ${correlations.tone}`),
+	new Function('x', `return ${correlations.accent}`)
 )
 
 {

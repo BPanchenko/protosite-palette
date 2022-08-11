@@ -8,10 +8,8 @@ import toPairs from "lodash/toPairs.js"
 
 export default function getPalette(
 	colors,
-	correlations = {
-		accent: accentCorrelationByDefault,
-		tone: toneCorrelationByDefault,
-	}
+	toneCorrelation = toneCorrelationByDefault,
+	accentCorrelation = accentCorrelationByDefault
 ) {
 	const palette = new Map()
 	
@@ -22,8 +20,8 @@ export default function getPalette(
 			name,
 			getColorData(
 				value,
-				correlations.tone ? correlations.tone : undefined,
-				correlations.accent ? correlations.accent : undefined
+				accentCorrelation,
+				toneCorrelation
 			)
 		)
 	})
