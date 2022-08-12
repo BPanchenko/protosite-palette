@@ -1,11 +1,10 @@
-import {
+import getPalette, {
 	accentKeys,
 	toneKeys
-} from "./src/constants.js"
+} from './index.js'
 
 import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
-import getPalette from './index.js'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
 import startCase from 'lodash/startCase.js'

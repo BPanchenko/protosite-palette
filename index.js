@@ -1,6 +1,8 @@
 import {
 	accentCorrelationByDefault,
-	toneCorrelationByDefault
+	accentKeys,
+	toneCorrelationByDefault,
+	toneKeys
 } from "./src/constants.js"
 
 import { getColorData } from "./src/utils.js"
@@ -27,4 +29,9 @@ export default function getPalette(
 	})
 
 	return palette
+}
+
+export {
+	accentKeys,
+	toneKeys
 }
