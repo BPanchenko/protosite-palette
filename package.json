@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "1.4.7",
+  "version": "1.5.7",
 	"type": "module",
   "main": "index.js",
 	"module": "assets/palette.js",

@@ -153,6 +153,30 @@ const palette = getPalette(
 }
 
 {
+	const FILE = path.resolve('./assets/correlations.js')
+	const SOURCE = './src/blank-correlations.js'
+
+	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
+	
+	if (fs.existsSync(FILE)) {
+		fs.truncateSync(FILE, 0)
+	}
+	
+	fs.writeFileSync(
+		FILE,
+		CONTENT.replace(
+			'body-tone-correlation',
+			correlations.tone
+		).replace(
+			'body-accent-correlation',
+			correlations.accent
+		)
+	)
+	
+	console.log(`${FILE} was updated`)
+}
+
+{
 	const FILE = path.resolve('./assets/colors.aco')
 	/*
 	// there are problems from using package `adobe-aco`
