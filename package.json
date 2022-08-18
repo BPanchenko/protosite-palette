@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "1.5.8",
+  "version": "1.5.9",
 	"type": "module",
   "main": "index.js",
 	"module": "assets/palette.js",
@@ -8,6 +8,7 @@
     "assets/colors.css",
     "assets/colors.js",
     "assets/correlations.js",
+    "assets/palette.aco",
     "assets/palette.css",
 		"assets/palette.js"
   ],
