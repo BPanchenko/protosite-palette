@@ -1,2 +1,2 @@
-export const toneCorrelationByDefault = x => body-tone-correlation
-export const accentCorrelationByDefault = x => body-accent-correlation
+export const toneCorrelation = x => body-tone-correlation
+export const accentCorrelation = x => body-accent-correlation
