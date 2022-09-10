@@ -4,10 +4,13 @@ import {
 } from "./constants.js"
 
 import BezierEasing from "bezier-easing"
+import SimpleLogger from "simple-node-logger"
 import bezier from "bezier"
 import chroma from "chroma-js"
 import isFunction from "lodash/isFunction.js"
 import toString from "lodash/toString.js"
+
+const log = SimpleLogger.createSimpleLogger("debug.log")
 
 function getColorData(
 	value,
@@ -22,20 +25,26 @@ function getColorData(
 	}
 
 	if (isFunction(accentFn)) {
+		log.info('==== ACCENTS ====')
+		log.setLevel('debug')
 		const step = 1 / accentKeys.length
 		data.accents = accentKeys.map((_, index) => {
 			const t = step * ++index
 			const factor = 0.8 * accentFn(t)
+			log.debug(index + ' => ' + t + ' => ' + factor)
 			const tint = color.set('lab.l', `*${factor}`)
 			return getColorData(tint)
 		})
 	}
 
 	if (isFunction(toneFn)) {
+		log.info('==== TONES ====')
+		log.setLevel('debug')
 		const step = 1 / toneKeys.length
 		data.tones = toneKeys.map((_, index) => {
 			const t = step * ++index
 			const factor = 2.8 * toneFn(t)
+			log.debug(index + ' => ' + t + ' => ' + factor)
 			const tint = color.saturate(factor).brighten(factor)
 			return getColorData(tint)
 		})
