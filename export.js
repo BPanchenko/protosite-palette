@@ -5,7 +5,6 @@ import getPalette, {
 
 import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
-import { initFunction } from "./src/utils.js"
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
 import startCase from 'lodash/startCase.js'
@@ -20,8 +19,8 @@ const {
 
 const palette = getPalette(
 	colors,
-	initFunction(correlations.tone),
-	initFunction(correlations.accent)
+	new Function('x', `return ${correlations.tone}`),
+	new Function('x', `return ${correlations.accent}`)
 )
 
 {

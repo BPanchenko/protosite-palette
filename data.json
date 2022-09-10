@@ -1,7 +1,7 @@
 {
 	"correlations": {
-		"accent": "x",
-		"tone": "x<.5 ? 2*x*x : -1+(4-2*x)*x"
+		"accent": [ 0.3, 0.5, 0.7, 0.5 ],
+		"tone": [ 0, 0.5, 0.5, 1 ]
 	},
 	"colors": {
 		"red": "#f44336",

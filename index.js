@@ -4,8 +4,12 @@ import {
 	toneCorrelationByDefault,
 	toneKeys
 } from "./src/constants.js"
+import {
+	getColorData,
+	initFunction
+} from "./src/utils.js"
 
-import { getColorData } from "./src/utils.js"
+import isFunction from "lodash/isFunction.js"
 import toPairs from "lodash/toPairs.js"
 
 export default function getPalette(
@@ -14,6 +18,14 @@ export default function getPalette(
 	accentCorrelation = accentCorrelationByDefault
 ) {
 	const palette = new Map()
+
+	if (!isFunction(toneCorrelation)) {
+		toneCorrelation = initFunction(toneCorrelation)
+	}
+
+	if (!isFunction(accentCorrelation)) {
+		accentCorrelation = initFunction(accentCorrelation)
+	}
 	
 	toPairs(colors).forEach(p => {
 		let name = p[0]
@@ -22,8 +34,8 @@ export default function getPalette(
 			name,
 			getColorData(
 				value,
-				accentCorrelation,
-				toneCorrelation
+				toneCorrelation,
+				accentCorrelation
 			)
 		)
 	})
