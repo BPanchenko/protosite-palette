@@ -5,6 +5,7 @@ import getPalette, {
 
 import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
+import { initFunction } from "./src/utils.js"
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
 import startCase from 'lodash/startCase.js'
@@ -19,8 +20,8 @@ const {
 
 const palette = getPalette(
 	colors,
-	new Function('x', `return ${correlations.tone}`),
-	new Function('x', `return ${correlations.accent}`)
+	initFunction(correlations.tone),
+	initFunction(correlations.accent)
 )
 
 {
@@ -147,30 +148,6 @@ const palette = getPalette(
 	fs.writeFileSync(
 		FILE,
 		CONTENT.replace('/*-entries-*/', ENTRIES.join(',') + '\n')
-	)
-	
-	console.log(`${FILE} was updated`)
-}
-
-{
-	const FILE = path.resolve('./assets/correlations.js')
-	const SOURCE = './src/blank-correlations.js'
-
-	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
-	
-	if (fs.existsSync(FILE)) {
-		fs.truncateSync(FILE, 0)
-	}
-	
-	fs.writeFileSync(
-		FILE,
-		CONTENT.replace(
-			'body-tone-correlation',
-			correlations.tone
-		).replace(
-			'body-accent-correlation',
-			correlations.accent
-		)
 	)
 	
 	console.log(`${FILE} was updated`)
