@@ -6,6 +6,6 @@ export const accentKeys = [
 	'A100', 'A200', 'A400','A700'
 ]
 
-export const toneCorrelationByDefault = t => t<.5 ? 2*t*t : -1+(4-2*t)*t
+export const toneCorrelationByDefault = x => x<.5 ? 2*x*x : -1+(4-2*x)*x
 
-export const accentCorrelationByDefault = t => t
+export const accentCorrelationByDefault = x => x
