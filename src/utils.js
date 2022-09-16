@@ -1,5 +1,6 @@
 import {
 	accentKeys,
+	scale,
 	toneKeys
 } from "./constants.js"
 
@@ -25,8 +26,12 @@ function getColorData(
 		const step = 1 / accentKeys.length
 		data.accents = accentKeys.map((_, index) => {
 			const t = step * ++index
-			const factor = 0.8 * accentFn(t)
-			const tint = color.set('lab.l', `*${factor}`)
+			const [f1, f2] = accentFn(t)
+			
+			let tint = chroma(color)
+			tint = tint.luminance(scale.copy().range([0.5, 0.06])(f2))
+			tint = tint.set('hsi.i', scale.copy().range([0.7, 0.4])(f1))
+			
 			return getColorData(tint)
 		})
 	}
@@ -35,8 +40,12 @@ function getColorData(
 		const step = 1 / toneKeys.length
 		data.tones = toneKeys.map((_, index) => {
 			const t = step * ++index
-			const factor = 2.8 * toneFn(t)
-			const tint = color.saturate(factor).brighten(factor)
+			const f = toneFn(t)
+
+			let tint = chroma(color)
+			tint = tint.set('hsl.l', scale.copy().range([1.45, 0.25])(f))
+			tint = tint.set('hsl.s', `*${scale.copy().range([0.1, 1])(f)}`)
+			
 			return getColorData(tint)
 		})
 	}

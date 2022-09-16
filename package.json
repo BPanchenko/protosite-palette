@@ -1,7 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "1.6.11",
-  "type": "module",
+  "version": "1.7.11",
   "main": "index.js",
   "files": [
     "assets/colors.css",

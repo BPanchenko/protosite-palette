@@ -24,7 +24,7 @@ export default function getPalette(
 	}
 
 	if (!isFunction(accentCorrelation)) {
-		accentCorrelation = initFunction(accentCorrelation)
+		accentCorrelation = initFunction(accentCorrelation, 2)
 	}
 	
 	toPairs(colors).forEach(p => {
