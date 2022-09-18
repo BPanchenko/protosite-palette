@@ -6,6 +6,7 @@ import {
 
 import BezierEasing from "bezier-easing"
 import bezier from "bezier"
+import camelCase from 'lodash/camelCase.js'
 import chroma from "chroma-js"
 import isFunction from "lodash/isFunction.js"
 import toString from "lodash/toString.js"
@@ -86,7 +87,26 @@ function initFunction(data, mode = 1) {
 	return fn
 }
 
+function getFlattenPalette(palette, format = 'hex') {
+	const data = new Map()
+	palette.forEach(
+		(color, name) => {
+			data.set(name, color[format])
+			color.tones.forEach(
+				(color, index) =>
+					data.set(camelCase(name) + toneKeys[index], color[format])
+			)
+			color.accents.forEach(
+				(color, index) =>
+					data.set(camelCase(name) + accentKeys[index], color[format])
+			)
+		}
+	)
+	return data
+}
+
 export {
 	getColorData,
+	getFlattenPalette,
 	initFunction
 }

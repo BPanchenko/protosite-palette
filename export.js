@@ -1,5 +1,6 @@
 import getPalette, {
 	accentKeys,
+	getFlattenPalette,
 	toneKeys
 } from './index.js'
 
@@ -19,9 +20,11 @@ const {
 
 const palette = getPalette(
 	colors,
-	new Function('x', `return ${correlations.tone}`),
-	new Function('x', `return ${correlations.accent}`)
+	correlations.tone,
+	correlations.accent
 )
+
+const flattenPalette = getFlattenPalette(palette)
 
 {
 	const DIR = './assets'
@@ -97,25 +100,9 @@ const palette = getPalette(
 	const SOURCE = './src/blank-map.js'
 
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
-
-	const ENTRIES = Array.from(palette).reduce(
-		(entries, [name, color]) => {
-			entries.push(`\n\t['${camelCase(name)}', '${color.hex}']`)
-			return entries.concat(color.tones.reduce(
-				(entries, color, index) => {
-					entries.push(`\n\t['${camelCase(name)}${toneKeys[index]}', '${color.hex}']`)
-					return entries
-				},
-				[]
-			)).concat(color.accents.reduce(
-				(entries, color, index) => {
-					entries.push(`\n\t['${camelCase(name)}${accentKeys[index]}', '${color.hex}']`)
-					return entries
-				},
-				[]
-			))
-		},
-		[]
+	
+	const ENTRIES = Array.from(flattenPalette).map(
+		([name, value]) => `\n\t['${name}', '${value}']`
 	)
 
 	if (fs.existsSync(FILE)) {
@@ -137,7 +124,7 @@ const palette = getPalette(
 	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
 
 	const ENTRIES = Object.entries(colors).map(
-		([name, color]) => `\n\t['${camelCase(name)}', '${color}']`
+		([name, value]) => `\n\t['${camelCase(name)}', '${value}']`
 	)
 
 	if (fs.existsSync(FILE)) {

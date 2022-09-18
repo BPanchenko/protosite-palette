@@ -6,6 +6,7 @@ import {
 } from "./src/constants.js"
 import {
 	getColorData,
+	getFlattenPalette,
 	initFunction
 } from "./src/utils.js"
 
@@ -45,5 +46,6 @@ export default function getPalette(
 
 export {
 	accentKeys,
+	getFlattenPalette,
 	toneKeys
 }
