@@ -3,12 +3,12 @@ import {
 	accentKeys,
 	toneCorrelationByDefault,
 	toneKeys
-} from "./src/constants.js"
+} from "./lib/constants.js"
 import {
 	getColorData,
 	getFlattenPalette,
 	initFunction
-} from "./src/utils.js"
+} from "./lib/utils.js"
 
 import isFunction from "lodash/isFunction.js"
 import toPairs from "lodash/toPairs.js"
