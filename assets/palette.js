@@ -1,302 +1,300 @@
-export default new Map([
-	['red', '#f44336'],
-	['red50', '#fbf6f6'],
-	['red100', '#e5ada9'],
-	['red200', '#dd7169'],
-	['red300', '#dc3e33'],
-	['red400', '#c7271b'],
-	['red500', '#ac1c12'],
-	['red600', '#96150c'],
-	['red700', '#871108'],
-	['red800', '#7d0f07'],
-	['red900', '#790e07'],
-	['redA100', '#f07d74'],
-	['redA200', '#f65d52'],
-	['redA400', '#f24235'],
-	['redA700', '#cd372e'],
-	['pink', '#e91e63'],
-	['pink50', '#fbf6f8'],
-	['pink100', '#e3abbf'],
-	['pink200', '#d96e92'],
-	['pink300', '#d53a6f'],
-	['pink400', '#c02157'],
-	['pink500', '#a61848'],
-	['pink600', '#91113d'],
-	['pink700', '#820e35'],
-	['pink800', '#780c30'],
-	['pink900', '#740b2f'],
-	['pinkA100', '#d97295'],
-	['pinkA200', '#d5527e'],
-	['pinkA400', '#e91e63'],
-	['pinkA700', '#c41a54'],
-	['purple', '#9c27b0'],
-	['purple50', '#faf6fb'],
-	['purple100', '#d6b2dd'],
-	['purple200', '#c17acd'],
-	['purple300', '#b24bc4'],
-	['purple400', '#9d33af'],
-	['purple500', '#862895'],
-	['purple600', '#742182'],
-	['purple700', '#671b74'],
-	['purple800', '#5f186c'],
-	['purple900', '#5d1768'],
-	['purpleA100', '#ae7ab8'],
-	['purpleA200', '#9d60a8'],
-	['purpleA400', '#8d429a'],
-	['purpleA700', '#812092'],
-	['violet', '#673ab7'],
-	['violet50', '#f8f7fa'],
-	['violet100', '#c2b6d8'],
-	['violet200', '#9a82c5'],
-	['violet300', '#7a56b8'],
-	['violet400', '#623ea3'],
-	['violet500', '#52328c'],
-	['violet600', '#47297a'],
-	['violet700', '#3d236c'],
-	['violet800', '#382064'],
-	['violet900', '#361f61'],
-	['violetA100', '#9b86bf'],
-	['violetA200', '#866eb1'],
-	['violetA400', '#7154a4'],
-	['violetA700', '#5b34a3'],
-	['indigo', '#3f51b5'],
-	['indigo50', '#f7f7fa'],
-	['indigo100', '#b7bcd7'],
-	['indigo200', '#848dc3'],
-	['indigo300', '#5967b5'],
-	['indigo400', '#42509f'],
-	['indigo500', '#354289'],
-	['indigo600', '#2c3777'],
-	['indigo700', '#263169'],
-	['indigo800', '#222c62'],
-	['indigo900', '#212a5f'],
-	['indigoA100', '#8a93c4'],
-	['indigoA200', '#727cb6'],
-	['indigoA400', '#5965ac'],
-	['indigoA700', '#3c4caa'],
-	['blue', '#2196f3'],
-	['blue50', '#f6f9fb'],
-	['blue100', '#a9cbe5'],
-	['blue200', '#69aade'],
-	['blue300', '#3391dc'],
-	['blue400', '#1b7ac7'],
-	['blue500', '#1268ac'],
-	['blue600', '#0c5a96'],
-	['blue700', '#084f87'],
-	['blue800', '#07487d'],
-	['blue900', '#074679'],
-	['blueA100', '#4aa6f0'],
-	['blueA200', '#2194f0'],
-	['blueA400', '#1c80ce'],
-	['blueA700', '#186cae'],
-	['lightBlue', '#03a9f4'],
-	['lightBlue50', '#f6fafb'],
-	['lightBlue100', '#a7d4e8'],
-	['lightBlue200', '#64bbe3'],
-	['lightBlue300', '#2baae3'],
-	['lightBlue400', '#1394cf'],
-	['lightBlue500', '#0b7fb3'],
-	['lightBlue600', '#066d9d'],
-	['lightBlue700', '#04618c'],
-	['lightBlue800', '#025a82'],
-	['lightBlue900', '#02577e'],
-	['lightBlueA100', '#13c0ff'],
-	['lightBlueA200', '#03abf7'],
-	['lightBlueA400', '#0293d4'],
-	['lightBlueA700', '#027cb4'],
-	['cyan', '#00bcd4'],
-	['cyan50', '#f6fbfb'],
-	['cyan100', '#a5e1e9'],
-	['cyan200', '#63d5e4'],
-	['cyan300', '#28d0e6'],
-	['cyan400', '#10bbd1'],
-	['cyan500', '#09a1b5'],
-	['cyan600', '#048d9f'],
-	['cyan700', '#027e8d'],
-	['cyan800', '#007584'],
-	['cyan900', '#007180'],
-	['cyanA100', '#00e2ff'],
-	['cyanA200', '#00c6df'],
-	['cyanA400', '#00aabf'],
-	['cyanA700', '#0090a2'],
-	['teal', '#009688'],
-	['teal50', '#f6fbfb'],
-	['teal100', '#a5e9e3'],
-	['teal200', '#63e4d8'],
-	['teal300', '#28e6d4'],
-	['teal400', '#10d1bf'],
-	['teal500', '#09b5a5'],
-	['teal600', '#049f91'],
-	['teal700', '#028d81'],
-	['teal800', '#008477'],
-	['teal900', '#008074'],
-	['tealA100', '#53ccc1'],
-	['tealA200', '#22c9ba'],
-	['tealA400', '#00beac'],
-	['tealA700', '#00a191'],
-	['green', '#4caf50'],
-	['green50', '#f7faf7'],
-	['green100', '#bad4bb'],
-	['green200', '#8abc8c'],
-	['green300', '#62ac65'],
-	['green400', '#4a974e'],
-	['green500', '#3d8140'],
-	['green600', '#336f36'],
-	['green700', '#2c632f'],
-	['green800', '#285c2a'],
-	['green900', '#275929'],
-	['greenA100', '#78ec7d'],
-	['greenA200', '#61df65'],
-	['greenA400', '#53c057'],
-	['greenA700', '#46a24a'],
-	['lightGreen', '#8bc34a'],
-	['lightGreen50', '#f9faf7'],
-	['lightGreen100', '#c8d8b6'],
-	['lightGreen200', '#a6c482'],
-	['lightGreen300', '#8bb658'],
-	['lightGreen400', '#74a140'],
-	['lightGreen500', '#628b33'],
-	['lightGreen600', '#54782b'],
-	['lightGreen700', '#4a6b25'],
-	['lightGreen800', '#446321'],
-	['lightGreen900', '#426020'],
-	['lightGreenA100', '#a4e558'],
-	['lightGreenA200', '#8fc94d'],
-	['lightGreenA400', '#7bad41'],
-	['lightGreenA700', '#689238'],
-	['lime', '#cddc39'],
-	['lime50', '#fafbf6'],
-	['lime100', '#dadeb0'],
-	['lime200', '#c8d076'],
-	['lime300', '#bec945'],
-	['lime400', '#a8b52d'],
-	['lime500', '#909b23'],
-	['lime600', '#7e871b'],
-	['lime700', '#707917'],
-	['lime800', '#677014'],
-	['lime900', '#646c13'],
-	['limeA100', '#cddb38'],
-	['limeA200', '#b3c032'],
-	['limeA400', '#99a52b'],
-	['limeA700', '#828c24'],
-	['yellow', '#ffeb3b'],
-	['yellow50', '#fbfbf6'],
-	['yellow100', '#e9e2a5'],
-	['yellow200', '#e4d763'],
-	['yellow300', '#e6d328'],
-	['yellow400', '#d1bd10'],
-	['yellow500', '#b5a409'],
-	['yellow600', '#9f8f04'],
-	['yellow700', '#8d8002'],
-	['yellow800', '#847600'],
-	['yellow900', '#807200'],
-	['yellowA100', '#dfcd34'],
-	['yellowA200', '#c3b42e'],
-	['yellowA400', '#a89a27'],
-	['yellowA700', '#8e8322'],
-	['amber', '#ffc107'],
-	['amber50', '#fbfaf6'],
-	['amber100', '#e9d8a5'],
-	['amber200', '#e4c463'],
-	['amber300', '#e6b628'],
-	['amber400', '#d1a110'],
-	['amber500', '#b58a09'],
-	['amber600', '#9f7804'],
-	['amber700', '#8d6a02'],
-	['amber800', '#846300'],
-	['amber900', '#806000'],
-	['amberA100', '#ffcc08'],
-	['amberA200', '#ecb306'],
-	['amberA400', '#cb9905'],
-	['amberA700', '#ad8104'],
-	['orange', '#ff9800'],
-	['orange50', '#fbf9f6'],
-	['orange100', '#e9cea5'],
-	['orange200', '#e4b063'],
-	['orange300', '#e69928'],
-	['orange400', '#d18310'],
-	['orange500', '#b56f09'],
-	['orange600', '#9f6004'],
-	['orange700', '#8d5502'],
-	['orange800', '#844e00'],
-	['orange900', '#804c00'],
-	['orangeA100', '#ffb400'],
-	['orangeA200', '#ff9d00'],
-	['orangeA400', '#e38700'],
-	['orangeA700', '#c07200'],
-	['deepOrange', '#ff5722'],
-	['deepOrange50', '#fbf7f6'],
-	['deepOrange100', '#e9b6a5'],
-	['deepOrange200', '#e48263'],
-	['deepOrange300', '#e65628'],
-	['deepOrange400', '#d13e10'],
-	['deepOrange500', '#b53209'],
-	['deepOrange600', '#9f2904'],
-	['deepOrange700', '#8d2302'],
-	['deepOrange800', '#842000'],
-	['deepOrange900', '#801f00'],
-	['deepOrangeA100', '#ff8258'],
-	['deepOrangeA200', '#ff6226'],
-	['deepOrangeA400', '#f55420'],
-	['deepOrangeA700', '#cf461c'],
-	['brown', '#795548'],
-	['brown50', '#f9f8f8'],
-	['brown100', '#cfc3bf'],
-	['brown200', '#b49b93'],
-	['brown300', '#a07c6f'],
-	['brown400', '#896558'],
-	['brown500', '#755549'],
-	['brown600', '#65483e'],
-	['brown700', '#5a3f35'],
-	['brown800', '#523a31'],
-	['brown900', '#503830'],
-	['brownA100', '#b09c94'],
-	['brownA200', '#9f877e'],
-	['brownA400', '#907268'],
-	['brownA700', '#865e4f'],
-	['grey', '#9e9e9e'],
-	['grey50', '#f9f9f9'],
-	['grey100', '#c7c7c7'],
-	['grey200', '#a3a3a3'],
-	['grey300', '#878787'],
-	['grey400', '#717171'],
-	['grey500', '#5f5f5f'],
-	['grey600', '#515151'],
-	['grey700', '#484848'],
-	['grey800', '#424242'],
-	['grey900', '#404040'],
-	['greyA100', '#a0a0a0'],
-	['greyA200', '#8c8c8c'],
-	['greyA400', '#787878'],
-	['greyA700', '#666666'],
-	['blueGrey', '#607d8b'],
-	['blueGrey50', '#f8f9f9'],
-	['blueGrey100', '#c1c9cd'],
-	['blueGrey200', '#97a7af'],
-	['blueGrey300', '#768d98'],
-	['blueGrey400', '#5f7782'],
-	['blueGrey500', '#50646e'],
-	['blueGrey600', '#43575f'],
-	['blueGrey700', '#3b4c55'],
-	['blueGrey800', '#36464e'],
-	['blueGrey900', '#34444b'],
-	['blueGreyA100', '#90a4ad'],
-	['blueGreyA200', '#79909c'],
-	['blueGreyA400', '#607d8b'],
-	['blueGreyA700', '#516a76'],
-	['greenGrey', '#5e7d75'],
-	['greenGrey50', '#f8f9f9'],
-	['greenGrey100', '#c2ccc9'],
-	['greenGrey200', '#9aaca8'],
-	['greenGrey300', '#7a948d'],
-	['greenGrey400', '#637f77'],
-	['greenGrey500', '#536b64'],
-	['greenGrey600', '#475c57'],
-	['greenGrey700', '#3d524d'],
-	['greenGrey800', '#384b46'],
-	['greenGrey900', '#374944'],
-	['greenGreyA100', '#94a9a4'],
-	['greenGreyA200', '#7d9790'],
-	['greenGreyA400', '#66867d'],
-	['greenGreyA700', '#56726a']
-])
+export const red = 0xf44336;
+export const red50 = 0xfbf6f6;
+export const red100 = 0xe5ada9;
+export const red200 = 0xdd7169;
+export const red300 = 0xdc3e33;
+export const red400 = 0xc7271b;
+export const red500 = 0xac1c12;
+export const red600 = 0x96150c;
+export const red700 = 0x871108;
+export const red800 = 0x7d0f07;
+export const red900 = 0x790e07;
+export const redA100 = 0xf07d74;
+export const redA200 = 0xf65d52;
+export const redA400 = 0xf24235;
+export const redA700 = 0xcd372e;
+export const pink = 0xe91e63;
+export const pink50 = 0xfbf6f8;
+export const pink100 = 0xe3abbf;
+export const pink200 = 0xd96e92;
+export const pink300 = 0xd53a6f;
+export const pink400 = 0xc02157;
+export const pink500 = 0xa61848;
+export const pink600 = 0x91113d;
+export const pink700 = 0x820e35;
+export const pink800 = 0x780c30;
+export const pink900 = 0x740b2f;
+export const pinkA100 = 0xd97295;
+export const pinkA200 = 0xd5527e;
+export const pinkA400 = 0xe91e63;
+export const pinkA700 = 0xc41a54;
+export const purple = 0x9c27b0;
+export const purple50 = 0xfaf6fb;
+export const purple100 = 0xd6b2dd;
+export const purple200 = 0xc17acd;
+export const purple300 = 0xb24bc4;
+export const purple400 = 0x9d33af;
+export const purple500 = 0x862895;
+export const purple600 = 0x742182;
+export const purple700 = 0x671b74;
+export const purple800 = 0x5f186c;
+export const purple900 = 0x5d1768;
+export const purpleA100 = 0xae7ab8;
+export const purpleA200 = 0x9d60a8;
+export const purpleA400 = 0x8d429a;
+export const purpleA700 = 0x812092;
+export const violet = 0x673ab7;
+export const violet50 = 0xf8f7fa;
+export const violet100 = 0xc2b6d8;
+export const violet200 = 0x9a82c5;
+export const violet300 = 0x7a56b8;
+export const violet400 = 0x623ea3;
+export const violet500 = 0x52328c;
+export const violet600 = 0x47297a;
+export const violet700 = 0x3d236c;
+export const violet800 = 0x382064;
+export const violet900 = 0x361f61;
+export const violetA100 = 0x9b86bf;
+export const violetA200 = 0x866eb1;
+export const violetA400 = 0x7154a4;
+export const violetA700 = 0x5b34a3;
+export const indigo = 0x3f51b5;
+export const indigo50 = 0xf7f7fa;
+export const indigo100 = 0xb7bcd7;
+export const indigo200 = 0x848dc3;
+export const indigo300 = 0x5967b5;
+export const indigo400 = 0x42509f;
+export const indigo500 = 0x354289;
+export const indigo600 = 0x2c3777;
+export const indigo700 = 0x263169;
+export const indigo800 = 0x222c62;
+export const indigo900 = 0x212a5f;
+export const indigoA100 = 0x8a93c4;
+export const indigoA200 = 0x727cb6;
+export const indigoA400 = 0x5965ac;
+export const indigoA700 = 0x3c4caa;
+export const blue = 0x2196f3;
+export const blue50 = 0xf6f9fb;
+export const blue100 = 0xa9cbe5;
+export const blue200 = 0x69aade;
+export const blue300 = 0x3391dc;
+export const blue400 = 0x1b7ac7;
+export const blue500 = 0x1268ac;
+export const blue600 = 0x0c5a96;
+export const blue700 = 0x084f87;
+export const blue800 = 0x07487d;
+export const blue900 = 0x074679;
+export const blueA100 = 0x4aa6f0;
+export const blueA200 = 0x2194f0;
+export const blueA400 = 0x1c80ce;
+export const blueA700 = 0x186cae;
+export const lightBlue = 0x03a9f4;
+export const lightBlue50 = 0xf6fafb;
+export const lightBlue100 = 0xa7d4e8;
+export const lightBlue200 = 0x64bbe3;
+export const lightBlue300 = 0x2baae3;
+export const lightBlue400 = 0x1394cf;
+export const lightBlue500 = 0x0b7fb3;
+export const lightBlue600 = 0x066d9d;
+export const lightBlue700 = 0x04618c;
+export const lightBlue800 = 0x025a82;
+export const lightBlue900 = 0x02577e;
+export const lightBlueA100 = 0x13c0ff;
+export const lightBlueA200 = 0x03abf7;
+export const lightBlueA400 = 0x0293d4;
+export const lightBlueA700 = 0x027cb4;
+export const cyan = 0x00bcd4;
+export const cyan50 = 0xf6fbfb;
+export const cyan100 = 0xa5e1e9;
+export const cyan200 = 0x63d5e4;
+export const cyan300 = 0x28d0e6;
+export const cyan400 = 0x10bbd1;
+export const cyan500 = 0x09a1b5;
+export const cyan600 = 0x048d9f;
+export const cyan700 = 0x027e8d;
+export const cyan800 = 0x007584;
+export const cyan900 = 0x007180;
+export const cyanA100 = 0x00e2ff;
+export const cyanA200 = 0x00c6df;
+export const cyanA400 = 0x00aabf;
+export const cyanA700 = 0x0090a2;
+export const teal = 0x009688;
+export const teal50 = 0xf6fbfb;
+export const teal100 = 0xa5e9e3;
+export const teal200 = 0x63e4d8;
+export const teal300 = 0x28e6d4;
+export const teal400 = 0x10d1bf;
+export const teal500 = 0x09b5a5;
+export const teal600 = 0x049f91;
+export const teal700 = 0x028d81;
+export const teal800 = 0x008477;
+export const teal900 = 0x008074;
+export const tealA100 = 0x53ccc1;
+export const tealA200 = 0x22c9ba;
+export const tealA400 = 0x00beac;
+export const tealA700 = 0x00a191;
+export const green = 0x4caf50;
+export const green50 = 0xf7faf7;
+export const green100 = 0xbad4bb;
+export const green200 = 0x8abc8c;
+export const green300 = 0x62ac65;
+export const green400 = 0x4a974e;
+export const green500 = 0x3d8140;
+export const green600 = 0x336f36;
+export const green700 = 0x2c632f;
+export const green800 = 0x285c2a;
+export const green900 = 0x275929;
+export const greenA100 = 0x78ec7d;
+export const greenA200 = 0x61df65;
+export const greenA400 = 0x53c057;
+export const greenA700 = 0x46a24a;
+export const lightGreen = 0x8bc34a;
+export const lightGreen50 = 0xf9faf7;
+export const lightGreen100 = 0xc8d8b6;
+export const lightGreen200 = 0xa6c482;
+export const lightGreen300 = 0x8bb658;
+export const lightGreen400 = 0x74a140;
+export const lightGreen500 = 0x628b33;
+export const lightGreen600 = 0x54782b;
+export const lightGreen700 = 0x4a6b25;
+export const lightGreen800 = 0x446321;
+export const lightGreen900 = 0x426020;
+export const lightGreenA100 = 0xa4e558;
+export const lightGreenA200 = 0x8fc94d;
+export const lightGreenA400 = 0x7bad41;
+export const lightGreenA700 = 0x689238;
+export const lime = 0xcddc39;
+export const lime50 = 0xfafbf6;
+export const lime100 = 0xdadeb0;
+export const lime200 = 0xc8d076;
+export const lime300 = 0xbec945;
+export const lime400 = 0xa8b52d;
+export const lime500 = 0x909b23;
+export const lime600 = 0x7e871b;
+export const lime700 = 0x707917;
+export const lime800 = 0x677014;
+export const lime900 = 0x646c13;
+export const limeA100 = 0xcddb38;
+export const limeA200 = 0xb3c032;
+export const limeA400 = 0x99a52b;
+export const limeA700 = 0x828c24;
+export const yellow = 0xffeb3b;
+export const yellow50 = 0xfbfbf6;
+export const yellow100 = 0xe9e2a5;
+export const yellow200 = 0xe4d763;
+export const yellow300 = 0xe6d328;
+export const yellow400 = 0xd1bd10;
+export const yellow500 = 0xb5a409;
+export const yellow600 = 0x9f8f04;
+export const yellow700 = 0x8d8002;
+export const yellow800 = 0x847600;
+export const yellow900 = 0x807200;
+export const yellowA100 = 0xdfcd34;
+export const yellowA200 = 0xc3b42e;
+export const yellowA400 = 0xa89a27;
+export const yellowA700 = 0x8e8322;
+export const amber = 0xffc107;
+export const amber50 = 0xfbfaf6;
+export const amber100 = 0xe9d8a5;
+export const amber200 = 0xe4c463;
+export const amber300 = 0xe6b628;
+export const amber400 = 0xd1a110;
+export const amber500 = 0xb58a09;
+export const amber600 = 0x9f7804;
+export const amber700 = 0x8d6a02;
+export const amber800 = 0x846300;
+export const amber900 = 0x806000;
+export const amberA100 = 0xffcc08;
+export const amberA200 = 0xecb306;
+export const amberA400 = 0xcb9905;
+export const amberA700 = 0xad8104;
+export const orange = 0xff9800;
+export const orange50 = 0xfbf9f6;
+export const orange100 = 0xe9cea5;
+export const orange200 = 0xe4b063;
+export const orange300 = 0xe69928;
+export const orange400 = 0xd18310;
+export const orange500 = 0xb56f09;
+export const orange600 = 0x9f6004;
+export const orange700 = 0x8d5502;
+export const orange800 = 0x844e00;
+export const orange900 = 0x804c00;
+export const orangeA100 = 0xffb400;
+export const orangeA200 = 0xff9d00;
+export const orangeA400 = 0xe38700;
+export const orangeA700 = 0xc07200;
+export const deepOrange = 0xff5722;
+export const deepOrange50 = 0xfbf7f6;
+export const deepOrange100 = 0xe9b6a5;
+export const deepOrange200 = 0xe48263;
+export const deepOrange300 = 0xe65628;
+export const deepOrange400 = 0xd13e10;
+export const deepOrange500 = 0xb53209;
+export const deepOrange600 = 0x9f2904;
+export const deepOrange700 = 0x8d2302;
+export const deepOrange800 = 0x842000;
+export const deepOrange900 = 0x801f00;
+export const deepOrangeA100 = 0xff8258;
+export const deepOrangeA200 = 0xff6226;
+export const deepOrangeA400 = 0xf55420;
+export const deepOrangeA700 = 0xcf461c;
+export const brown = 0x795548;
+export const brown50 = 0xf9f8f8;
+export const brown100 = 0xcfc3bf;
+export const brown200 = 0xb49b93;
+export const brown300 = 0xa07c6f;
+export const brown400 = 0x896558;
+export const brown500 = 0x755549;
+export const brown600 = 0x65483e;
+export const brown700 = 0x5a3f35;
+export const brown800 = 0x523a31;
+export const brown900 = 0x503830;
+export const brownA100 = 0xb09c94;
+export const brownA200 = 0x9f877e;
+export const brownA400 = 0x907268;
+export const brownA700 = 0x865e4f;
+export const grey = 0x9e9e9e;
+export const grey50 = 0xf9f9f9;
+export const grey100 = 0xc7c7c7;
+export const grey200 = 0xa3a3a3;
+export const grey300 = 0x878787;
+export const grey400 = 0x717171;
+export const grey500 = 0x5f5f5f;
+export const grey600 = 0x515151;
+export const grey700 = 0x484848;
+export const grey800 = 0x424242;
+export const grey900 = 0x404040;
+export const greyA100 = 0xa0a0a0;
+export const greyA200 = 0x8c8c8c;
+export const greyA400 = 0x787878;
+export const greyA700 = 0x666666;
+export const blueGrey = 0x607d8b;
+export const blueGrey50 = 0xf8f9f9;
+export const blueGrey100 = 0xc1c9cd;
+export const blueGrey200 = 0x97a7af;
+export const blueGrey300 = 0x768d98;
+export const blueGrey400 = 0x5f7782;
+export const blueGrey500 = 0x50646e;
+export const blueGrey600 = 0x43575f;
+export const blueGrey700 = 0x3b4c55;
+export const blueGrey800 = 0x36464e;
+export const blueGrey900 = 0x34444b;
+export const blueGreyA100 = 0x90a4ad;
+export const blueGreyA200 = 0x79909c;
+export const blueGreyA400 = 0x607d8b;
+export const blueGreyA700 = 0x516a76;
+export const greenGrey = 0x5e7d75;
+export const greenGrey50 = 0xf8f9f9;
+export const greenGrey100 = 0xc2ccc9;
+export const greenGrey200 = 0x9aaca8;
+export const greenGrey300 = 0x7a948d;
+export const greenGrey400 = 0x637f77;
+export const greenGrey500 = 0x536b64;
+export const greenGrey600 = 0x475c57;
+export const greenGrey700 = 0x3d524d;
+export const greenGrey800 = 0x384b46;
+export const greenGrey900 = 0x374944;
+export const greenGreyA100 = 0x94a9a4;
+export const greenGreyA200 = 0x7d9790;
+export const greenGreyA400 = 0x66867d;
+export const greenGreyA700 = 0x56726a;

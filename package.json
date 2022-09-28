@@ -1,14 +1,10 @@
 {
   "name": "protosite-palette",
-  "version": "1.8.11",
+  "version": "2.8.11",
 	"type": "module",
   "main": "index.js",
   "files": [
-    "assets/colors.css",
-    "assets/colors.js",
-    "assets/palette.aco",
-    "assets/palette.css",
-    "assets/palette.js"
+    "assets/*"
   ],
   "scripts": {
     "export": "node export.js"

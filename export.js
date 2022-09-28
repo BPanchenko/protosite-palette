@@ -8,6 +8,7 @@ import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
+import snakeCase from 'lodash/snakeCase.js'
 import startCase from 'lodash/startCase.js'
 
 // import { createAcoFile } from 'adobe-aco'
@@ -45,7 +46,7 @@ const flattenPalette = getFlattenPalette(palette)
 	palette.forEach(
 		(color, name) => fs.appendFileSync(
 			FILE,
-			`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
+			`\n\t${PREFIX}${kebabCase(name)}: ${color.css};`
 		)
 	)
 	fs.appendFileSync(FILE, '\n}')
@@ -70,13 +71,13 @@ const flattenPalette = getFlattenPalette(palette)
 			)
 			fs.appendFileSync(
 				FILE,
-				`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
+				`\n\t${PREFIX}${kebabCase(name)}: ${color.css};`
 			)
 			color.tones.forEach(
 				(color, index) => {
 					fs.appendFileSync(
 						FILE,
-						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.hex};`
+						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.css};`
 					)
 				}
 			)
@@ -84,7 +85,7 @@ const flattenPalette = getFlattenPalette(palette)
 				(color, index) => {
 					fs.appendFileSync(
 						FILE,
-						`\n\t${PREFIX}${kebabCase(name)}-${accentKeys[index]}: ${color.hex};`
+						`\n\t${PREFIX}${kebabCase(name)}-${accentKeys[index]}: ${color.css};`
 					)
 				}
 			)
@@ -97,21 +98,16 @@ const flattenPalette = getFlattenPalette(palette)
 
 {
 	const FILE = path.resolve('./assets/palette.js')
-	const SOURCE = './src/blank-map.js'
-
-	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
-	
-	const ENTRIES = Array.from(flattenPalette).map(
-		([name, value]) => `\n\t['${name}', '${value}']`
-	)
 
 	if (fs.existsSync(FILE)) {
 		fs.truncateSync(FILE, 0)
 	}
 	
-	fs.writeFileSync(
-		FILE,
-		CONTENT.replace('/*-entries-*/', ENTRIES.join(',') + '\n')
+	flattenPalette.forEach(
+		(color, name) => fs.appendFileSync(
+			FILE,
+			`export const ${camelCase(name)} = ${color.replace('#', '0x')};\n`
+		)
 	)
 	
 	console.log(`${FILE} was updated`)
@@ -119,21 +115,16 @@ const flattenPalette = getFlattenPalette(palette)
 
 {
 	const FILE = path.resolve('./assets/colors.js')
-	const SOURCE = './src/blank-map.js'
-
-	const CONTENT = fs.readFileSync(SOURCE, { encoding:'utf8', flag:'r' })
-
-	const ENTRIES = Object.entries(colors).map(
-		([name, value]) => `\n\t['${camelCase(name)}', '${value}']`
-	)
 
 	if (fs.existsSync(FILE)) {
 		fs.truncateSync(FILE, 0)
 	}
 	
-	fs.writeFileSync(
-		FILE,
-		CONTENT.replace('/*-entries-*/', ENTRIES.join(',') + '\n')
+	palette.forEach(
+		(color, name) => fs.appendFileSync(
+			FILE,
+			`export const ${camelCase(name)} = ${color.hex.replace('#', '0x')};\n`
+		)
 	)
 	
 	console.log(`${FILE} was updated`)

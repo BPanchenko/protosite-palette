@@ -1,22 +1,20 @@
-export default new Map([
-	['red', '#f44336'],
-	['pink', '#e91e63'],
-	['purple', '#9c27b0'],
-	['violet', '#673ab7'],
-	['indigo', '#3f51b5'],
-	['blue', '#2196f3'],
-	['lightBlue', '#03a9f4'],
-	['cyan', '#00bcd4'],
-	['teal', '#009688'],
-	['green', '#4caf50'],
-	['lightGreen', '#8bc34a'],
-	['lime', '#cddc39'],
-	['yellow', '#ffeb3b'],
-	['amber', '#ffc107'],
-	['orange', '#ff9800'],
-	['deepOrange', '#ff5722'],
-	['brown', '#795548'],
-	['grey', '#9e9e9e'],
-	['blueGrey', '#607d8b'],
-	['greenGrey', '#5e7d75']
-])
+export const red = 0xf44336;
+export const pink = 0xe91e63;
+export const purple = 0x9c27b0;
+export const violet = 0x673ab7;
+export const indigo = 0x3f51b5;
+export const blue = 0x2196f3;
+export const lightBlue = 0x03a9f4;
+export const cyan = 0x00bcd4;
+export const teal = 0x009688;
+export const green = 0x4caf50;
+export const lightGreen = 0x8bc34a;
+export const lime = 0xcddc39;
+export const yellow = 0xffeb3b;
+export const amber = 0xffc107;
+export const orange = 0xff9800;
+export const deepOrange = 0xff5722;
+export const brown = 0x795548;
+export const grey = 0x9e9e9e;
+export const blueGrey = 0x607d8b;
+export const greenGrey = 0x5e7d75;

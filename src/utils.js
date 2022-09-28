@@ -18,6 +18,7 @@ function getColorData(
 ) {
 	const color = chroma(value)
 	const data = {
+		css: color.css(),
 		rgb: color.rgb(),
 		hex: color.hex(),
 		hsl: color.hsl()
