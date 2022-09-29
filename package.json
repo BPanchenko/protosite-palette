@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "2.9.12",
+  "version": "2.9.13",
   "type": "module",
   "main": "index.js",
   "files": [
@@ -25,8 +25,8 @@
   },
   "author": {
     "name": "Boris Panchenko",
-    "email": "boris.v.panchenko@gmail.com",
-    "url": "http://bpanchenko.ru"
+    "email": "boris.v.panchenko@mail.ru",
+    "url": "https://bpanchenko.ru"
   },
   "license": "MIT",
   "bugs": {
