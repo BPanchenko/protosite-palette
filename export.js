@@ -8,7 +8,6 @@ import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
-import snakeCase from 'lodash/snakeCase.js'
 import startCase from 'lodash/startCase.js'
 
 // import { createAcoFile } from 'adobe-aco'
