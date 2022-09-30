@@ -105,7 +105,7 @@ const flattenPalette = getFlattenPalette(palette)
 	flattenPalette.forEach(
 		(color, name) => fs.appendFileSync(
 			FILE,
-			`export const ${camelCase(name)} = ${color.replace('#', '0x')};\n`
+			`export const ${camelCase(name)} = '${color}';\n`
 		)
 	)
 	
@@ -122,7 +122,7 @@ const flattenPalette = getFlattenPalette(palette)
 	palette.forEach(
 		(color, name) => fs.appendFileSync(
 			FILE,
-			`export const ${camelCase(name)} = ${color.hex.replace('#', '0x')};\n`
+			`export const ${camelCase(name)} = '${color.hex}';\n`
 		)
 	)
 	
