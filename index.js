@@ -7,7 +7,8 @@ import {
 import {
 	getColorData,
 	getFlattenPalette,
-	initFunction
+	initFunction,
+	isColor
 } from "./lib/utils.js"
 
 import isFunction from "lodash/isFunction.js"
@@ -47,5 +48,6 @@ export default function getPalette(
 export {
 	accentKeys,
 	getFlattenPalette,
+	isColor,
 	toneKeys
 }

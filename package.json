@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "2.9.14",
+  "version": "2.10.14",
   "type": "module",
   "main": "index.js",
   "files": [
@@ -18,7 +18,8 @@
     "d3-scale": "4.0.2",
     "file-saver": "2.0.5",
     "get-css-variables": "0.3.0",
-    "lodash": "4.17.21"
+    "lodash": "4.17.21",
+    "validate-color": "2.2.1"
   },
   "repository": {
     "type": "git",
