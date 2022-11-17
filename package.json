@@ -14,6 +14,8 @@
     "adobe-aco": "0.1.1",
     "bezier": "0.1.0",
     "bezier-easing": "2.1.0",
+    "d3-color": "3.1.0",
+    "d3-scale": "4.0.2",
     "file-saver": "2.0.5",
     "get-css-variables": "0.3.0",
     "lodash": "4.17.21"
