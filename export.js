@@ -45,7 +45,7 @@ const flattenPalette = getFlattenPalette(palette)
 	palette.forEach(
 		(color, name) => fs.appendFileSync(
 			FILE,
-			`\n\t${PREFIX}${kebabCase(name)}: ${color.css};`
+			`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
 		)
 	)
 	fs.appendFileSync(FILE, '\n}')
@@ -70,13 +70,13 @@ const flattenPalette = getFlattenPalette(palette)
 			)
 			fs.appendFileSync(
 				FILE,
-				`\n\t${PREFIX}${kebabCase(name)}: ${color.css};`
+				`\n\t${PREFIX}${kebabCase(name)}: ${color.hex};`
 			)
 			color.tones.forEach(
 				(color, index) => {
 					fs.appendFileSync(
 						FILE,
-						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.css};`
+						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.hex};`
 					)
 				}
 			)
@@ -84,7 +84,7 @@ const flattenPalette = getFlattenPalette(palette)
 				(color, index) => {
 					fs.appendFileSync(
 						FILE,
-						`\n\t${PREFIX}${kebabCase(name)}-${accentKeys[index]}: ${color.css};`
+						`\n\t${PREFIX}${kebabCase(name)}-${accentKeys[index]}: ${color.hex};`
 					)
 				}
 			)
