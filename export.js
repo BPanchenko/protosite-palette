@@ -78,6 +78,12 @@ const flattenPalette = getFlattenPalette(palette)
 						FILE,
 						`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}: ${color.hex};`
 					)
+					if (color.hasOwnProperty('rgba')) {
+						fs.appendFileSync(
+							FILE,
+							`\n\t${PREFIX}${kebabCase(name)}-o: ${color.rgba};`
+						)
+					}
 				}
 			)
 			color.accents.forEach(
