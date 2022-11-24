@@ -1,14 +1,17 @@
 {
   "name": "protosite-palette",
-  "version": "2.12.16",
+  "version": "2.13.16",
   "type": "module",
   "main": "index.js",
   "files": [
     "assets/*",
-    "lib/*"
+    "lib/*",
+    "source/*"
   ],
   "scripts": {
-    "export": "node export.js"
+    "export": "node export.js",
+    "export:protosite": "node export.js --source-name=protosite",
+    "export:universal": "node export.js --source-name=universal"
   },
   "dependencies": {
     "adobe-aco": "0.1.1",
@@ -20,7 +23,8 @@
     "file-saver": "2.0.5",
     "get-css-variables": "0.3.0",
     "lodash": "4.17.21",
-    "validate-color": "2.2.1"
+    "validate-color": "2.2.1",
+    "yargs": "17.6.2"
   },
   "repository": {
     "type": "git",

@@ -6,17 +6,48 @@ import getPalette, {
 
 import camelCase from 'lodash/camelCase.js'
 import fs from 'fs'
+import { hideBin } from 'yargs/helpers'
 import kebabCase from 'lodash/kebabCase.js'
 import path from 'path'
 import startCase from 'lodash/startCase.js'
+import yargs from 'yargs'
 
-// import { createAcoFile } from 'adobe-aco'
-// import { saveAs } from 'file-saver'
+// Settings
+
+const from = 'source'
+const to = 'dist'
+const argv = yargs(hideBin(process.argv))
+	.option('source-name', {
+		alias: 'name',
+		default: process.env.npm_config_source_name,
+		type: 'string',
+		describe: 'Source file name or palette name'
+	})
+	.argv
+
+const SOURCE = path.resolve(process.cwd(), from)
+const SOURCE_FILENAME = argv.sourceName + '.json'
+const SOURCE_FILE = path.join(SOURCE, SOURCE_FILENAME)
+
+const DIST = path.resolve(process.cwd(), to, argv.sourceName)
+
+// Checking Source File and Destination Folder
+
+{
+	if (!fs.existsSync(SOURCE_FILE)){
+		throw new Error(`File "${SOURCE_FILENAME}" not found at path "${SOURCE}"`)
+	}
+	if (!fs.existsSync(DIST)){
+		fs.mkdirSync(DIST)
+	}
+}
+
+// Creating assets
 
 const {
 	colors,
 	correlations
-} = JSON.parse(fs.readFileSync('./data.json'))
+} = JSON.parse(fs.readFileSync(SOURCE_FILE))
 
 const palette = getPalette(
 	colors,
@@ -27,14 +58,7 @@ const palette = getPalette(
 const flattenPalette = getFlattenPalette(palette)
 
 {
-	const DIR = './assets'
-	if (!fs.existsSync(DIR)){
-		fs.mkdirSync(DIR)
-	}
-}
-
-{
-	const FILE = path.resolve('./assets/colors.css')
+	const FILE = path.resolve(DIST, 'colors.css')
 	const PREFIX = '--clr-'
 
 	if (fs.existsSync(FILE)) {
@@ -50,11 +74,11 @@ const flattenPalette = getFlattenPalette(palette)
 	)
 	fs.appendFileSync(FILE, '\n}')
 
-	console.log(`${FILE} was updated`)
+	console.log(`${FILE} is created`)
 }
 
 {
-	const FILE = path.resolve('./assets/palette.css')
+	const FILE = path.resolve(DIST, 'palette.css')
 	const PREFIX = '--clr-'
 
 	if (fs.existsSync(FILE)) {
@@ -98,11 +122,11 @@ const flattenPalette = getFlattenPalette(palette)
 	)
 	fs.appendFileSync(FILE, '\n}')
 
-	console.log(`${FILE} was updated`)
+	console.log(`${FILE} is created`)
 }
 
 {
-	const FILE = path.resolve('./assets/palette.js')
+	const FILE = path.resolve(DIST, 'palette.js')
 
 	if (fs.existsSync(FILE)) {
 		fs.truncateSync(FILE, 0)
@@ -115,11 +139,11 @@ const flattenPalette = getFlattenPalette(palette)
 		)
 	)
 	
-	console.log(`${FILE} was updated`)
+	console.log(`${FILE} is created`)
 }
 
 {
-	const FILE = path.resolve('./assets/colors.js')
+	const FILE = path.resolve(DIST, 'colors.js')
 
 	if (fs.existsSync(FILE)) {
 		fs.truncateSync(FILE, 0)
@@ -132,11 +156,11 @@ const flattenPalette = getFlattenPalette(palette)
 		)
 	)
 	
-	console.log(`${FILE} was updated`)
+	console.log(`${FILE} is created`)
 }
 
 {
-	const FILE = path.resolve('./assets/colors.aco')
+	const FILE = path.resolve(DIST, 'colors.aco')
 	/*
 	// there are problems from using package `adobe-aco`
 	const acoSwatches = Array.from(colors).map(
