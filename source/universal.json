@@ -1,0 +1,28 @@
+{
+	"correlations": {
+		"accent": [ 0.3, 0.5, 0.7, 0.5 ],
+		"tone": [ 0.2, 0.2, 0.8, 0.8 ]
+	},
+	"colors": {
+		"red": "#FF0000",
+		"pink": "#FFC0CB",
+		"purple": "#800080",
+		"violet": "#8F00FF",
+		"indigo": "#4B0082",
+		"blue": "#0000FF",
+		"lightBlue": "#ADD8E6",
+		"cyan": "#00FFFF",
+		"teal": "#008080",
+		"green": "#008000",
+		"lightGreen": "#90EE90",
+		"lime": "#00FF00",
+		"yellow": "#FFFF00",
+		"amber": "#FFBF00",
+		"orange": "#FFA500",
+		"deepOrange": "#FF4500",
+		"brown": "#A52A2A",
+		"grey": "#808080",
+		"blueGrey": "#8C92AC",
+		"greenGrey": "#5E716A"
+	}
+}
