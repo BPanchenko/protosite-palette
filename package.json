@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "2.13.16",
+  "version": "2.13.17",
   "type": "module",
   "main": "index.js",
   "files": [
@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "export": "node export.js",
-    "export:protosite": "node export.js --source-name=protosite",
-    "export:universal": "node export.js --source-name=universal"
+    "export:material": "node export.js --name=material",
+    "export:universal": "node export.js --name=universal"
   },
   "dependencies": {
     "adobe-aco": "0.1.1",
