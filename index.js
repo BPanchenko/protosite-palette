@@ -11,6 +11,7 @@ import {
 	isColor
 } from "./lib/utils.js"
 
+import camelCase from "lodash/camelCase.js"
 import isFunction from "lodash/isFunction.js"
 import toPairs from "lodash/toPairs.js"
 
@@ -30,7 +31,7 @@ export default function getPalette(
 	}
 	
 	toPairs(colors).forEach(p => {
-		let name = p[0]
+		let name = camelCase(p[0])
 		let value = p[1]
 		palette.set(
 			name,

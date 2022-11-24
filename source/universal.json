@@ -10,18 +10,18 @@
 		"violet": "#8F00FF",
 		"indigo": "#4B0082",
 		"blue": "#0000FF",
-		"lightBlue": "#ADD8E6",
+		"light-blue": "#ADD8E6",
 		"cyan": "#00FFFF",
 		"teal": "#008080",
 		"green": "#008000",
-		"lightGreen": "#90EE90",
+		"light-green": "#90EE90",
 		"lime": "#00FF00",
 		"yellow": "#FFFF00",
 		"amber": "#FFBF00",
 		"orange": "#FFA500",
-		"deepOrange": "#FF4500",
+		"deep-orange": "#FF4500",
 		"brown": "#A52A2A",
 		"grey": "#808080",
-		"blueGrey": "#8C92AC"
+		"blue-grey": "#8C92AC"
 	}
 }
