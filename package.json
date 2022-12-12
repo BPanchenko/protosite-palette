@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "2.13.19",
+  "version": "2.13.20",
   "type": "module",
   "main": "index.js",
   "files": [

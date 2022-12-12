@@ -105,7 +105,7 @@ const flattenPalette = getFlattenPalette(palette)
 					if (color.hasOwnProperty('rgba')) {
 						fs.appendFileSync(
 							FILE,
-							`\n\t${PREFIX}${kebabCase(name)}-o: ${color.rgba};`
+							`\n\t${PREFIX}${kebabCase(name)}-${toneKeys[index]}-tp: ${color.rgba};`
 						)
 					}
 				}
@@ -135,7 +135,7 @@ const flattenPalette = getFlattenPalette(palette)
 	flattenPalette.forEach(
 		(color, name) => fs.appendFileSync(
 			FILE,
-			`export const ${camelCase(name)} = '${color}';\n`
+			`export const ${name} = '${color}';\n`
 		)
 	)
 	
