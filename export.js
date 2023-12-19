@@ -15,7 +15,7 @@ import yargs from 'yargs'
 // Settings
 
 const from = 'source'
-const to = 'dist'
+const to = 'assets'
 const argv = yargs(hideBin(process.argv))
 	.option('source-name', {
 		alias: 'name',
