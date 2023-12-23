@@ -1,5 +1,7 @@
 # protosite-palette
 
+[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)
+
 Адаптер цветового решения проекта.
 
 Обеспечивает доступ к одной цветовой схеме проектам отличающимся своими технологическими стеками (требованиями к интерфейсам подключаемых модулей).<br>
@@ -9,7 +11,7 @@
 ### Установка пакета
 
 ```bash
-npm install --save-dev protosite-palette
+yarn add protosite-palette -D
 ```
 
 
