@@ -2,26 +2,38 @@
   "name": "protosite-palette",
   "version": "2.13.21",
   "type": "module",
-  "main": "index.js",
+  "main": "module/index.mjs",
   "files": [
     "assets/*",
-    "lib/*",
+    "builder/*",
+    "module/*",
     "source/*"
   ],
   "scripts": {
-    "export": "node export.js",
-    "export:material": "node export.js --name=material",
-    "export:universal": "node export.js --name=universal"
+    "build:all": "node builder/build.cjs --dist=temp",
+    "build:protosite": "node builder/build.cjs --name=protosite",
+    "build:material": "node builder/build.cjs --name=material",
+    "build:universal": "node builder/build.cjs --name=universal",
+    "fix": "run-p --print-label lint:**",
+    "lint:cjs": "set ESLINT_USE_FLAT_CONFIG=true&& eslint --fix -c eslint.config.cjs builder",
+    "lint:mjs": "set ESLINT_USE_FLAT_CONFIG=true&& eslint --fix -c eslint.config.mjs module"
   },
-  "dependencies": {
+  "devDependencies": {
     "adobe-aco": "0.1.1",
     "bezier": "0.1.0",
     "bezier-easing": "2.1.0",
     "d3-color": "3.1.0",
     "d3-color-difference": "0.1.3",
     "d3-scale": "4.0.2",
-    "lodash": "4.17.21",
+    "eslint": "8.56.0",
+    "eslint-plugin-require-sort": "^1.3.0",
+    "node-color-log": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "read-directory": "^3.0.2",
     "yargs": "17.7.2"
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
   },
   "repository": {
     "type": "git",
@@ -32,7 +44,6 @@
     "email": "boris.v.panchenko@mail.ru",
     "url": "https://bpanchenko.ru"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BPanchenko/protosite-palette/issues"
   },

@@ -1,0 +1,10 @@
+root: true
+configType: flat
+env:
+  es2023: true
+  node: true
+ignores: [assets, node_modules]
+extends: standard
+parserOptions:
+  ecmaVersion: 14
+  sourceType: module

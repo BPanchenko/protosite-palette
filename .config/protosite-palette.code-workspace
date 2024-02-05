@@ -6,7 +6,8 @@
   ],
   "settings": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": true,
@@ -18,8 +19,12 @@
     "editor.formatOnSaveMode": "file",
     "editor.formatOnType": false,
     "editor.tabSize": 4,
+
     "eslint.enable": true,
-    "eslint.validate": ["javascript", "typescript"],
+    "eslint.experimental.useFlatConfig": true,
+    "eslint.format.enable": true,
+    "eslint.validate": ["javascript"],
+
     "files.autoSave": "onFocusChange"
   }
 }
