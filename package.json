@@ -6,13 +6,11 @@
   "types": "module/index.d.ts",
   "files": [
     "assets/*",
-    "builder/*",
-    "module/*",
-    "source/*"
+    "module/*"
   ],
   "scripts": {
     "build:all": "node builder/build.cjs --dist=temp",
-    "build:protosite": "node builder/build.cjs --name=protosite",
+    "build:protosite": "node builder/build.cjs --name=protosite --dist=assets",
     "build:material": "node builder/build.cjs --name=material",
     "build:universal": "node builder/build.cjs --name=universal",
     "fix": "run-p --print-label lint:**",
@@ -31,6 +29,7 @@
     "node-color-log": "11.0.0",
     "npm-run-all": "4.1.5",
     "read-directory": "3.0.2",
+    "type-fest": "^4.10.2",
     "yargs": "17.7.2"
   },
   "dependencies": {

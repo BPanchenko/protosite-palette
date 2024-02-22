@@ -5,6 +5,7 @@ const start = process.hrtime();
 
 function logError(error) {
   logger.error(error);
+  process.exit(1);
 }
 
 function logSuccess(savedFile, hrstart = start) {

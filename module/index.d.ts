@@ -1,3 +1,6 @@
+import type { ArrayIndices, ArrayValues } from "type-fest";
+import { accentKeys, toneKeys } from "./settings.mjs";
+
 type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}`
   ? `${Lowercase<P1>}${Capitalize<P2>}`
   : Lowercase<S>;
@@ -40,7 +43,13 @@ export type ColorData = {
 };
 
 export type ColorValue = string;
-export type AccentColorKey = string;
-export type ToneKey = string;
+export type AccentColorKey = ArrayValues<typeof accentKeys>;
+export type ToneKey = ArrayValues<typeof toneKeys>;
 
-export type CorrelationFunction = (n: number) => number;
+export type AccentCorrelationFunction = (
+  index: ArrayIndices<typeof accentKeys>
+) => [number, number];
+
+export type ToneCorrelationFunction = (
+  index: ArrayIndices<typeof toneKeys>
+) => number;
