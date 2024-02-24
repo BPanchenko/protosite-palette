@@ -23,7 +23,7 @@
     "eslint.enable": true,
     "eslint.experimental.useFlatConfig": true,
     "eslint.format.enable": true,
-    "eslint.validate": ["javascript"],
+    "eslint.validate": ["javascript", "json", "jsonc", "json5", "yaml"],
 
     "files.autoSave": "onFocusChange"
   }

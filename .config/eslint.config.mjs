@@ -1,8 +1,18 @@
 export default [
   {
-    files: ["**/*.mjs"],
+    files: ["**/*.js", "**/*.ts", "**/*.mjs"],
     rules: {
-      semi: ["warn", "never", { beforeStatementContinuationChars: "always" }],
+      "@stylistic/indent": ["error", "tab"],
+      "sort-imports": [
+        "warn",
+        {
+          ignoreCase: false,
+          ignoreDeclarationSort: true,
+          ignoreMemberSort: false,
+          memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+          allowSeparatedGroups: true,
+        },
+      ],
     },
   },
 ];

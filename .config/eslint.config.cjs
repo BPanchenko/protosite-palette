@@ -5,8 +5,13 @@ module.exports = [
       "require-sort": require("eslint-plugin-require-sort"),
     },
     rules: {
-      semi: ["warn", "always", { omitLastInOneLineBlock: true }],
       "require-sort/require-sort": "warn",
+      "@stylistic/semi": [
+        "error",
+        "always",
+        { omitLastInOneLineClassBody: true },
+      ],
+      "@stylistic/semi-spacing": ["error", { before: true, after: false }],
     },
   },
 ];

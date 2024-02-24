@@ -1,10 +1,89 @@
+---
 root: true
-configType: flat
+
 env:
-  es2023: true
+  commonjs: true
+  es2024: true
   node: true
-ignores: [assets, node_modules]
-extends: standard
+
+extends:
+  - eslint:recommended
+  - plugin:dtslint/recommended
+  - plugin:json-schema-validator/recommended
+  - plugin:json/recommended-with-comments
+  - plugin:sonarjs/recommended
+  - plugin:yml/standard
+
+parser: esprima
+
 parserOptions:
-  ecmaVersion: 14
+  ecmaVersion: latest
   sourceType: module
+
+plugins:
+  - "@stylistic"
+  - "@stylistic/ts"
+
+rules:
+  "@stylistic/arrow-parens":
+    - 2
+    - "as-needed"
+    - requireForBlockBody: true
+  "@stylistic/comma-dangle":
+    - 2
+    - always-multiline
+    - functions: never
+      objects: never
+  "@stylistic/indent":
+    - 2
+    - 2
+  "@stylistic/semi":
+    - 2
+    - never
+    - beforeStatementContinuationChars: always
+  "@stylistic/semi-spacing":
+    - 2
+    - before: false
+      after: false
+  "@stylistic/no-extra-semi": 2
+  "@stylistic/ts/member-delimiter-style": 2
+  "sort-keys":
+    - 2
+    - asc
+    - caseSensitive: true
+      natural: true
+      minKeys: 2
+  "sort-vars": 2
+
+overrides:
+  - files:
+      - "*.ts"
+    parser: "@typescript-eslint/parser"
+    plugins:
+      - dtslint
+  - files:
+      - "*.js"
+      - "*.cjs"
+      - "*.mjs"
+    plugins:
+      - sonarjs
+  - files:
+      - "*.json"
+    parser: jsonc-eslint-parser
+    plugins:
+      - json-schema-validator
+      - json
+      - json-format
+  - files:
+      - "*.yaml"
+      - "*.yml"
+    parser: yaml-eslint-parser
+    plugins:
+      - yml
+
+settings:
+  json/sort-package-json: standard
+  json/ignore-files:
+    - "**/package-lock.json"
+  json/json-with-comments-files:
+    - ".config/**"
