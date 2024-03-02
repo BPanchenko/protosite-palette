@@ -1,5 +1,5 @@
 import type { ArrayIndices, ArrayValues } from "type-fest";
-import { accentKeys, toneKeys } from "./lib/settings.mjs";
+import { accentKeys, toneKeys } from "./lib/settings.js";
 
 type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}`
   ? `${Lowercase<P1>}${Capitalize<P2>}`

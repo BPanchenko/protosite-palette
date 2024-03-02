@@ -8,17 +8,17 @@ env:
 
 extends:
   - eslint:recommended
-  - plugin:dtslint/recommended
   - plugin:json-schema-validator/recommended
   - plugin:json/recommended-with-comments
   - plugin:sonarjs/recommended
   - plugin:yml/standard
 
-parser: esprima
+parser: "@babel/eslint-parser"
 
 parserOptions:
   ecmaVersion: latest
   sourceType: module
+  requireConfigFile: false
 
 plugins:
   - "@stylistic"
@@ -27,16 +27,14 @@ plugins:
 rules:
   "@stylistic/arrow-parens":
     - 2
-    - "as-needed"
+    - as-needed
     - requireForBlockBody: true
   "@stylistic/comma-dangle":
     - 2
     - always-multiline
-    - functions: never
-      objects: never
   "@stylistic/indent":
     - 2
-    - 2
+    - tab
   "@stylistic/semi":
     - 2
     - never
@@ -47,26 +45,32 @@ rules:
       after: false
   "@stylistic/no-extra-semi": 2
   "@stylistic/ts/member-delimiter-style": 2
-  "sort-keys":
+  sort-keys:
     - 2
     - asc
     - caseSensitive: true
       natural: true
       minKeys: 2
-  "sort-vars": 2
+  sort-vars: 2
 
 overrides:
   - files:
-      - "*.ts"
-    parser: "@typescript-eslint/parser"
-    plugins:
-      - dtslint
-  - files:
       - "*.js"
-      - "*.cjs"
-      - "*.mjs"
     plugins:
       - sonarjs
+    rules:
+      sort-imports:
+        - 1
+        - allowSeparatedGroups: true
+          ignoreCase: false
+          ignoreDeclarationSort: true
+          ignoreMemberSort: false
+          memberSyntaxSortOrder:
+            - none
+            - all
+            - multiple
+            - single
+
   - files:
       - "*.json"
     parser: jsonc-eslint-parser
