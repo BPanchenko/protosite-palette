@@ -1,11 +1,12 @@
 /// <reference path="types.d.ts" />
+/// <reference types="node" />
 
 import _ from "lodash";
 import child_process from "node:child_process";
-import esprima from "esprima";
+import Module from "node:module";
 import path from "node:path";
 import util from "node:util";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { globSync } from "glob";
 import { readPackageUpSync } from "read-package-up";
@@ -16,8 +17,12 @@ import {
   getModuleDescription,
   getPackageDir,
   getPackageNameFromModuleID,
+  isValidESM,
 } from "./utils.js";
 
+/**
+ * @type {Module.InitializeHook}
+ */
 export async function initialize() {
   const exec = util.promisify(child_process.exec);
   const { dependencies } = await exec("npm ls --json").then(({ stdout }) =>
@@ -31,6 +36,9 @@ export async function initialize() {
   });
 }
 
+/**
+ * @type {Module.ResolveHook}
+ */
 export async function resolve(specifier, context, nextResolve) {
   const {
     isBuiltin,
@@ -100,22 +108,12 @@ export async function resolve(specifier, context, nextResolve) {
   return resolution;
 }
 
+/**
+ * @type {Module.LoadHook}
+ */
 export async function load(url, context, nextLoad) {
-  /*
-  const sourceCode = readFileSync(fileURLToPath(url), "utf-8");
-  console.log("=== load module ===", url, sourceCode);
-  const program = esprima.parseScript(sourceCode, { tokens: false });
-  console.log("=== load module ===", url, program);
-*/
-  const result = await nextLoad(url, context);
-  console.log("=== load module ===", url, result);
-  /*
-  const result = {
-    format: context.format,
-    shortCircuit: true,
-    source: sourceCode,
-  };
-  */
-
-  return result;
+  if (context.format === Format.Node && isValidESM(url)) {
+    context.format = Format.ESM;
+  }
+  return nextLoad(url, context);
 }

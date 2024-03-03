@@ -1,5 +1,5 @@
-import * as _ from "lodash";
-import * as hex2rgb from "hex2rgb";
+import startCase from "lodash/startCase.js";
+import hex2rgb from "hex2rgb";
 import path from "path";
 import { createAcoFile } from "adobe-aco";
 
@@ -10,7 +10,7 @@ export default function createACO(palette, flattenPalette, dist) {
   const swatches = Array.from(palette.entries()).map(
     ([colorName, paletteColorData]) => {
       const rgb = hex2rgb(paletteColorData.hex).rgb;
-      return [rgb, "rgb", _.startCase(colorName)];
+      return [rgb, "rgb", startCase(colorName)];
     }
   );
 

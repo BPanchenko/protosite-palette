@@ -1,5 +1,5 @@
-import * as _ from "lodash"
-import * as logger from "node-color-log"
+import round from "lodash/round.js"
+import logger from "node-color-log"
 
 const start = process.hrtime()
 
@@ -35,7 +35,7 @@ function logSummary(array, hrstart = start) {
 }
 
 function roundNanoseconds(value) {
-	return _.round(value / 1000000000, 3)
+	return round(value / 1000000000, 3)
 }
 
 export { logError, logSuccess, logSummary }

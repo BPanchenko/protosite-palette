@@ -9,11 +9,11 @@
     "./lib/*"
   ],
   "scripts": {
-    "build:all": "node ./builder/build.cjs --dist=temp",
-    "build:protosite": "node --trace-warnings --import ./.hooks/register-hooks.js ./builder/build.js --name=protosite --dist=assets",
-    "build:material": "node ./builder/build.cjs --name=material --dist=temp",
-    "build:universal": "node ./builder/build.cjs --name=universal --dist=temp",
-    "lint": "eslint {**/*,*}.{js,cjs,mjs,json,yaml,yml} --cache --color --debug --fix"
+    "build:all": "node --import ./.hooks/register-hooks.js ./builder/build.cjs --dist=temp",
+    "build:protosite": "node --import ./.hooks/register-hooks.js ./builder/build.js --name=protosite --dist=assets",
+    "build:material": "node --import ./.hooks/register-hooks.js ./builder/build.cjs --name=material --dist=temp",
+    "build:universal": "node --import ./.hooks/register-hooks.js ./builder/build.cjs --name=universal --dist=temp",
+    "lint": "eslint {**/*,*}.{js,ts,cjs,mjs,json,yaml,yml} --cache --color --debug --fix"
   },
   "dependencies": {
     "adobe-aco": "0.1.1",
@@ -39,7 +39,6 @@
     "eslint-plugin-sonarjs": "0.24.0",
     "eslint-plugin-yaml": "0.5.0",
     "eslint-plugin-yml": "1.12.2",
-    "esprima": "4.0.1",
     "file-saver": "2.0.5",
     "glob": "10.3.10",
     "jsonc-eslint-parser": "2.4.0",

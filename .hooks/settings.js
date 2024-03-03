@@ -1,7 +1,7 @@
-import _ from "lodash";
+import defaults from "lodash/defaults.js";
+import path from "node:path";
 import { builtinModules } from "node:module";
 import { pathToFileURL } from "node:url";
-import path from "node:path";
 
 /**
  * @typedef {import('./types.d.ts').TDescription} TDescription
@@ -41,7 +41,7 @@ export const Extensions = Object.freeze(
 export const cache = new Map(
   builtinModules.map((id) => [
     id,
-    _.defaults(
+    defaults(
       {
         format: Format.Builtin,
         isBuiltin: true,

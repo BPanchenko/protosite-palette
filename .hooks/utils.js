@@ -1,13 +1,15 @@
-import _ from "lodash";
+import defaults from "lodash/defaults.js";
 import path from "node:path";
 import { createRequire, isBuiltin as isNodeModule } from "node:module";
 import {
   existsSync,
   fstatSync,
   openSync,
+  readFileSync,
   statSync,
   writeFileSync,
 } from "node:fs";
+import { fileURLToPath } from "node:url";
 
 import {
   CacheFilePath,
@@ -53,12 +55,12 @@ export const defModuleDescription = (id, config = {}) => {
     ? getPackageDir(id)
     : undefined;
 
-  const { isDirectory, isFile } = _.defaults(path && parsePath(path), {
+  const { isDirectory, isFile } = defaults(path && parsePath(path), {
     isDirectory: false,
     isFile: false,
   });
 
-  const description = _.defaults(
+  const description = defaults(
     {
       isBuiltin,
       isDependency,
@@ -118,3 +120,16 @@ export const getModuleDescription = (id, config) =>
  */
 export const isDependencyPackage = (id) =>
   deps.has(getPackageNameFromModuleID(id));
+
+/**
+ * @param {string} url
+ * @returns {boolean}
+ */
+export const isValidESM = (url) => {
+  const regex = new RegExp(
+    "(export|import)(?:[\\s.*]([\\w*{}\\n\\r\\t, ]+)[\\s*]from)?[\\s*](?:[\"'](.*[\\w]+)[\"'])?",
+    "gm"
+  );
+  const source = readFileSync(fileURLToPath(url), "utf-8");
+  return regex.test(source);
+};

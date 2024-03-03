@@ -1,22 +1,15 @@
-/*
-import fs from "fs";
-import { inspect } from "util";
-*/
-
-import * as _ from "lodash"
+import forOwn from "lodash/forOwn.js"
+import isEmpty from "lodash/isEmpty.js"
 import path from "path"
 import yargs from "yargs"
-import * as readDir from "read-directory"
-
-// import { hideBin } from "yargs/helpers";
-import * as yargsHelpers from "yargs/helpers"
-console.log(yargsHelpers)
+import yargsHelpers from "yargs/helpers"
+import readDir from "read-directory"
 
 import createACO from "./.aco.js"
 import { getFlattenPalette, getPalette } from "../index.js"
 import { logError } from "./logger.js"
 
-const argv = yargs(hideBin(process.argv))
+const argv = yargs(yargsHelpers.hideBin(process.argv))
 	.option("source-name", {
 		alias: "name",
 		describe: "Source file name or palette name",
@@ -47,13 +40,13 @@ const sourceFiles = (function ({ sourceName, sourcePath }) {
 	sourcePath,
 })
 
-if (_.isEmpty(sourceFiles)) {
+if (isEmpty(sourceFiles)) {
 	logError("Source files not found")
 }
 
 // Build assets
 
-_.forOwn(sourceFiles, (data, file, sources) => {
+forOwn(sourceFiles, (data, file, sources) => {
 	const { colors, correlations } = JSON.parse(data)
 	const paletteName = path.parse(file).name
 	const distFolder = Object.keys(sources).length > 1 ? paletteName : "."

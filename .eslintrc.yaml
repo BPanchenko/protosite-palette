@@ -55,6 +55,12 @@ rules:
 
 overrides:
   - files:
+      - "*.ts"
+    parser: "@typescript-eslint/parser"
+    rules:
+      no-unused-vars: off
+
+  - files:
       - "*.js"
     plugins:
       - sonarjs
@@ -78,6 +84,7 @@ overrides:
       - json-schema-validator
       - json
       - json-format
+
   - files:
       - "*.yaml"
       - "*.yml"

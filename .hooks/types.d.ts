@@ -1,15 +1,13 @@
 import { Format } from "./settings.js";
-
-type TFormatKeys = keyof typeof Format;
-type TFormatValues = (typeof Format)[TFormatKeys];
+import type Module from "node:module";
 
 export type TFormat = {
-  [P in TFormatKeys]: (typeof Format)[P];
+  [P in keyof typeof Format]: (typeof Format)[P];
 };
 
 export type TDescription =
   | Record<"isBuiltin" | "isDependency" | "isDirectory" | "isFile", boolean>
   | Partial<{
-      format: TFormatValues;
+      format: Module.ModuleFormat;
       path: string;
     }>;
