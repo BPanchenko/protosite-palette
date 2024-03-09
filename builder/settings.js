@@ -27,6 +27,8 @@ const sourcePath = path.resolve(
 
 /**
  *
+ * @typedef {Object} Source
+ * @returns {import("type-fest").Entries<{}>}
  */
 const sources = (function ({ sourceName, sourcePath }) {
   try {

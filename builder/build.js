@@ -17,7 +17,7 @@ const getDestinationPath = curry((hasMultipleSources, root, paletteFolder) =>
 /**
  *
  * @param {string} row
- * @returns Array<[string,string]>
+ * @returns {Array<import("../").Source}
  */
 const getPrimaryColorsFromSourceJSON = (row) =>
   toPairs(JSON.parse(row).colors).map(([key, hex]) => [camelCase(key), hex]);
