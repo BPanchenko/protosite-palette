@@ -1,6 +1,8 @@
 import round from "lodash/round.js"
 import logger from "node-color-log"
 
+logger.setDate(() => "")
+
 const start = process.hrtime()
 
 function logError(error) {
@@ -13,10 +15,7 @@ function logSuccess(savedFile, hrstart = start) {
 	logger
 		.bgColor("green")
 		.color("white")
-		.log("SAVED:")
-		.joint()
-		.log(` ${savedFile} `)
-		.joint()
+		.append(`SAVED: ${savedFile} `)
 		.bold()
 		.log(`in ${roundNanoseconds(hrend[1])} s`)
 }
@@ -38,4 +37,4 @@ function roundNanoseconds(value) {
 	return round(value / 1000000000, 3)
 }
 
-export { logError, logSuccess, logSummary }
+export { logger, logError, logSuccess, logSummary }

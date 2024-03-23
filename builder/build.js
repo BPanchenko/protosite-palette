@@ -1,46 +1,62 @@
-import camelCase from "lodash/camelCase.js";
-import curry from "lodash/curry.js";
-import forOwn from "lodash/forOwn.js";
-import toPairs from "lodash/toPairs";
+import curry from "lodash/curry.js"
+import forOwn from "lodash/forOwn.js"
+import path from "path"
+import { writeFile } from "node:fs"
 
-import path from "path";
-import saveAs from "file-saver";
-
-import { distPath, sources } from "./settings.js";
-import { getFlattenPalette, getPalette } from "../index.js";
-import createAcoFileContent from "../lib/fn.createAcoFileContent.js";
+import getPelette from "../lib/fn.getPalette.js"
+import { logError, logSuccess, logger } from "./logger.js"
+import { distPath, sources } from "./settings.js"
+import { getPrimaryColors } from "../lib/utils.js"
+import {
+	makeAcoContent,
+	makeCssContent,
+	makeDtsContent,
+	makeEsmContent,
+} from "../lib/makeFileContent.js"
 
 const getDestinationPath = curry((hasMultipleSources, root, paletteFolder) =>
-  path.resolve(root, hasMultipleSources ? paletteFolder : ".")
-)(Object.keys(sources).length > 1)(distPath);
+	path.resolve(root, hasMultipleSources ? paletteFolder : "."),
+)(Object.keys(sources).length > 1)(distPath)
 
-/**
- *
- * @param {string} row
- * @returns {Array<import("../").Source}
- */
-const getPrimaryColorsFromSourceJSON = (row) =>
-  toPairs(JSON.parse(row).colors).map(([key, hex]) => [camelCase(key), hex]);
+forOwn(sources, (source, file) => {
+	const { name } = path.parse(file)
+	const data = JSON.parse(source)
+	const outDir = getDestinationPath(name)
 
-// Primary Colors
+	logger.debug(`Saving the ${name} palette to "${outDir}"`);
 
-forOwn(sources, (source, file, sources) => {
-  const data = getPrimaryColorsFromSourceJSON(source);
-  const paletteName = path.parse(file).name;
-  console.log(paletteName, data);
-});
+	[
+		["colors", getPrimaryColors(data)],
+		["palette", getPelette(data)],
+	].forEach(([name, data]) => {
+		const entries = Object.entries(data);
 
-/*
-forOwn(sourceFiles, (data, file, sources) => {
-	const { colors, correlations } = JSON.parse(data);
-	const paletteName = path.parse(file).name;
-	const dist = path.resolve(
-	  distPath,
-	  Object.keys(sources).length > 1 ? paletteName : "."
-	);
-	const palette = getPalette(colors, correlations.tone, correlations.accent);
-  
-	// const flattenPalette = getFlattenPalette(palette)
-  });
+		// Write all colors to files
 
-  */
+		[
+			[".css", makeCssContent],
+			[".d.ts", makeDtsContent],
+			[".js", makeEsmContent],
+		].forEach(([ext, fn]) =>
+			writeFile(
+				path.join(outDir, name + ext),
+				Buffer.from(fn(entries)),
+				"utf8",
+				err => (err ? logError(err) : logSuccess(name + ext)),
+			),
+		)
+
+		// Exclude colors with alpha channel for ACO files
+
+		writeFile(
+			path.join(outDir, name + ".aco"),
+			Buffer.from(
+				makeAcoContent(
+					entries.filter(entry => entry[0].includes("TP") === false),
+				),
+			),
+			"utf8",
+			err => (err ? logError(err) : logSuccess(name + ".aco")),
+		)
+	})
+})

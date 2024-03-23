@@ -1,14 +1,14 @@
-import type { ArrayIndices, ArrayValues } from "type-fest";
-import { accentKeys, toneKeys } from "./lib/settings.js";
+import type { ArrayIndices, ArrayValues } from "type-fest"
+import { accentKeys, toneKeys } from "./lib/settings.js"
 
 type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}`
-  ? `${Lowercase<P1>}${Capitalize<P2>}`
-  : Lowercase<S>;
+	? `${Lowercase<P1>}${Capitalize<P2>}`
+	: Lowercase<S>
 
 export type PaletteColorData = ColorData & {
-  accents?: Record<AccentColorKey, ColorData>;
-  tones?: Record<ToneKey, ColorData>;
-};
+	accents?: Record<AccentColorKey, ColorData>;
+	tones?: Record<ToneKey, ColorData>;
+}
 
 export type ColorKey =
   | "red"
@@ -30,34 +30,34 @@ export type ColorKey =
   | "brown"
   | "grey"
   | "blue-grey"
-  | "green-grey";
+  | "green-grey"
 
 export type ColorName = {
-  [K in ColorKey]: CamelCase<K>;
-}[ColorKey];
+	[K in ColorKey]: CamelCase<K>;
+}[ColorKey]
 
 export type ColorData = {
-  hsl: ColorValue;
-  hex: ColorValue;
-  rgb: ColorValue;
-};
+	hsl: ColorValue;
+	hex: ColorValue;
+	rgb: ColorValue;
+}
 
-export type ColorValue = string;
-export type AccentColorKey = ArrayValues<typeof accentKeys>;
-export type ToneKey = ArrayValues<typeof toneKeys>;
+export type ColorValue = string
+export type AccentColorKey = ArrayValues<typeof accentKeys>
+export type ToneKey = ArrayValues<typeof toneKeys>
 
 export type AccentCorrelationFunction = (
-  index: ArrayIndices<typeof accentKeys>
-) => [number, number];
+	index: ArrayIndices<typeof accentKeys>
+) => [number, number]
 
 export type ToneCorrelationFunction = (
-  index: ArrayIndices<typeof toneKeys>
-) => number;
+	index: ArrayIndices<typeof toneKeys>
+) => number
 
 export type Source = {
-  correlations:
-    | [number, number, number, number]
-    | AccentCorrelationFunction
-    | ToneCorrelationFunction;
-  data: Record<ColorKey, string>;
-};
+	correlations: {
+		accent: AccentCorrelationFunction | [number, number, number, number];
+		tone: ToneCorrelationFunction | [number, number, number, number];
+	};
+	data: Record<ColorKey, ColorValue>;
+}
