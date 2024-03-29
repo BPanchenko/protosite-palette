@@ -49,9 +49,9 @@ export type Config = {
     tone: ToneCorFn | [number, number, number, number];
   };
   format: "hex" | "hsl" | "rgba";
-  mixins: Array<[ColorKey, ColorKey]>;
+  grayMixins: Array<[ColorKey, ColorKey]>;
   name: string;
-  theme: "dark" | "light";
+  theme: "dark" | "light" | ThemeConfig;
 };
 
 export type PaletteColorData = ColorData & {
@@ -68,4 +68,9 @@ export type Source = {
     accent: AccentCorFn | [number, number, number, number];
     tone: ToneCorFn | [number, number, number, number];
   };
+};
+
+export type ThemeConfig = {
+  background: ColorValue;
+  foreground: ColorValue;
 };
