@@ -48,8 +48,6 @@ export type Config = {
     accent: AccentCorFn | [number, number, number, number];
     tone: ToneCorFn | [number, number, number, number];
   };
-  format: "hex" | "hsl" | "rgba";
-  grayMixins: Array<[ColorKey, ColorKey]>;
   name: string;
   theme: "dark" | "light" | ThemeConfig;
 };
