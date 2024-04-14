@@ -1,51 +1,31 @@
-import { logError } from "./logger.js";
-import isEmpty from "lodash/isEmpty.js";
-import path from "path";
-import readDir from "read-directory";
-import yargs from "yargs";
-import yargsHelpers from "yargs/helpers";
+import isEmpty from 'lodash/isEmpty.js';
+import { logError } from './logger.js';
+import path from 'path';
+import readDir from 'read-directory';
+import sourceConfig from '../.config/palette.config.json' assert { type: 'json' };
 
-const { outDir, sourceName } = yargs(yargsHelpers.hideBin(process.argv))
-  .option("config", {
-    alias: "c",
-    default: process.env.npm_config_config,
-    describe: "Location of the configuration file",
-    type: "string",
-  })
-  .option("out-dir", {
-    alias: "o",
-    default: process.env.npm_config_out_dir,
-    describe: "Destination directory for the build files",
-    type: "string",
-  }).argv;
+config.log(sourceConfig);
 
 const distPath = path.resolve(process.cwd(), outDir);
-
-const sourcePath = path.resolve(
-  process.cwd(),
-  process.env.npm_config_source_dir || "source"
-);
+const sourcePath = path.resolve(process.cwd(), 'assets');
 
 /**
  *
- * @typedef {Object} Source
+ * @param c {import("../").SourceConfig}
  * @returns {import("type-fest").Entries<{}>}
  */
-const sources = (function ({ sourceName, sourcePath }) {
-  try {
-    const files = readDir.sync(sourcePath, {
-      filter: `${sourceName || "*"}.json`,
-    });
-    if (isEmpty(files)) {
-      throw new Error("Source files not found");
-    }
-    return files;
-  } catch (err) {
-    logError(err);
-  }
-})({
-  sourceName,
-  sourcePath,
-});
+const config = (function (c) {
+	try {
+		const files = readDir.sync(sourcePath, {
+			filter: `${sourceName || '*'}.json`
+		});
+		if (isEmpty(files)) {
+			throw new Error('Source files not found');
+		}
+		return files;
+	} catch (err) {
+		logError(err);
+	}
+})(sourceConfig);
 
-export { distPath, sources };
+export { distPath, config };
