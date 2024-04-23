@@ -1,9 +1,14 @@
 {
   "name": "protosite-palette",
-  "version": "2.16.0",
+  "version": "2.16.0-beta.1",
   "type": "module",
-  "main": "./index.js",
   "types": "./index.d.ts",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./colors": "./assets/colors.js",
+    "./palette": "./assets/palette.js"
+  },
   "files": [
     "./assets/*",
     "./lib/*"

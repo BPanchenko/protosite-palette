@@ -1,5 +1,6 @@
 {
   "name": "protosite",
+  "theme": "light",
   "colors": {
     "red": "#f44336",
     "pink": "#e91e63",
@@ -17,10 +18,12 @@
     "amber": "#ffc107",
     "orange": "#ff9800",
     "deep-orange": "#ff5722",
-    "brown": "#795548"
+    "brown": "#795548",
+    "gray": "#6b6b6b"
   },
   "correlations": {
-    "accent": [0.3, 0.5, 0.7, 0.5],
-    "tone": [0.2, 0.2, 0.8, 0.8]
-  }
+    "accent": [0, 0, 1, 1],
+    "tone": [0, 0, 1, 1]
+  },
+  "admixturesToGray": ["blue", "green", "orange"]
 }
