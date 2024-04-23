@@ -1,82 +1,82 @@
 {
-  "root": true,
-  "env": {
-    "commonjs": true,
-    "es2024": true,
-    "node": true
-  },
-  "extends": ["eslint:recommended", "plugin:sonarjs/recommended"],
-  "parser": "@babel/eslint-parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "requireConfigFile": false
-  },
-  "plugins": ["@stylistic", "@stylistic/ts", "sonarjs"],
-  "rules": {
-    "@stylistic/arrow-parens": [
-      2,
-      "as-needed",
-      {
-        "requireForBlockBody": true
-      }
-    ],
-    "@stylistic/comma-dangle": [2, "always-multiline"],
-    "@stylistic/indent": [2, "tab"],
-    "@stylistic/semi": [
-      2,
-      "never",
-      {
-        "beforeStatementContinuationChars": "always"
-      }
-    ],
-    "@stylistic/semi-spacing": [
-      2,
-      {
-        "before": false,
-        "after": false
-      }
-    ],
-    "@stylistic/no-extra-semi": 2,
-    "@stylistic/ts/member-delimiter-style": 2,
-    "sort-keys": [
-      2,
-      "asc",
-      {
-        "caseSensitive": true,
-        "natural": true,
-        "minKeys": 2
-      }
-    ],
-    "sort-vars": 2
-  },
-  "overrides": [
-    {
-      "files": ["*.ts"],
-      "parser": "@typescript-eslint/parser",
-      "rules": {
-        "no-unused-vars": "off"
-      }
-    },
-    {
-      "files": ["*.js"],
-      "rules": {
-        "sort-imports": [
-          1,
-          {
-            "allowSeparatedGroups": true,
-            "ignoreCase": false,
-            "ignoreDeclarationSort": true,
-            "ignoreMemberSort": false,
-            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-          }
-        ]
-      }
-    }
-  ],
-  "settings": {
-    "json/sort-package-json": "standard",
-    "json/ignore-files": ["**/package-lock.json"],
-    "json/json-with-comments-files": [".config/**"]
-  }
+	"root": true,
+	"env": {
+		"commonjs": true,
+		"es2024": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:sonarjs/recommended"],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"requireConfigFile": false
+	},
+	"plugins": ["@stylistic", "@stylistic/ts", "import", "sonarjs"],
+	"rules": {
+		"@stylistic/arrow-parens": [
+			2,
+			"as-needed",
+			{
+				"requireForBlockBody": true
+			}
+		],
+		"@stylistic/comma-dangle": [2, "always-multiline"],
+		"@stylistic/indent": [2, "tab"],
+		"@stylistic/semi": [
+			2,
+			"never",
+			{
+				"beforeStatementContinuationChars": "always"
+			}
+		],
+		"@stylistic/semi-spacing": [
+			2,
+			{
+				"before": false,
+				"after": false
+			}
+		],
+		"@stylistic/no-extra-semi": 2,
+		"@stylistic/ts/member-delimiter-style": 2,
+		"sort-keys": [
+			2,
+			"asc",
+			{
+				"caseSensitive": true,
+				"natural": true,
+				"minKeys": 2
+			}
+		],
+		"sort-vars": 2
+	},
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"parser": "@typescript-eslint/parser",
+			"rules": {
+				"no-unused-vars": "off"
+			}
+		},
+		{
+			"files": ["*.js"],
+			"rules": {
+				"sort-imports": [
+					1,
+					{
+						"allowSeparatedGroups": true,
+						"ignoreCase": false,
+						"ignoreDeclarationSort": true,
+						"ignoreMemberSort": false,
+						"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+					}
+				]
+			}
+		}
+	],
+	"settings": {
+		"json/sort-package-json": "standard",
+		"json/ignore-files": ["**/package-lock.json"],
+		"json/json-with-comments-files": [".config/**"]
+	}
 }
