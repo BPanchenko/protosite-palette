@@ -3,7 +3,7 @@
   "bracketSameLine": false,
   "bracketSpacing": true,
   "jsxSingleQuote": false,
-  "printWidth": 140,
+  "printWidth": 80,
   "proseWrap": "always",
   "quoteProps": "consistent",
   "semi": false,
@@ -11,12 +11,6 @@
   "trailingComma": "none",
   "useTabs": true,
   "overrides": [
-    {
-      "files": ["*.js", "*.ts"],
-      "options": {
-        "semi": true
-      }
-    },
     {
       "files": ["*.json"],
       "options": {

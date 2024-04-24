@@ -15,32 +15,38 @@
 	"plugins": ["@stylistic", "@stylistic/ts", "import", "sonarjs"],
 	"rules": {
 		"@stylistic/arrow-parens": [
-			2,
+			1,
 			"as-needed",
 			{
 				"requireForBlockBody": true
 			}
 		],
-		"@stylistic/comma-dangle": [2, "always-multiline"],
-		"@stylistic/indent": [2, "tab"],
+		"@stylistic/comma-dangle": [1, "always-multiline"],
+		"@stylistic/indent": [1, "tab"],
 		"@stylistic/semi": [
-			2,
-			"never",
+			1,
+			"always",
 			{
 				"beforeStatementContinuationChars": "always"
 			}
 		],
 		"@stylistic/semi-spacing": [
-			2,
+			1,
 			{
 				"before": false,
 				"after": false
 			}
 		],
-		"@stylistic/no-extra-semi": 2,
-		"@stylistic/ts/member-delimiter-style": 2,
+		"@stylistic/no-extra-semi": 1,
+		"@stylistic/ts/member-delimiter-style": 1,
+		"sort-imports": [
+			1,
+			{
+				"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+			}
+		],
 		"sort-keys": [
-			2,
+			1,
 			"asc",
 			{
 				"caseSensitive": true,
@@ -56,21 +62,6 @@
 			"parser": "@typescript-eslint/parser",
 			"rules": {
 				"no-unused-vars": "off"
-			}
-		},
-		{
-			"files": ["*.js"],
-			"rules": {
-				"sort-imports": [
-					1,
-					{
-						"allowSeparatedGroups": true,
-						"ignoreCase": false,
-						"ignoreDeclarationSort": true,
-						"ignoreMemberSort": false,
-						"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-					}
-				]
 			}
 		}
 	],

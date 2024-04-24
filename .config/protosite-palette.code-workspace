@@ -1,30 +1,29 @@
 {
-  "folders": [
-    {
-      "path": ".."
-    }
-  ],
-  "settings": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.fixAll": "explicit"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.detectIndentation": true,
-    "editor.fontFamily": "'Clincher Code', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file",
-    "editor.formatOnType": false,
-    "editor.tabSize": 4,
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit",
+			"source.fixAll": "explicit"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.detectIndentation": true,
+		"editor.fontFamily": "'Clincher Code', monospace",
+		"editor.fontLigatures": true,
+		"editor.fontSize": 13,
+		"editor.formatOnPaste": false,
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.formatOnType": false,
+		"editor.tabSize": 4,
 
-    "eslint.enable": true,
-    "eslint.experimental.useFlatConfig": true,
-    "eslint.format.enable": true,
-    "eslint.validate": ["javascript", "json", "jsonc", "json5", "yaml"],
+		"eslint.enable": true,
+		"eslint.format.enable": true,
+		"eslint.validate": ["javascript", "json", "jsonc", "json5", "yaml"],
 
-    "files.autoSave": "onFocusChange"
-  }
+		"files.autoSave": "onFocusChange"
+	}
 }
