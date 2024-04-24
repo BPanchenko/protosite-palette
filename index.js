@@ -1,6 +1,6 @@
 export { accentKeys, toneKeys } from './lib/settings.js'
 export { isColor } from './lib/utils.js'
 
-import getPalette from './lib/fn.getPalette.js'
+import Palette from './lib/class.Palette.js'
 
-export default getPalette
+export default Palette

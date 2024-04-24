@@ -7,7 +7,7 @@ import {
 } from '../lib/makeFileContent.js'
 
 import { capitalize } from 'lodash/camelCase'
-import getPelette from '../lib/fn.getPalette.js'
+import getPelette from '../lib/class.Palette.js'
 import { getPrimaryColors } from '../lib/utils.js'
 import path from 'path'
 import { writeFile } from 'node:fs'
