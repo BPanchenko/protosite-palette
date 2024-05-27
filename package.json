@@ -1,6 +1,6 @@
 {
   "name": "protosite-palette",
-  "version": "2.16.0-beta.1",
+  "version": "2.16.0-beta.2",
   "type": "module",
   "types": "./index.d.ts",
   "main": "./index.js",
