@@ -1,17 +1,17 @@
 {
   "name": "protosite-palette",
-  "version": "2.16.1",
+  "version": "2.16.9",
   "type": "module",
-  "types": "./index.d.ts",
-  "main": "./index.js",
   "exports": {
     ".": "./index.js",
     "./colors": "./assets/colors.js",
     "./palette": "./assets/palette.js"
   },
   "files": [
-    "./assets/*",
-    "./lib/*"
+    ".config/palette.config.json",
+    "assets/*",
+    "lib/*",
+    "index.*"
   ],
   "scripts": {
     "build": "node --import .hooks/register-hooks.js builder/build.js",
@@ -25,7 +25,8 @@
     "d3-color-difference": "0.1.3",
     "d3-scale": "4.0.2",
     "hex2rgb": "2.2.0",
-    "lodash": "4.17.21"
+    "lodash": "4.17.21",
+    "validate-color": "2.2.4"
   },
   "devDependencies": {
     "@babel/core": "7.24.6",
@@ -42,8 +43,7 @@
     "read-directory": "3.0.2",
     "read-package-up": "11.0.0",
     "type-fest": "4.18.3",
-    "typescript": "5.4.5",
-    "validate-color": "2.2.4"
+    "typescript": "5.4.5"
   },
   "engines": {
     "node": ">=21.1.0"
