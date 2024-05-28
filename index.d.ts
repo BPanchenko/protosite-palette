@@ -6,26 +6,6 @@ type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}`
 	: Lowercase<S>
 
 declare global {
-	type ColorKey =
-		| 'red'
-		| 'pink'
-		| 'purple'
-		| 'violet'
-		| 'indigo'
-		| 'blue'
-		| 'light-blue'
-		| 'cyan'
-		| 'teal'
-		| 'green'
-		| 'light-green'
-		| 'lime'
-		| 'yellow'
-		| 'amber'
-		| 'orange'
-		| 'deep-orange'
-		| 'brown'
-		| 'gray'
-
 	type AccentKey = ArrayValues<typeof accentKeys>
 	type AccentCorFn = (
 		index: ArrayIndices<typeof accentKeys>
@@ -59,13 +39,28 @@ declare global {
 			: CamelCase<K> | CamelCase<`${K}-gray`>
 	}[ColorKey]
 
-	type ColorData = {
+	type ColorAdditionalProps = {
+		'key': ColorKey
+		'name': ColorName
+		'css-var': string
+		'js-const': string
+	}
+
+	type ColorFormats = {
 		hsl: ColorValue
 		hex: ColorValue
 		rgb: ColorValue
 	}
 
+	type ColorShades = {
+		accents: Record<AccentKey, SecondaryColor>
+		tones: Record<ToneKey, SecondaryColor>
+	}
+
+	type ColorData = PrimaryColor | SecondaryColor
 	type ColorValue = string
+	type PrimaryColor = SecondaryColor & ColorShades
+	type SecondaryColor = ColorFormats & Partial<ColorAdditionalProps>
 
 	interface Config {
 		admixturesToGray?: ColorKey
@@ -81,11 +76,6 @@ declare global {
 	interface SourceConfig
 		extends Required<Pick<Config, 'colors' | 'correlations'>>,
 			Optional<Omit<Config, 'colors' | 'correlations'>> {}
-
-	type PaletteColorData = ColorData & {
-		accents?: Record<AccentKey, ColorData>
-		tones?: Record<ToneKey, ColorData>
-	}
 
 	type ThemeConfig = {
 		background: ColorValue
