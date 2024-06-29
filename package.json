@@ -1,66 +1,65 @@
 {
-  "name": "protosite-palette",
-  "version": "2.16.9",
-  "type": "module",
-  "exports": {
-    ".": "./index.js",
-    "./colors": "./assets/colors.js",
-    "./palette": "./assets/palette.js"
-  },
-  "files": [
-    ".config/palette.config.json",
-    "assets/*",
-    "lib/*",
-    "index.*"
-  ],
-  "scripts": {
-    "build": "node --import .hooks/register-hooks.js builder/build.js",
-    "lint": "eslint {**/*,*}.{js,d.ts} --cache --color --debug --fix"
-  },
-  "dependencies": {
-    "adobe-aco": "0.1.1",
-    "bezier": "0.1.0",
-    "bezier-easing": "2.1.0",
-    "d3-color": "3.1.0",
-    "d3-color-difference": "0.1.3",
-    "d3-scale": "4.0.2",
-    "hex2rgb": "2.2.0",
-    "lodash": "4.17.21",
-    "validate-color": "2.2.4"
-  },
-  "devDependencies": {
-    "@babel/core": "7.24.6",
-    "@babel/eslint-parser": "7.24.6",
-    "@stylistic/eslint-plugin": "2.1.0",
-    "@types/node": "20.12.12",
-    "@typescript-eslint/parser": "7.11.0",
-    "eslint": "9.3.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-sonarjs": "1.0.3",
-    "glob": "10.4.1",
-    "node-color-log": "12.0.1",
-    "npm-run-all": "4.1.5",
-    "read-directory": "3.0.2",
-    "read-package-up": "11.0.0",
-    "type-fest": "4.18.3",
-    "typescript": "5.4.5"
-  },
-  "engines": {
-    "node": ">=21.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BPanchenko/protosite-palette.git"
-  },
-  "author": "Boris Panchenko <boris.v.panchenko@mail.ru> (https://bpanchenko.ru)",
-  "bugs": {
-    "url": "https://github.com/BPanchenko/protosite-palette/issues"
-  },
-  "homepage": "https://github.com/BPanchenko/protosite-palette#readme",
-  "license": "LGPL-3.0-only",
-  "description": "[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)",
-  "directories": {
-    "lib": "lib"
-  },
-  "keywords": []
+	"name": "@bpanchenko/palette",
+	"version": "3.0.0",
+	"type": "module",
+	"types": "./index.d.ts",
+	"exports": {
+		".": "./index.js",
+		"./*.css": "./assets/*.css",
+		"./colors": "./assets/colors.js",
+		"./config": "./.config/palette.config.json",
+		"./palette": "./assets/palette.js"
+	},
+	"files": [
+		".config/palette.config.json",
+		"@types/*",
+		"assets/*",
+		"lib/*",
+		"index.*"
+	],
+	"scripts": {
+		"build": "node --import ./.hooks/register-hooks.js ./builder/build.js",
+		"lint": "eslint {**/*,*}.{js,d.ts} --cache --color --debug --fix"
+	},
+	"dependencies": {
+		"adobe-aco": "0.1.1",
+		"bezier-easing": "2.1.0",
+		"colorjs.io": "0.5.0",
+		"d3-scale": "4.0.2",
+		"lodash": "4.17.21"
+	},
+	"devDependencies": {
+		"@babel/core": "7.24.7",
+		"@babel/eslint-parser": "7.24.7",
+		"@stylistic/eslint-plugin": "2.1.0",
+		"@types/node": "20.14.2",
+		"@typescript-eslint/parser": "7.13.0",
+		"eslint": "9.4.0",
+		"eslint-plugin-import": "2.29.1",
+		"eslint-plugin-sonarjs": "1.0.3",
+		"glob": "10.4.1",
+		"node-color-log": "12.0.1",
+		"npm-run-all": "4.1.5",
+		"read-package-up": "11.0.0",
+		"typescript": "5.4.5"
+	},
+	"engines": {
+		"node": ">=21.1.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BPanchenko/protosite-palette.git"
+	},
+	"author": "Boris Panchenko <boris.v.panchenko@mail.ru> (https://bpanchenko.ru)",
+	"bugs": {
+		"url": "https://github.com/BPanchenko/protosite-palette/issues"
+	},
+	"homepage": "https://github.com/BPanchenko/protosite-palette#readme",
+	"license": "LGPL-3.0-only",
+	"description": "[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)",
+	"directories": {
+		"assets": "assets",
+		"lib": "lib"
+	},
+	"keywords": []
 }

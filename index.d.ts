@@ -1,17 +1,12 @@
-import type { ArrayIndices, ArrayValues } from 'type-fest'
-import { accentKeys, toneKeys } from './lib/settings.js'
+import type ProtoColor from 'colorjs.io'
 
 type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}`
 	? `${Lowercase<P1>}${Capitalize<P2>}`
 	: Lowercase<S>
 
 declare global {
-	type AccentKey = ArrayValues<typeof accentKeys>
-	type AccentCorFn = (
-		index: ArrayIndices<typeof accentKeys>
-	) => [number, number]
-	type ToneCorFn = (index: ArrayIndices<typeof toneKeys>) => number
-	type ToneKey = ArrayValues<typeof toneKeys>
+	type AccentCorFn = (index: number) => [number, number]
+	type ShadeCorFn = (index: number) => number
 
 	type ColorKey =
 		| 'red'
@@ -39,43 +34,73 @@ declare global {
 			: CamelCase<K> | CamelCase<`${K}-gray`>
 	}[ColorKey]
 
-	type ColorAdditionalProps = {
+	type AdditionalProps = {
+		'css-value': string
+		'css-variable': string
+		'js-const': string
+		'key': ColorKey
+		'name': ColorName
+	}
+
+	type ColorFormat =
+		| 'cmyk'
+		| 'gl'
+		| 'hcl'
+		| 'lab'
+		| 'lch'
+		| 'oklab'
+		| 'oklch'
+		| 'rgb'
+
+	type ColorData = {
 		'key': ColorKey
 		'name': ColorName
 		'css-var': string
 		'js-const': string
+		'hex': string
+		'rgb': [number, number, number]
+	}
+	type ColorValue = [number, number, number]
+	type ShadeWeight = number
+
+	interface PrimaryColor extends Partial<AdditionalProps>, ProtoColor {
+		type: 'primary'
+		accents?: Record<ShadeWeight, ColorShade>
+		shades: Record<ShadeWeight, ColorShade>
 	}
 
-	type ColorFormats = {
-		hsl: ColorValue
-		hex: ColorValue
-		rgb: ColorValue
+	interface ColorAccent extends Partial<AdditionalProps>, ProtoColor {
+		type: 'accent'
+		$primaryRef: PrimaryColor
 	}
 
-	type ColorShades = {
-		accents: Record<AccentKey, SecondaryColor>
-		tones: Record<ToneKey, SecondaryColor>
+	interface ColorShade extends Partial<AdditionalProps>, ProtoColor {
+		type: 'shade'
+		$primaryRef: PrimaryColor
 	}
 
-	type ColorData = PrimaryColor | SecondaryColor
-	type ColorValue = string
-	type PrimaryColor = SecondaryColor & ColorShades
-	type SecondaryColor = ColorFormats & Partial<ColorAdditionalProps>
+	type PaletteColor = PrimaryColor | ColorAccent | ColorShade
 
 	interface Config {
 		admixturesToGray?: ColorKey
 		colors: Record<ColorKey, ColorValue>
 		correlations: {
 			accent: AccentCorFn | [number, number, number, number]
-			tone: ToneCorFn | [number, number, number, number]
+			shade: ShadeCorFn | [number, number, number, number]
 		}
+		format:
+			| {
+					in: ColorFormat
+					out: ColorFormat
+			  }
+			| ColorFormat
 		name: string
 		theme: 'dark' | 'light' | ThemeConfig
 	}
 
 	interface SourceConfig
 		extends Required<Pick<Config, 'colors' | 'correlations'>>,
-			Optional<Omit<Config, 'colors' | 'correlations'>> {}
+			Partial<Omit<Config, 'colors' | 'correlations'>> {}
 
 	type ThemeConfig = {
 		background: ColorValue

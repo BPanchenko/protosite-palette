@@ -1,37 +1,42 @@
+import startCase from 'lodash/startCase.js'
+import path from 'node:path'
+import { writeFile } from 'node:fs'
+
+import Palette from '../lib/class.Palette.js'
 import { logError, logSuccess, logger } from './logger.js'
 import {
 	makeAcoContent,
 	makeCssContent,
 	makeDtsContent,
 	makeEsmContent
-} from '../lib/makeFileContent.js'
+} from '../lib/making.js'
+import { getColorData, mapToArray } from '../lib/utils.js'
 
-import { capitalize } from 'lodash/camelCase'
-import getPelette from '../lib/class.Palette.js'
-import { getPrimaryColors } from '../lib/utils.js'
-import path from 'path'
-import { writeFile } from 'node:fs'
+const outDir = path.resolve(process.cwd(), 'assets')
+const palette = new Palette()
 
-const { name } = path.parse(file)
-const outDir = getDestinationPath(name)
-const palette = getPelette()
+const primaryColors = mapToArray(palette.primaryColors).map((color) =>
+	getColorData(color)
+)
+const paletteColors = mapToArray(palette.flatten).map((color) =>
+	getColorData(color)
+)
 
-logger.debug(`Saving the ${name} palette to "${outDir}"`)
 ;[
-	['colors', palette.primaryColors],
-	['palette', palette]
-].forEach(([dataName, data]) => {
-	const entries = Object.entries(data)
-
+	['colors', primaryColors],
+	['palette', paletteColors]
+].forEach(([listName, list]) => {
+	const acoFileName = startCase([palette.name, listName].join(' '))
+	logger.debug(`Saving ${acoFileName} to "${outDir}"`)
 	;[
-		[`${capitalize([palette.name, dataName].join('-'))}.aco`, makeAcoContent],
-		[`${dataName}.css`, makeCssContent],
-		[`${dataName}.d.ts`, makeDtsContent],
-		[`${dataName}.js`, makeEsmContent]
+		[`${acoFileName}.aco`, makeAcoContent],
+		[`${listName}.css`, makeCssContent],
+		[`${listName}.d.ts`, makeDtsContent],
+		[`${listName}.js`, makeEsmContent]
 	].forEach(([file, makeContent]) =>
 		writeFile(
 			path.join(outDir, file),
-			Buffer.from(makeContent(entries)),
+			Buffer.from(makeContent(list)),
 			'utf8',
 			(err) => (err ? logError(err) : logSuccess(file))
 		)
