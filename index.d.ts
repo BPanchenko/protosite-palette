@@ -42,15 +42,9 @@ declare global {
 		'name': ColorName
 	}
 
-	type ColorFormat =
-		| 'cmyk'
-		| 'gl'
-		| 'hcl'
-		| 'lab'
-		| 'lch'
-		| 'oklab'
-		| 'oklch'
-		| 'rgb'
+	type ColorFormat = 'gl' | 'hcl' | 'lab' | 'lch' | 'oklab' | 'oklch' | 'rgb'
+
+	type ColorSector = 'Rd' | 'Pr' | 'Bl' | 'Cy' | 'Gr' | 'Yl' | 'Mono'
 
 	type ColorData = {
 		'key': ColorKey
@@ -67,6 +61,13 @@ declare global {
 		type: 'primary'
 		accents?: Record<ShadeWeight, ColorShade>
 		shades: Record<ShadeWeight, ColorShade>
+		meta: {
+			sect: ColorSector
+			wgth: number
+			coord: {
+				[K in ColorSector]: number
+			}
+		}
 	}
 
 	interface ColorAccent extends Partial<AdditionalProps>, ProtoColor {
