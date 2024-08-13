@@ -21,23 +21,12 @@
 		"gray": "#6b6b6b"
 	},
 	"correlations": {
-		"accent": [
-			0,
-			0,
-			1,
-			1
-		],
-		"shade": [
-			0,
-			0.2,
-			0.8,
-			1
-		]
+		"accent": [0, 0, 1, 1],
+		"shade": [0, 0.2, 0.8, 1]
 	},
-	"admixturesToGray": [
-		"blue",
-		"green",
-		"orange"
-	],
-	"theme": "light"
+	"admixturesToGray": ["blue", "green", "orange"],
+	"theme": {
+		"bgColor": "#fbfbfb",
+		"fgColor": "#201500"
+	}
 }
