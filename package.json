@@ -5,7 +5,6 @@
 	"types": "./index.d.ts",
 	"exports": {
 		".": "./index.js",
-		"./*.css": "./assets/*.css",
 		"./colors": "./assets/colors.js",
 		"./config": "./.config/palette.config.json",
 		"./palette": "./assets/palette.js"
