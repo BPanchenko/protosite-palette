@@ -1,7 +1,12 @@
 {
 	"name": "protosite",
+	"space": {
+		"input": "srgb",
+		"css": "oklch",
+		"esm": "oklab"
+	},
 	"colors": {
-		"red": "#e32636",
+		"red": "#ff4d00",
 		"pink": "#ffaacc",
 		"purple": "#a40076",
 		"violet": "#8a00a1",
@@ -20,13 +25,17 @@
 		"brown": "#8c6046",
 		"gray": "#6b6b6b"
 	},
+	"mixtures": [
+		["blue", "gray"],
+		["green", "gray"],
+		["orange", "gray"]
+	],
 	"correlations": {
 		"accent": [0, 0, 1, 1],
-		"shade": [0, 0.2, 0.8, 1]
+		"shade": [0, 0, 1, 1]
 	},
-	"admixturesToGray": ["blue", "green", "orange"],
 	"theme": {
-		"bgColor": "#fbfbfb",
-		"fgColor": "#201500"
+		"back": "#fbfbfb",
+		"front": "#201500"
 	}
 }

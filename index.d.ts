@@ -30,27 +30,27 @@ declare global {
 
 	type ColorName = {
 		[K in ColorKey]: K extends 'gray'
-			? CamelCase<K>
-			: CamelCase<K> | CamelCase<`${K}-gray`>
+		? CamelCase<K>
+		: CamelCase<K> | CamelCase<`${K}-gray`>
 	}[ColorKey]
 
 	type AdditionalProps = {
 		'css-value': string
 		'css-variable': string
-		'js-const': string
+		'js-variable': string
 		'key': ColorKey
 		'name': ColorName
 	}
 
-	type ColorFormat = 'gl' | 'hcl' | 'lab' | 'lch' | 'oklab' | 'oklch' | 'rgb'
+	type ColorSpace = 'gl' | 'hcl' | 'lab' | 'lch' | 'oklab' | 'oklch' | 'srgb'
 
 	type ColorSector = 'Rd' | 'Pr' | 'Bl' | 'Cy' | 'Gr' | 'Yl' | 'Mono'
 
 	type ColorData = {
 		'key': ColorKey
 		'name': ColorName
-		'css-var': string
-		'js-const': string
+		'css-variable': string
+		'js-variable': string
 		'hex': string
 		'rgb': [number, number, number]
 	}
@@ -89,19 +89,24 @@ declare global {
 			accent: AccentCorFn | [number, number, number, number]
 			shade: ShadeCorFn | [number, number, number, number]
 		}
+		space: {
+			inpu: ColorSpace
+			css: ColorSpace
+			esm: ColorSpace
+		},
 		format:
-			| {
-					in: ColorFormat
-					out: ColorFormat
-			  }
-			| ColorFormat
+		| {
+			in: ColorSpace
+			out: ColorSpace
+		}
+		| ColorSpace
 		name: string
 		theme: 'dark' | 'light' | ThemeConfig
 	}
 
 	interface SourceConfig
 		extends Required<Pick<Config, 'colors' | 'correlations'>>,
-			Partial<Omit<Config, 'colors' | 'correlations'>> {}
+		Partial<Omit<Config, 'colors' | 'correlations'>> { }
 
 	type ThemeConfig = {
 		background: ColorValue
