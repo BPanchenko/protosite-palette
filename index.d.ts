@@ -47,27 +47,38 @@ declare global {
 	type ColorSector = 'Rd' | 'Pr' | 'Bl' | 'Cy' | 'Gr' | 'Yl' | 'Mono'
 
 	type ColorData = {
-		'key': ColorKey
-		'name': ColorName
+		key: ColorKey
+		name: ColorName
+		hex: string
+		rgb: ColorAsRGB
+		meta: ColorMeta
 		'css-variable': string
+		'css-value': string
 		'js-variable': string
-		'hex': string
-		'rgb': [number, number, number]
+		'js-value': number
+	} & {
+		[K in ColorSpace]?: string
+	} & {
+		accents?: Array<ColorData>
+		shades?: Array<ColorData>
 	}
-	type ColorValue = [number, number, number]
+
+	type ColorAsRGB = [number, number, number]
+	type ColorMeta = {
+		sect: ColorSector
+		wgth: number
+		coord: {
+			[K in ColorSector]: number
+		}
+	}
+	type ColorValue = string | ColorAsRGB
 	type ShadeWeight = number
 
 	interface PrimaryColor extends Partial<AdditionalProps>, ProtoColor {
 		type: 'primary'
 		accents?: Record<ShadeWeight, ColorShade>
 		shades: Record<ShadeWeight, ColorShade>
-		meta: {
-			sect: ColorSector
-			wgth: number
-			coord: {
-				[K in ColorSector]: number
-			}
-		}
+		meta: ColorMeta
 	}
 
 	interface ColorAccent extends Partial<AdditionalProps>, ProtoColor {
@@ -83,24 +94,17 @@ declare global {
 	type PaletteColor = PrimaryColor | ColorAccent | ColorShade
 
 	interface Config {
-		admixturesToGray?: ColorKey
+		name: string
+		space: {
+			input: ColorSpace
+			output: ColorSpace
+		}
 		colors: Record<ColorKey, ColorValue>
+		mixtures: Array<[ColorKey, ColorKey]>
 		correlations: {
 			accent: AccentCorFn | [number, number, number, number]
 			shade: ShadeCorFn | [number, number, number, number]
 		}
-		space: {
-			inpu: ColorSpace
-			css: ColorSpace
-			esm: ColorSpace
-		},
-		format:
-		| {
-			in: ColorSpace
-			out: ColorSpace
-		}
-		| ColorSpace
-		name: string
 		theme: 'dark' | 'light' | ThemeConfig
 	}
 

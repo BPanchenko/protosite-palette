@@ -16,10 +16,10 @@ const outDir = path.resolve(process.cwd(), 'assets')
 const palette = new Palette()
 
 const primaryColors = mapToArray(palette.primaryColors).map((color) =>
-	getColorData(color)
+	getColorData(color, color.key, palette.outSpace)
 )
 const paletteColors = mapToArray(palette.flatten).map((color) =>
-	getColorData(color)
+	getColorData(color, color.key, palette.outSpace)
 )
 
 ;[

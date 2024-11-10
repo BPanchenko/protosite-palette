@@ -1,6 +1,6 @@
 {
 	"name": "@bpanchenko/palette",
-	"version": "3.1.1",
+	"version": "3.2.1",
 	"type": "module",
 	"types": "./index.d.ts",
 	"exports": {
@@ -40,6 +40,7 @@
 		"node-color-log": "12.0.1",
 		"npm-run-all": "4.1.5",
 		"read-package-up": "11.0.0",
+		"to-hex": "0.0.18",
 		"typescript": "5.4.5"
 	},
 	"engines": {
