@@ -1,29 +1,28 @@
 {
 	"name": "protosite",
 	"space": {
-		"input": "srgb",
-		"css": "oklch",
-		"esm": "oklab"
+		"input": "lab",
+		"output": "hwb"
 	},
 	"colors": {
-		"red": "#ff4d00",
-		"pink": "#ffaacc",
-		"purple": "#a40076",
-		"violet": "#8a00a1",
-		"indigo": "#324ab2",
-		"blue": "#3939e5",
-		"light-blue": "#42a1f5",
-		"cyan": "#00bcd4",
-		"teal": "#1f9682",
-		"green": "#179132",
-		"light-green": "#5bcc29",
-		"lime": "#a5d053",
-		"yellow": "#fefe22",
-		"amber": "#f4c800",
-		"orange": "#f4a900",
-		"deep-orange": "#ea7500",
-		"brown": "#8c6046",
-		"gray": "#6b6b6b"
+		"red": [39.93, 54.42, 39.08],
+		"pink": [73.59, 35.82, -2.76],
+		"purple": [46.8, 65.42, -30.87],
+		"violet": [42.19, 69.86, -74.77],
+		"indigo": [15.86, 31.72, -49.58],
+		"blue": [38.28, 25.41, -60.71],
+		"light-blue": [72.55, -17.65, -42.55],
+		"cyan": [75.29, -40.61, -10.26],
+		"teal": [55.8, -36.32, 1.53],
+		"green": [76.56, -71.54, 53.65],
+		"light-green": [82.94, -53.23, 47.75],
+		"lime": [76.54, -37.99, 66.59],
+		"yellow": [86.61, -8.45, 85.48],
+		"amber": [81.03, 10.39, 83.04],
+		"orange": [74.77, 24.83, 73.7],
+		"deep-orange": [64.99, 48.33, 69.4],
+		"brown": [59.2, 27.22, 24.49],
+		"gray": [52.97, -1.14, 0.82]
 	},
 	"mixtures": [
 		["blue", "gray"],
@@ -35,7 +34,7 @@
 		"shade": [0, 0, 1, 1]
 	},
 	"theme": {
-		"back": "#fbfbfb",
-		"front": "#201500"
+		"background": [98.62, 0, 0],
+		"foreground": [7.62, 2.54, 11.46]
 	}
 }
