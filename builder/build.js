@@ -22,6 +22,7 @@ const paletteColors = mapToArray(palette.flatten).map((color) =>
 	getColorData(color, color.key, palette.outSpace)
 )
 
+// console.log(primaryColors)
 ;[
 	['colors', primaryColors],
 	['palette', paletteColors]

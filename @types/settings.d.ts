@@ -33,11 +33,11 @@ declare type ShadeWeight =
  */
 
 declare type AccentKey = {
-    [K in AccentWeight]: `a${K}`
+    [K in AccentWeight]: `${PrimaryKey}-a${K}`
 }[AccentWeight]
 
 declare type ShadeKey = {
-    [K in ShadeWeight]: `${K}`
+    [K in ShadeWeight]: `${PrimaryKey}-${K}`
 }[ShadeWeight]
 
 declare type PrimaryKey =

@@ -19,8 +19,6 @@ import type {
 } from './color'
 
 declare namespace Palette {
-    type Color = ThemeColor | PrimaryColor | ShadeColor | AccentColor
-
     type Config = {
         correlations: {
             accent: AccentCorFn
@@ -28,9 +26,9 @@ declare namespace Palette {
         }
     } & Required<Omit<UserConfig, 'correlations'>>
 
+    type Key = PrimaryKey | ShadeKey | AccentKey
+    type Color = ThemeColor | PrimaryColor | ShadeColor | AccentColor
     type Theme = Record<ThemeKey, ThemeColor>
-
-    type Key = `${PrimaryKey}-${ShadeKey | AccentKey}` | PrimaryKey
 
     interface IFace {
         entries(): Array<[PrimaryKey, PrimaryColor]>
@@ -42,5 +40,5 @@ declare namespace Palette {
         new(configuration: UserConfig): IFace;
     }
 
-    export const IFace: Constructor
+    const IFace: Constructor
 }
