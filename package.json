@@ -1,6 +1,6 @@
 {
 	"name": "@bpanchenko/palette",
-	"version": "3.2.4",
+	"version": "3.2.5",
 	"type": "module",
 	"main": "./index.js",
 	"types": "./@types/index.d.ts",

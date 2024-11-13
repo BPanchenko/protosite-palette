@@ -38,7 +38,7 @@ const paletteColors = mapToArray(palette.flatten).map((color) =>
 		writeFile(
 			path.join(outDir, file),
 			Buffer.from(makeContent(list, listName)),
-			'utf8',
+			{ encoding: 'utf8' },
 			(err) => (err ? logError(err) : logSuccess(file))
 		)
 	)
