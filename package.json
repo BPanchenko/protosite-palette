@@ -1,13 +1,27 @@
 {
 	"name": "@bpanchenko/palette",
-	"version": "3.2.2",
+	"version": "3.2.3",
 	"type": "module",
-	"types": "./index.d.ts",
+	"main": "./index.js",
+	"types": "./@types/index.d.ts",
 	"exports": {
-		".": "./index.js",
-		"./colors": "./assets/colors.js",
+		".": {
+			"types": "./@types/index.d.ts",
+			"default": "./index.js"
+		},
+		"./colors": {
+			"types": "./assets/colors.d.ts",
+			"default": "./assets/colors.js"
+		},
+		"./palette": {
+			"types": "./assets/palette.d.ts",
+			"default": "./assets/palette.js"
+		},
 		"./config": "./.config/palette.config.json",
-		"./palette": "./assets/palette.js"
+		"./*": {
+			"types": "./@types/*.d.ts",
+			"default": "./*.js"
+		}
 	},
 	"files": [
 		".config/palette.config.json",
@@ -23,25 +37,25 @@
 	"dependencies": {
 		"adobe-aco": "0.1.1",
 		"bezier-easing": "2.1.0",
-		"colorjs.io": "0.5.0",
+		"colorjs.io": "0.5.2",
 		"d3-scale": "4.0.2",
 		"lodash": "4.17.21"
 	},
 	"devDependencies": {
-		"@babel/core": "7.24.7",
-		"@babel/eslint-parser": "7.24.7",
-		"@stylistic/eslint-plugin": "2.1.0",
-		"@types/node": "20.14.2",
-		"@typescript-eslint/parser": "7.13.0",
-		"eslint": "9.4.0",
-		"eslint-plugin-import": "2.29.1",
-		"eslint-plugin-sonarjs": "1.0.3",
-		"glob": "10.4.1",
+		"@babel/core": "7.26.0",
+		"@babel/eslint-parser": "7.25.9",
+		"@stylistic/eslint-plugin": "2.10.1",
+		"@types/node": "22.9.0",
+		"@typescript-eslint/parser": "8.14.0",
+		"eslint": "9.14.0",
+		"eslint-plugin-import": "2.31.0",
+		"eslint-plugin-sonarjs": "2.0.4",
+		"glob": "11.0.0",
 		"node-color-log": "12.0.1",
 		"npm-run-all": "4.1.5",
 		"read-package-up": "11.0.0",
 		"to-hex": "0.0.18",
-		"typescript": "5.4.5"
+		"typescript": "5.6.3"
 	},
 	"engines": {
 		"node": ">=21.1.0"

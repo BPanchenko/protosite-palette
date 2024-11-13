@@ -1,5 +1,4 @@
-export * from './assets/palette.js'
+// @ts-check
 
-import Palette from './lib/class.Palette.js'
-
-export default Palette
+export * from './assets/palette'
+export { default } from './lib/class.Palette'
