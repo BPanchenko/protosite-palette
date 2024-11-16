@@ -14,15 +14,25 @@ import { getColorData, mapToArray } from '../lib/utils.js'
 
 const outDir = path.resolve(process.cwd(), 'assets')
 const palette = new Palette()
+const { background, foreground, outSpace } = palette
 
-const primaryColors = mapToArray(palette.primaryColors).map((color) =>
-	getColorData(color, color.key, palette.outSpace)
-)
-const paletteColors = mapToArray(palette.flatten).map((color) =>
-	getColorData(color, color.key, palette.outSpace)
+const theme = [
+	getColorData(background, background.key, outSpace),
+	getColorData(foreground, foreground.key, outSpace)
+]
+
+const primaryColors = theme.concat(
+	mapToArray(palette.primaryColors).map((color) =>
+		getColorData(color, color.key, outSpace)
+	)
 )
 
-// console.log(primaryColors)
+const paletteColors = theme.concat(
+	mapToArray(palette.flatten).map((color) =>
+		getColorData(color, color.key, outSpace)
+	)
+)
+
 ;[
 	['colors', primaryColors],
 	['palette', paletteColors]

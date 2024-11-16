@@ -1,6 +1,6 @@
 {
 	"name": "@bpanchenko/palette",
-	"version": "3.2.5",
+	"version": "3.3.5",
 	"type": "module",
 	"main": "./index.js",
 	"types": "./@types/index.d.ts",
@@ -47,7 +47,7 @@
 		"@stylistic/eslint-plugin": "2.10.1",
 		"@types/node": "22.9.0",
 		"@typescript-eslint/parser": "8.14.0",
-		"eslint": "9.14.0",
+		"eslint": "9.15.0",
 		"eslint-plugin-import": "2.31.0",
 		"eslint-plugin-sonarjs": "2.0.4",
 		"glob": "11.0.0",

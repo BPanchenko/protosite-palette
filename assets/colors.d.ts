@@ -1,3 +1,5 @@
+export const clrBackground: number;
+export const clrForeground: number;
 export const clrRed: number;
 export const clrPink: number;
 export const clrPurple: number;

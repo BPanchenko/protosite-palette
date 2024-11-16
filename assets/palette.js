@@ -1,5 +1,7 @@
 /// <reference path="./palette.d.ts" />
 
+export const clrBackground = 0xfbfbfb;
+export const clrForeground = 0x1f1500;
 export const clrRed = 0xb02722;
 export const clrRed50 = 0xffe3dd;
 export const clrRed100 = 0xffccc3;
