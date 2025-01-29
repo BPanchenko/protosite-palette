@@ -1,7 +1,7 @@
 /// <reference path="./colors.d.ts" />
 
-export const clrBlack = 0x0;
-export const clrWhite = 0x130005;
+export const clrBlack = 0x17181a;
+export const clrWhite = 0xfff;
 export const clrBackground = 0xfbfbfb;
 export const clrForeground = 0x1f1500;
 export const clrRed = 0xb02722;
