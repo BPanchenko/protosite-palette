@@ -14,9 +14,11 @@ import { getColorData, mapToArray } from '../lib/utils.js'
 
 const outDir = path.resolve(process.cwd(), 'assets')
 const palette = new Palette()
-const { background, foreground, outSpace } = palette
+const { background, black, foreground, outSpace, white } = palette
 
 const theme = [
+	getColorData(black, black.key, outSpace),
+	getColorData(white, white.key, outSpace),
 	getColorData(background, background.key, outSpace),
 	getColorData(foreground, foreground.key, outSpace)
 ]

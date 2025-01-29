@@ -60,7 +60,7 @@ declare type PrimaryKey =
     | 'brown'
     | 'gray'
 
-declare type ThemeKey = 'background' | 'foreground'
+declare type ThemeKey = 'background' | 'black' | 'foreground' | 'white'
 
 /**
  * Types of palette colors
@@ -109,6 +109,8 @@ declare type UserConfig = {
     }
     theme?: {
         background: Color.Value
+        black: Color.Value
         foreground: Color.Value
+        white: Color.Value
     }
 }

@@ -1,4 +1,8 @@
 :root {
+	--clr-black: hwb(215.09 17.556% 130.24%);
+	--clr-black-rgb: 0,0,0;
+	--clr-white: hwb(339.29 0% 92.318%);
+	--clr-white-rgb: 19,0,5;
 	--clr-background: hwb(180 98.433% 1.5665%);
 	--clr-background-rgb: 251,251,251;
 	--clr-foreground: hwb(41.755 0% 88.01%);
