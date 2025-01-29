@@ -75,5 +75,6 @@
 		"assets": "assets",
 		"lib": "lib"
 	},
-	"keywords": []
+	"keywords": [],
+	"packageManager": "yarn@4.6.0"
 }
