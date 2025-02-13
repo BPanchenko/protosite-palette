@@ -1,32 +1,28 @@
-// @ts-check
+/** @typedef {import('#types').Palette.Color} Color */
+/** @typedef {import('#types').Palette.Configuration} Configuration */
+/** @typedef {import('#types').Palette.Key} Key */
+/** @typedef {import('#types').Palette.Theme} Theme */
 
-/** @typedef {import('../@types').Palette.Color} Color */
-/** @typedef {import('../@types').Palette.Config} Configuration */
-/** @typedef {import('../@types').Palette.IFace} IPalette */
-/** @typedef {import('../@types').Palette.Key} Key */
-/** @typedef {import('../@types').Palette.Theme} Theme */
-
-/** @typedef {import('../@types').PrimaryColor} PrimaryColor */
-/** @typedef {import('../@types').PrimaryKey} PrimaryKey */
-/** @typedef {import('../@types').ThemeColor} ThemeColor */
-/** @typedef {import('../@types').UserConfig} UserConfig */
+/** @typedef {import('#types').PrimaryColor} PrimaryColor */
+/** @typedef {import('#types').PrimaryColorKey} PrimaryColorKey */
+/** @typedef {import('#types').GeneralColor} GeneralColor */
+/** @typedef {import('#types').UserConfig} UserConfig */
 
 import startCase from 'lodash/startCase.js'
 
 import {
 	initConfig,
 	initPrimaryColor,
-	initThemeColor
+	initGeneralColor
 } from './initialization.js'
 import { colorKeys } from './settings.js'
 import { getColorData, mapToArray } from './utils.js'
 
-/** @implements {IPalette} */
 class Palette {
 	/** @type {Configuration} */
 	#config
 
-	/** @type {Map<PrimaryKey, PrimaryColor>} */
+	/** @type {Map<PrimaryColorKey, PrimaryColor>} */
 	#draft
 	/** @type {Map<Key, Color>} */
 	#flatCache
@@ -34,16 +30,16 @@ class Palette {
 	/** @type {Theme} */
 	#theme
 
-	/** @type {ThemeColor} */
+	/** @type {GeneralColor} */
 	#background
 
-	/** @type {ThemeColor} */
+	/** @type {GeneralColor} */
 	#black
 
-	/** @type {ThemeColor} */
+	/** @type {GeneralColor} */
 	#foreground
 
-	/** @type {ThemeColor} */
+	/** @type {GeneralColor} */
 	#white
 
 	/** @param {UserConfig} [c] */
@@ -70,18 +66,14 @@ class Palette {
 			])
 		)
 	}
-
-	/** @type {IPalette['entries']} */
 	entries() {
 		return Array.from(this.#draft.entries())
 	}
 
-	/** @type {IPalette['keys']} */
 	keys() {
 		return Array.from(this.#draft.keys())
 	}
 
-	/** @type {IPalette['values']} */
 	values() {
 		return mapToArray(this.#draft).map((color) =>
 			getColorData(color, color.key, this.#config.space.output)
@@ -157,22 +149,22 @@ class Palette {
 					$ref: this
 				}
 
-				this.#background = initThemeColor(background, {
+				this.#background = initGeneralColor(background, {
 					key: 'background',
 					...options
 				})
 
-				this.#black = initThemeColor(black, {
+				this.#black = initGeneralColor(black, {
 					key: 'black',
 					...options
 				})
 
-				this.#foreground = initThemeColor(foreground, {
+				this.#foreground = initGeneralColor(foreground, {
 					key: 'foreground',
 					...options
 				})
 
-				this.#white = initThemeColor(white, {
+				this.#white = initGeneralColor(white, {
 					key: 'white',
 					...options
 				})

@@ -1,10 +1,10 @@
 {
 	"name": "protosite",
-	"space": {
-		"input": "lab",
-		"output": "hwb"
+	"general-colors": {
+		"black": [8, 0, -2],
+		"white": [100, 0, 0]
 	},
-	"colors": {
+	"primary-colors": {
 		"red": [39.93, 54.42, 39.08],
 		"pink": [73.59, 35.82, -2.76],
 		"purple": [46.8, 65.42, -30.87],
@@ -24,19 +24,7 @@
 		"brown": [59.2, 27.22, 24.49],
 		"gray": [52.97, -1.14, 0.82]
 	},
-	"mixtures": [
-		["blue", "gray"],
-		["green", "gray"],
-		["orange", "gray"]
-	],
-	"correlations": {
-		"accent": [0, 0, 1, 1],
-		"shade": [0, 0, 1, 1]
-	},
-	"theme": {
-		"background": [98.62, 0, 0],
-		"black": [8, 0, -2],
-		"foreground": [7.62, 2.54, 11.46],
-		"white": [100, 0, 0]
-	}
+	"color-space": "lab",
+	"easing-accents": [0, 0, 1, 1],
+	"easing-shades": [0, 0, 1, 1]
 }

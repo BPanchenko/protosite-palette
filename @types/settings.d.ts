@@ -1,7 +1,4 @@
-// @ts-check
-
 import type { Color } from './color'
-import type ProtoColor from 'colorjs.io'
 
 /**
  * Initialization parameters of color tones
@@ -32,15 +29,15 @@ declare type ShadeWeight =
  * Unique key associated with any color
  */
 
-declare type AccentKey = {
-    [K in AccentWeight]: `${PrimaryKey}-a${K}`
+declare type ColorAccentKey = {
+    [K in AccentWeight]: `${PrimaryColorKey}-a${K}`
 }[AccentWeight]
 
-declare type ShadeKey = {
-    [K in ShadeWeight]: `${PrimaryKey}-${K}`
+declare type ColorShadeKey = {
+    [K in ShadeWeight]: `${PrimaryColorKey}-${K}`
 }[ShadeWeight]
 
-declare type PrimaryKey =
+declare type PrimaryColorKey =
     | 'red'
     | 'pink'
     | 'purple'
@@ -60,57 +57,35 @@ declare type PrimaryKey =
     | 'brown'
     | 'gray'
 
-declare type ThemeKey = 'background' | 'black' | 'foreground' | 'white'
+declare type GeneralColorKey = 'black' | 'white'
 
 /**
  * Types of palette colors
  */
 
-declare interface AccentColor extends ProtoColor {
+declare interface AccentColor {
     type: 'accent'
-    key: AccentKey
+    key: ColorAccentKey
     $ref: PrimaryColor
 }
 
-declare interface ShadeColor extends ProtoColor {
+declare interface ShadeColor {
     type: 'shade'
-    key: ShadeKey
+    key: ColorShadeKey
     $ref: PrimaryColor
 }
 
-declare interface PrimaryColor extends ProtoColor {
+declare interface PrimaryColor {
     type: 'primary'
-    key: PrimaryKey
+    key: PrimaryColorKey
     meta: Color.MetaData
     shades: Map<ShadeWeight, ShadeColor>
     accents: Map<AccentWeight, AccentColor>
     $ref: Object
 }
 
-declare interface ThemeColor extends ProtoColor {
+declare interface GeneralColor {
     type: 'theme'
-    key: ThemeKey
+    key: GeneralColorKey
     $ref: Object
-}
-
-declare type UserConfig = {
-    colors: {
-        [K in PrimaryKey]: Color.Value
-    }
-    correlations?: {
-        accent: [number, number, number, number]
-        shade: [number, number, number, number]
-    }
-    mixtures?: Array<[PrimaryKey, PrimaryKey]>
-    name?: string
-    space?: {
-        input: Color.Space
-        output: Color.Space
-    }
-    theme?: {
-        background: Color.Value
-        black: Color.Value
-        foreground: Color.Value
-        white: Color.Value
-    }
 }

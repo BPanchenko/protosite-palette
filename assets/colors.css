@@ -1,6 +1,7 @@
 :root {
 	--clr-black: hwb(222.6 8.8365% 89.748%);
 	--clr-black-rgb: 23 24 26;
+	--clr-black-vector: 0.0901960784313725 0.0941176470588235 0.1019607843137255;
 	--clr-white: hwb(120 100% 0%);
 	--clr-white-rgb: 0 15 255;
 	--clr-background: hwb(180 98.433% 1.5665%);

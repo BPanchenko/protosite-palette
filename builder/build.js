@@ -2,15 +2,15 @@ import startCase from 'lodash/startCase.js'
 import path from 'node:path'
 import { writeFile } from 'node:fs'
 
-import Palette from '../lib/class.Palette.js'
+import Palette from '../library/class.Palette.js'
 import { logError, logSuccess, logger } from './logger.js'
 import {
 	makeAcoContent,
 	makeCssContent,
 	makeDtsContent,
 	makeEsmContent
-} from '../lib/making.js'
-import { getColorData, mapToArray } from '../lib/utils.js'
+} from '../library/making.js'
+import { getColorData, mapToArray } from '../library/utils.js'
 
 const outDir = path.resolve(process.cwd(), 'assets')
 const palette = new Palette()

@@ -12,14 +12,14 @@ import { WT } from './settings.js'
 
 import configByDefault from '@bpanchenko/palette/config' with { type: 'json' }
 
-/** @typedef {import('../@types').AccentColor} AccentColor */
-/** @typedef {import('../@types').ShadeColor} ShadeColor */
-/** @typedef {import('../@types').ThemeColor} ThemeColor */
-/** @typedef {import('../@types/lib/initialization').InitColor.GetAccentsFunc} GetAccentsFunc */
-/** @typedef {import('../@types/lib/initialization').InitColor.GetShadesFunc} GetShadesFunc */
-/** @typedef {import('../@types/lib/initialization').InitColor.PrimaryFunc} InitPrimaryColorFunc */
-/** @typedef {import('../@types/lib/initialization').InitColor.ThemeFunc} InitThemeColorFunc */
-/** @typedef {import('../@types/lib/initialization').InitColor.ToneFunc} InitColorToneFunc */
+/** @typedef {import('../@types/index.js').AccentColor} AccentColor */
+/** @typedef {import('../@types/index.js').ShadeColor} ShadeColor */
+/** @typedef {import('../@types/index.js').GeneralColor} GeneralColor */
+/** @typedef {import('./initialization.js').InitColor.GetAccentsFunc} GetAccentsFunc */
+/** @typedef {import('./initialization.js').InitColor.GetShadesFunc} GetShadesFunc */
+/** @typedef {import('./initialization.js').InitColor.PrimaryFunc} InitPrimaryColorFunc */
+/** @typedef {import('./initialization.js').InitColor.ThemeFunc} InitGeneralColorFunc */
+/** @typedef {import('./initialization.js').InitColor.ToneFunc} InitColorToneFunc */
 
 /** @type {GetAccentsFunc} */
 function getAccentsOfColor(color, correlation) {
@@ -131,8 +131,8 @@ export function initPrimaryColor(value, options) {
 	return color
 }
 
-/** @type {InitThemeColorFunc} */
-export function initThemeColor(value, options) {
+/** @type {InitGeneralColorFunc} */
+export function initGeneralColor(value, options) {
 	const { key, space, $ref } = options
 	const color = new Color(space, value)
 
@@ -142,7 +142,7 @@ export function initThemeColor(value, options) {
 		$ref
 	})
 
-	/** @satisfies {ThemeColor} */
+	/** @satisfies {GeneralColor} */
 	return color
 }
 

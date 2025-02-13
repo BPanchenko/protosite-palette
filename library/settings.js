@@ -1,9 +1,9 @@
 // @ts-check
 
-/** @typedef {import('../@types').PrimaryKey} PrimaryKey */
+/** @typedef {import('../@types').PrimaryColorKey} PrimaryColorKey */
 /** @typedef {import('../@types').Color.Space} ColorSpace */
 
-/** @type {Readonly<PrimaryKey[]>} */
+/** @type {Readonly<PrimaryColorKey[]>} */
 export const colorKeys = Object.freeze([
 	'red',
 	'pink',

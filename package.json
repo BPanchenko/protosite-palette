@@ -4,6 +4,13 @@
 	"type": "module",
 	"main": "./index.js",
 	"types": "./@types/index.d.ts",
+	"files": [
+		".config/palette.config.json",
+		"@types/*",
+		"assets/*",
+		"library/*",
+		"index.js"
+	],
 	"exports": {
 		".": {
 			"types": "./@types/index.d.ts",
@@ -23,13 +30,10 @@
 			"default": "./*.js"
 		}
 	},
-	"files": [
-		".config/palette.config.json",
-		"@types/*",
-		"assets/*",
-		"lib/*",
-		"index.*"
-	],
+	"imports": {
+		"#library/*": "./library/*",
+		"#types": "./@types/index.d.ts"
+	},
 	"scripts": {
 		"build": "node --import ./.hooks/register-hooks.js ./builder/build.js",
 		"lint": "eslint {**/*,*}.{js,d.ts} --cache --color --debug --fix"

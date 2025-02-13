@@ -64,7 +64,7 @@ export const defineProperties = (target, hash, isReadonly = true) =>
 
 /**
  * @param {PaletteColor} color
- * @param {PrimaryKey} draftKey
+ * @param {PrimaryColorKey} draftKey
  * @param {ColorSpace} space
  * @returns {Color.Data}
  */
