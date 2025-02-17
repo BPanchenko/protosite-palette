@@ -1,0 +1,7 @@
+{
+	"space-by-default": "oklab",
+	"has-fallback-hex": true,
+	"support-for-p3": true,
+	"support-for-rec2020": true,
+	"assets": ["css", "javascript", "typescript"]
+}

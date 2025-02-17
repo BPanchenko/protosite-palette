@@ -14,75 +14,14 @@ type CamelCase<T extends string> = T extends `${infer P1}-${infer P2}`
 
 declare namespace Color {
 
-    /**
-     * The location sector of a color on the color wheel
-     * 
-     * @see https://en.wikipedia.org/wiki/Color_wheel
-     */
-    type Sector = 'Rd' | 'Pr' | 'Bl' | 'Cy' | 'Gr' | 'Yl' | 'Mono'
 
-    type Type = 'general' | 'primary' | 'shade' | 'accent'
-
-    /**
-     * Defining the color name based on the color key by converting
-     */
-    type Name = {
-        [K in PrimaryColorKey]: K extends 'gray'
-        ? CamelCase<K>
-        : CamelCase<K> | CamelCase<`${K}-gray`>
-    }[PrimaryColorKey]
 
     /**
      * Reference to parent instance
      */
     type Reference = Object | PrimaryColor
 
-    /**
-     * Supported Color Spaces
-     */
-    type Space =
-        | 'a98rgb-linear'
-        | 'a98rgb'
-        | 'acescc'
-        | 'acescg'
-        | 'cam16-jmh'
-        | 'gl'
-        | 'hcl'
-        | 'hct'
-        | 'hpluv'
-        | 'hsl'
-        | 'hsluv'
-        | 'hsv'
-        | 'hwb'
-        | 'ictcp'
-        | 'jzazbz'
-        | 'jzczhz'
-        | 'lab-d65'
-        | 'lab'
-        | 'lch'
-        | 'lchuv'
-        | 'luv'
-        | 'okhsl'
-        | 'okhsv'
-        | 'oklab'
-        | 'oklch'
-        | 'oklrab'
-        | 'oklrch'
-        | 'p3-linear'
-        | 'p3'
-        | 'prophoto-linear'
-        | 'prophoto'
-        | 'rec2020-linear'
-        | 'rec2020'
-        | 'rec2100-linear'
-        | 'rec2100hlg'
-        | 'rec2100pq'
-        | 'srgb-linear'
-        | 'srgb'
-        | 'xyz-abs-d65'
-        | 'xyz-d50'
-        | 'xyz-d65'
-        | 'xyz'
+
 
     /**
      * Hash Table of color properties
