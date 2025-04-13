@@ -1,5 +1,5 @@
 {
-  "color-space": "lab",
+  "name": "Protosite Palette",
   "general-colors": {
     "black": [8, 0, -2],
     "white": [100, 0, 0]
@@ -88,5 +88,6 @@
       "key": "gray",
       "value": [52.97, -1.14, 0.82]
     }
-  ]
+  ],
+  "space": "lab"
 }
