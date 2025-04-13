@@ -1,5 +1,5 @@
 {
-  "color-space": "lab",
+  "name": "Protosite Palette",
   "general-colors": {
     "black": [8, 0, -2],
     "white": [100, 0, 0]
@@ -17,76 +17,77 @@
   },
   "primary-colors": [
     {
-      "key": "red",
+      "ident": "red",
       "value": [39.93, 54.42, 39.08]
     },
     {
-      "key": "pink",
+      "ident": "pink",
       "value": [73.59, 35.82, -2.76]
     },
     {
-      "key": "purple",
+      "ident": "purple",
       "value": [46.8, 65.42, -30.87]
     },
     {
-      "key": "violet",
+      "ident": "violet",
       "value": [42.19, 69.86, -74.77]
     },
     {
-      "key": "indigo",
+      "ident": "indigo",
       "value": [15.86, 31.72, -49.58]
     },
     {
-      "key": "blue",
+      "ident": "blue",
       "value": [38.28, 25.41, -60.71]
     },
     {
-      "key": "light blue",
+      "ident": "light-blue",
       "value": [72.55, -17.65, -42.55]
     },
     {
-      "key": "cyan",
+      "ident": "cyan",
       "value": [75.29, -40.61, -10.26]
     },
     {
-      "key": "teal",
+      "ident": "teal",
       "value": [55.8, -36.32, 1.53]
     },
     {
-      "key": "green",
+      "ident": "green",
       "value": [76.56, -71.54, 53.65]
     },
     {
-      "key": "light green",
+      "ident": "light-green",
       "value": [82.94, -53.23, 47.75]
     },
     {
-      "key": "lime",
+      "ident": "lime",
       "value": [76.54, -37.99, 66.59]
     },
     {
-      "key": "yellow",
+      "ident": "yellow",
       "value": [86.61, -8.45, 85.48]
     },
     {
-      "key": "amber",
+      "ident": "amber",
       "value": [81.03, 10.39, 83.04]
     },
     {
-      "key": "orange",
+      "ident": "orange",
       "value": [74.77, 24.83, 73.7]
     },
     {
-      "key": "deep orange",
+      "ident": "deep-orange",
       "value": [64.99, 48.33, 69.4]
     },
     {
-      "key": "brown",
+      "ident": "brown",
       "value": [59.2, 27.22, 24.49]
     },
     {
-      "key": "gray",
+      "ident": "gray",
       "value": [52.97, -1.14, 0.82]
     }
-  ]
+  ],
+  "space": "lab"
 }

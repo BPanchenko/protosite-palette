@@ -1,0 +1,37 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      adobe-aco:
+        specifier: 0.1.1
+        version: 0.1.1
+      palette-constructor:
+        specifier: 1.0.0
+        version: 1.0.0
+
+packages:
+
+  '@szydlovski/binary-file@0.1.0':
+    resolution: {integrity: sha512-lNWi0uVVbeTJXKbGvGF3dBSpaHY4nxmBQ271AjHq6AMq6THYTTdne9f8l4piaT+AbS4qW7jDfuICakz1MI3GUg==}
+
+  adobe-aco@0.1.1:
+    resolution: {integrity: sha512-KrV8o0VnQUz+ARj+YBaOOV1YySVCqjjPPQ/CL7MRx0yFB/VU1po0tl0oKACo2bxIoFxkRAoz7FH5hB2zFgXYaQ==}
+
+  palette-constructor@1.0.0:
+    resolution: {integrity: sha512-8Oi8QkpgPg/9I9BoRkFciOG7DuhTB8QywkTQYTqrsZ4ThQyFeqOF2xXBWrHExBe7tVS4YRHCK/nwSB5yxroRqg==}
+
+snapshots:
+
+  '@szydlovski/binary-file@0.1.0': {}
+
+  adobe-aco@0.1.1:
+    dependencies:
+      '@szydlovski/binary-file': 0.1.0
+
+  palette-constructor@1.0.0: {}
