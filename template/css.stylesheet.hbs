@@ -1,0 +1,8 @@
+
+{{#each list as |item|}}
+@property {{item['css-name']}} {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: {{item['css-value']}};
+}
+{{/each}}

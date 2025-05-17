@@ -3,18 +3,23 @@
   "version": "3.4.8",
   "homepage": "https://palette.protosite.xyz",
   "type": "module",
-  "main": "./assets/palette.js",
-  "types": "./assets/palette.d.ts",
+  "main": "./.bundle/palette.js",
+  "types": "./.bundle/palette.d.ts",
   "files": [
-    "./assets/*",
+    "./.bundle/*",
     "./palette-constructor.config.json"
   ],
   "exports": {
     "./config": "./palette.config.json",
-    "./colors": "./assets/colors.js"
+    "./colors": "./.bundle/colors.js"
   },
   "devDependencies": {
     "adobe-aco": "0.1.1",
+    "chromatic-chandelier": "0.0.3",
+    "date-format": "4.0.14",
+    "handlebars": "4.7.8",
+    "lodash": "4.17.21",
+    "node-color-log": "12.0.1",
     "palette-constructor": "1.0.0"
   },
   "engines": {
