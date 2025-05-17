@@ -1,10 +1,12 @@
-import { makeColorDTO, makePointInSpace } from 'chromatic-chandelier';
-import Handlebars from "handlebars";
 import { readFileSync, writeFileSync } from 'node:fs';
-import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
+
+import { makeColorDTO } from 'chromatic-chandelier/fn.makeColorDTO.js';
+import { makePointInSpace } from 'chromatic-chandelier/fn.makePointInSpace.js';
+import Handlebars from "handlebars";
 
 import dataset from "../dataset.json" with { type: 'json' };
 import packageJSON from "../package.json" with { type: 'json' };
+import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
 
 const { version } = packageJSON
 
