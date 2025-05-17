@@ -1,0 +1,1095 @@
+{
+  "meta": {
+    "name": "Protosite Palette"
+  },
+  "data": [
+    {
+      "ident": "black",
+      "value": "hwb(222.6 8.8365% 89.748%)"
+    },
+    {
+      "ident": "white",
+      "value": "hwb(120 100% 0%)"
+    },
+    {
+      "ident": "red",
+      "value": "hwb(2.2621 13.335% 31.062%)"
+    },
+    {
+      "ident": "red-50",
+      "value": "hwb(186.37 132.89% 32.484%)"
+    },
+    {
+      "ident": "red-100",
+      "value": "hwb(7.4933 76.514% 0%)"
+    },
+    {
+      "ident": "red-200",
+      "value": "hwb(6.5203 54.73% 0%)"
+    },
+    {
+      "ident": "red-300",
+      "value": "hwb(5.2558 37.148% 2.9442%)"
+    },
+    {
+      "ident": "red-400",
+      "value": "hwb(4.3095 25.502% 16.897%)"
+    },
+    {
+      "ident": "red-500",
+      "value": "hwb(2.3615 13.718% 30.638%)"
+    },
+    {
+      "ident": "red-600",
+      "value": "hwb(354.97 0% 44.178%)"
+    },
+    {
+      "ident": "red-700",
+      "value": "hwb(354.73 0% 61.402%)"
+    },
+    {
+      "ident": "red-800",
+      "value": "hwb(355.64 0% 78.312%)"
+    },
+    {
+      "ident": "red-900",
+      "value": "hwb(356.28 0% 93.271%)"
+    },
+    {
+      "ident": "red-a100",
+      "value": "hwb(2.1772 52.463% 0%)"
+    },
+    {
+      "ident": "red-a200",
+      "value": "hwb(359.64 43.503% 0%)"
+    },
+    {
+      "ident": "red-a400",
+      "value": "hwb(342.45 0% 0%)"
+    },
+    {
+      "ident": "red-a700",
+      "value": "hwb(339.78 0% 21.393%)"
+    },
+    {
+      "ident": "pink",
+      "value": "hwb(337.31 60.871% 5.7094%)"
+    },
+    {
+      "ident": "pink-50",
+      "value": "hwb(339.55 88.272% 0%)"
+    },
+    {
+      "ident": "pink-100",
+      "value": "hwb(338.56 78.431% 0%)"
+    },
+    {
+      "ident": "pink-200",
+      "value": "hwb(337.38 62.783% 3.6194%)"
+    },
+    {
+      "ident": "pink-300",
+      "value": "hwb(336.87 50.638% 16.947%)"
+    },
+    {
+      "ident": "pink-400",
+      "value": "hwb(336.16 38.877% 29.975%)"
+    },
+    {
+      "ident": "pink-500",
+      "value": "hwb(335.14 27.488% 42.688%)"
+    },
+    {
+      "ident": "pink-600",
+      "value": "hwb(333.45 16.342% 55.076%)"
+    },
+    {
+      "ident": "pink-700",
+      "value": "hwb(329.66 4.364% 67.136%)"
+    },
+    {
+      "ident": "pink-800",
+      "value": "hwb(328.75 0% 79.46%)"
+    },
+    {
+      "ident": "pink-900",
+      "value": "hwb(340.91 0% 93.76%)"
+    },
+    {
+      "ident": "pink-a100",
+      "value": "hwb(335.66 55.58% 0%)"
+    },
+    {
+      "ident": "pink-a200",
+      "value": "hwb(333.85 44.306% 0%)"
+    },
+    {
+      "ident": "pink-a400",
+      "value": "hwb(322.77 0% 0%)"
+    },
+    {
+      "ident": "pink-a700",
+      "value": "hwb(322.56 0% 20.517%)"
+    },
+    {
+      "ident": "purple",
+      "value": "hwb(311.02 17.795% 24.837%)"
+    },
+    {
+      "ident": "purple-50",
+      "value": "hwb(317.67 87.726% 0%)"
+    },
+    {
+      "ident": "purple-100",
+      "value": "hwb(316.57 77.179% 0%)"
+    },
+    {
+      "ident": "purple-200",
+      "value": "hwb(313.92 53.042% 0%)"
+    },
+    {
+      "ident": "purple-300",
+      "value": "hwb(312.57 36.237% 6.9276%)"
+    },
+    {
+      "ident": "purple-400",
+      "value": "hwb(311.48 22.492% 20.663%)"
+    },
+    {
+      "ident": "purple-500",
+      "value": "hwb(309.18 2.3711% 34.165%)"
+    },
+    {
+      "ident": "purple-600",
+      "value": "hwb(307.97 0% 49.279%)"
+    },
+    {
+      "ident": "purple-700",
+      "value": "hwb(308.44 0% 65.788%)"
+    },
+    {
+      "ident": "purple-800",
+      "value": "hwb(309.75 0% 81.024%)"
+    },
+    {
+      "ident": "purple-900",
+      "value": "hwb(315.9 0% 94.532%)"
+    },
+    {
+      "ident": "purple-a100",
+      "value": "hwb(314.05 53.762% 0%)"
+    },
+    {
+      "ident": "purple-a200",
+      "value": "hwb(312.62 40.738% 0%)"
+    },
+    {
+      "ident": "purple-a400",
+      "value": "hwb(307.58 0% 0%)"
+    },
+    {
+      "ident": "purple-a700",
+      "value": "hwb(307.74 0% 22.787%)"
+    },
+    {
+      "ident": "violet",
+      "value": "hwb(277.93 10.859% 11.012%)"
+    },
+    {
+      "ident": "violet-50",
+      "value": "hwb(92.784 146.53% 29.071%)"
+    },
+    {
+      "ident": "violet-100",
+      "value": "hwb(93.047 139.23% 35.808%)"
+    },
+    {
+      "ident": "violet-200",
+      "value": "hwb(271.44 63.134% 0%)"
+    },
+    {
+      "ident": "violet-300",
+      "value": "hwb(273.67 42.255% 0%)"
+    },
+    {
+      "ident": "violet-400",
+      "value": "hwb(276.21 21.89% 3.3675%)"
+    },
+    {
+      "ident": "violet-500",
+      "value": "hwb(281.18 0% 17.079%)"
+    },
+    {
+      "ident": "violet-600",
+      "value": "hwb(281.17 0% 37.31%)"
+    },
+    {
+      "ident": "violet-700",
+      "value": "hwb(280.27 0% 57.037%)"
+    },
+    {
+      "ident": "violet-800",
+      "value": "hwb(277.79 0% 75.24%)"
+    },
+    {
+      "ident": "violet-900",
+      "value": "hwb(267.45 0% 91.521%)"
+    },
+    {
+      "ident": "violet-a100",
+      "value": "hwb(271.47 63.872% 0%)"
+    },
+    {
+      "ident": "violet-a200",
+      "value": "hwb(271.51 55.943% 0%)"
+    },
+    {
+      "ident": "violet-a400",
+      "value": "hwb(271.95 38.568% 0%)"
+    },
+    {
+      "ident": "violet-a700",
+      "value": "hwb(277.76 0% 0%)"
+    },
+    {
+      "ident": "indigo",
+      "value": "hwb(255.62 7.9752% 55.905%)"
+    },
+    {
+      "ident": "indigo-50",
+      "value": "hwb(62.89 130.13% 12.127%)"
+    },
+    {
+      "ident": "indigo-100",
+      "value": "hwb(63.145 123.1% 18.632%)"
+    },
+    {
+      "ident": "indigo-200",
+      "value": "hwb(243.12 69.506% 0%)"
+    },
+    {
+      "ident": "indigo-300",
+      "value": "hwb(244.58 56.168% 4.3666%)"
+    },
+    {
+      "ident": "indigo-400",
+      "value": "hwb(245.71 44.071% 17.672%)"
+    },
+    {
+      "ident": "indigo-500",
+      "value": "hwb(247.37 32.28% 30.672%)"
+    },
+    {
+      "ident": "indigo-600",
+      "value": "hwb(250.08 20.64% 43.35%)"
+    },
+    {
+      "ident": "indigo-700",
+      "value": "hwb(255.47 8.2278% 55.688%)"
+    },
+    {
+      "ident": "indigo-800",
+      "value": "hwb(262.09 0% 69.586%)"
+    },
+    {
+      "ident": "indigo-900",
+      "value": "hwb(252.93 0% 88.912%)"
+    },
+    {
+      "ident": "indigo-a100",
+      "value": "hwb(76.118 160.32% 56.696%)"
+    },
+    {
+      "ident": "indigo-a200",
+      "value": "hwb(244.32 62.94% 0%)"
+    },
+    {
+      "ident": "indigo-a400",
+      "value": "hwb(242.69 50.209% 0%)"
+    },
+    {
+      "ident": "indigo-a700",
+      "value": "hwb(238.86 27.971% 0%)"
+    },
+    {
+      "ident": "blue",
+      "value": "hwb(238.15 29.397% 25.247%)"
+    },
+    {
+      "ident": "blue-50",
+      "value": "hwb(52.658 138.38% 18.074%)"
+    },
+    {
+      "ident": "blue-100",
+      "value": "hwb(52.908 131.22% 24.302%)"
+    },
+    {
+      "ident": "blue-200",
+      "value": "hwb(232.05 66.211% 0%)"
+    },
+    {
+      "ident": "blue-300",
+      "value": "hwb(234.41 51.926% 0%)"
+    },
+    {
+      "ident": "blue-400",
+      "value": "hwb(235.71 40.858% 10.42%)"
+    },
+    {
+      "ident": "blue-500",
+      "value": "hwb(237.82 30.509% 23.76%)"
+    },
+    {
+      "ident": "blue-600",
+      "value": "hwb(241.8 19.842% 36.811%)"
+    },
+    {
+      "ident": "blue-700",
+      "value": "hwb(250.99 4.9643% 49.559%)"
+    },
+    {
+      "ident": "blue-800",
+      "value": "hwb(255.77 0% 67.614%)"
+    },
+    {
+      "ident": "blue-900",
+      "value": "hwb(248.82 0% 88.208%)"
+    },
+    {
+      "ident": "blue-a100",
+      "value": "hwb(221.61 58.373% 0%)"
+    },
+    {
+      "ident": "blue-a200",
+      "value": "hwb(219.82 48.362% 0%)"
+    },
+    {
+      "ident": "blue-a400",
+      "value": "hwb(213.4 19.307% 0%)"
+    },
+    {
+      "ident": "blue-a700",
+      "value": "hwb(198.19 0% 30.618%)"
+    },
+    {
+      "ident": "light-blue",
+      "value": "hwb(201.81 29.416% 0%)"
+    },
+    {
+      "ident": "light-blue-50",
+      "value": "hwb(204.3 82.571% 0%)"
+    },
+    {
+      "ident": "light-blue-100",
+      "value": "hwb(203.95 68.916% 0%)"
+    },
+    {
+      "ident": "light-blue-200",
+      "value": "hwb(202.34 36.889% 0%)"
+    },
+    {
+      "ident": "light-blue-300",
+      "value": "hwb(200.95 19.335% 8.3358%)"
+    },
+    {
+      "ident": "light-blue-400",
+      "value": "hwb(196.8 0% 21.479%)"
+    },
+    {
+      "ident": "light-blue-500",
+      "value": "hwb(197.1 0% 38.118%)"
+    },
+    {
+      "ident": "light-blue-600",
+      "value": "hwb(197.74 0% 53.862%)"
+    },
+    {
+      "ident": "light-blue-700",
+      "value": "hwb(199.25 0% 68.538%)"
+    },
+    {
+      "ident": "light-blue-800",
+      "value": "hwb(203.71 0% 81.895%)"
+    },
+    {
+      "ident": "light-blue-900",
+      "value": "hwb(219.17 0% 94.043%)"
+    },
+    {
+      "ident": "light-blue-a100",
+      "value": "hwb(185.94 0% 16.034%)"
+    },
+    {
+      "ident": "light-blue-a200",
+      "value": "hwb(184.36 0% 26.446%)"
+    },
+    {
+      "ident": "light-blue-a400",
+      "value": "hwb(179.35 0% 56.235%)"
+    },
+    {
+      "ident": "light-blue-a700",
+      "value": "hwb(179.41 0% 69.845%)"
+    },
+    {
+      "ident": "cyan",
+      "value": "hwb(178.67 20.79% 19.143%)"
+    },
+    {
+      "ident": "cyan-50",
+      "value": "hwb(178.06 54.473% 0%)"
+    },
+    {
+      "ident": "cyan-100",
+      "value": "hwb(178.33 41.579% 2.8876%)"
+    },
+    {
+      "ident": "cyan-200",
+      "value": "hwb(178.59 25.479% 15.978%)"
+    },
+    {
+      "ident": "cyan-300",
+      "value": "hwb(179.1 0% 28.73%)"
+    },
+    {
+      "ident": "cyan-400",
+      "value": "hwb(179.29 0% 41.128%)"
+    },
+    {
+      "ident": "cyan-500",
+      "value": "hwb(179.3 0% 54.064%)"
+    },
+    {
+      "ident": "cyan-600",
+      "value": "hwb(179.3 0% 66.376%)"
+    },
+    {
+      "ident": "cyan-700",
+      "value": "hwb(179.31 0% 77.956%)"
+    },
+    {
+      "ident": "cyan-800",
+      "value": "hwb(179.33 0% 88.631%)"
+    },
+    {
+      "ident": "cyan-900",
+      "value": "hwb(179.91 0% 97.797%)"
+    },
+    {
+      "ident": "cyan-a100",
+      "value": "hwb(179.72 0% 27.316%)"
+    },
+    {
+      "ident": "cyan-a200",
+      "value": "hwb(179.75 0% 33.162%)"
+    },
+    {
+      "ident": "cyan-a400",
+      "value": "hwb(179.82 0% 44.562%)"
+    },
+    {
+      "ident": "cyan-a700",
+      "value": "hwb(179.92 0% 60.882%)"
+    },
+    {
+      "ident": "teal",
+      "value": "hwb(169.21 13.714% 41.016%)"
+    },
+    {
+      "ident": "teal-50",
+      "value": "hwb(166.04 61.852% 0%)"
+    },
+    {
+      "ident": "teal-100",
+      "value": "hwb(166.28 55.263% 3.9612%)"
+    },
+    {
+      "ident": "teal-200",
+      "value": "hwb(166.87 42.062% 16.977%)"
+    },
+    {
+      "ident": "teal-300",
+      "value": "hwb(167.75 28.427% 29.644%)"
+    },
+    {
+      "ident": "teal-400",
+      "value": "hwb(169.4 12.194% 41.933%)"
+    },
+    {
+      "ident": "teal-500",
+      "value": "hwb(172.23 0% 53.81%)"
+    },
+    {
+      "ident": "teal-600",
+      "value": "hwb(171.94 0% 65.874%)"
+    },
+    {
+      "ident": "teal-700",
+      "value": "hwb(171.08 0% 77.58%)"
+    },
+    {
+      "ident": "teal-800",
+      "value": "hwb(168.62 0% 88.367%)"
+    },
+    {
+      "ident": "teal-900",
+      "value": "hwb(341.04 3.7247% 104.31%)"
+    },
+    {
+      "ident": "teal-a100",
+      "value": "hwb(172.62 0% 26.659%)"
+    },
+    {
+      "ident": "teal-a200",
+      "value": "hwb(172.56 0% 32.499%)"
+    },
+    {
+      "ident": "teal-a400",
+      "value": "hwb(172.38 0% 43.855%)"
+    },
+    {
+      "ident": "teal-a700",
+      "value": "hwb(171.87 0% 59.947%)"
+    },
+    {
+      "ident": "green",
+      "value": "hwb(147.91 0% 14.342%)"
+    },
+    {
+      "ident": "green-50",
+      "value": "hwb(128.3 69.783% 0%)"
+    },
+    {
+      "ident": "green-100",
+      "value": "hwb(136.35 28.025% 0%)"
+    },
+    {
+      "ident": "green-200",
+      "value": "hwb(147.97 0% 10.361%)"
+    },
+    {
+      "ident": "green-300",
+      "value": "hwb(147.7 0% 24.861%)"
+    },
+    {
+      "ident": "green-400",
+      "value": "hwb(147.16 0% 38.84%)"
+    },
+    {
+      "ident": "green-500",
+      "value": "hwb(146.08 0% 52.231%)"
+    },
+    {
+      "ident": "green-600",
+      "value": "hwb(143.79 0% 64.945%)"
+    },
+    {
+      "ident": "green-700",
+      "value": "hwb(138.42 0% 76.881%)"
+    },
+    {
+      "ident": "green-800",
+      "value": "hwb(133.05 0% 88.051%)"
+    },
+    {
+      "ident": "green-900",
+      "value": "hwb(323.24 4.7493% 105.54%)"
+    },
+    {
+      "ident": "green-a100",
+      "value": "hwb(152.34 0% 24.529%)"
+    },
+    {
+      "ident": "green-a200",
+      "value": "hwb(152.88 0% 30.556%)"
+    },
+    {
+      "ident": "green-a400",
+      "value": "hwb(153.88 0% 42.269%)"
+    },
+    {
+      "ident": "green-a700",
+      "value": "hwb(150.74 0% 58.722%)"
+    },
+    {
+      "ident": "light-green",
+      "value": "hwb(119.31 43.073% 9.2249%)"
+    },
+    {
+      "ident": "light-green-50",
+      "value": "hwb(117.3 70.129% 0%)"
+    },
+    {
+      "ident": "light-green-100",
+      "value": "hwb(118.82 51.65% 0.30123%)"
+    },
+    {
+      "ident": "light-green-200",
+      "value": "hwb(119.61 38.852% 13.559%)"
+    },
+    {
+      "ident": "light-green-300",
+      "value": "hwb(121.01 24.937% 26.497%)"
+    },
+    {
+      "ident": "light-green-400",
+      "value": "hwb(126.33 4.4327% 39.095%)"
+    },
+    {
+      "ident": "light-green-500",
+      "value": "hwb(124.81 0% 51.595%)"
+    },
+    {
+      "ident": "light-green-600",
+      "value": "hwb(124.83 0% 64.6%)"
+    },
+    {
+      "ident": "light-green-700",
+      "value": "hwb(125.09 0% 76.83%)"
+    },
+    {
+      "ident": "light-green-800",
+      "value": "hwb(124.35 0% 88.058%)"
+    },
+    {
+      "ident": "light-green-900",
+      "value": "hwb(321.51 3.987% 104.23%)"
+    },
+    {
+      "ident": "light-green-a100",
+      "value": "hwb(148.8 0% 24.056%)"
+    },
+    {
+      "ident": "light-green-a200",
+      "value": "hwb(149.79 0% 30.141%)"
+    },
+    {
+      "ident": "light-green-a400",
+      "value": "hwb(150.86 0% 41.916%)"
+    },
+    {
+      "ident": "light-green-a700",
+      "value": "hwb(144.95 0% 58.384%)"
+    },
+    {
+      "ident": "lime",
+      "value": "hwb(83.61 17.663% 19.009%)"
+    },
+    {
+      "ident": "lime-50",
+      "value": "hwb(87.051 47.542% 0%)"
+    },
+    {
+      "ident": "lime-100",
+      "value": "hwb(85.996 36.737% 3.4407%)"
+    },
+    {
+      "ident": "lime-200",
+      "value": "hwb(84.164 21.119% 16.602%)"
+    },
+    {
+      "ident": "lime-300",
+      "value": "hwb(78.242 0% 29.436%)"
+    },
+    {
+      "ident": "lime-400",
+      "value": "hwb(78.026 0% 42.437%)"
+    },
+    {
+      "ident": "lime-500",
+      "value": "hwb(78.674 0% 55.172%)"
+    },
+    {
+      "ident": "lime-600",
+      "value": "hwb(79.883 0% 67.292%)"
+    },
+    {
+      "ident": "lime-700",
+      "value": "hwb(82.514 0% 78.681%)"
+    },
+    {
+      "ident": "lime-800",
+      "value": "hwb(90.502 0% 89.169%)"
+    },
+    {
+      "ident": "lime-900",
+      "value": "hwb(99.01 0% 98.057%)"
+    },
+    {
+      "ident": "lime-a100",
+      "value": "hwb(94.248 0% 23.619%)"
+    },
+    {
+      "ident": "lime-a200",
+      "value": "hwb(96.702 0% 29.353%)"
+    },
+    {
+      "ident": "lime-a400",
+      "value": "hwb(100.24 0% 40.91%)"
+    },
+    {
+      "ident": "lime-a700",
+      "value": "hwb(86.534 0% 59.223%)"
+    },
+    {
+      "ident": "yellow",
+      "value": "hwb(56.613 0% 8.5678%)"
+    },
+    {
+      "ident": "yellow-50",
+      "value": "hwb(55.976 23.78% 0%)"
+    },
+    {
+      "ident": "yellow-100",
+      "value": "hwb(56.21 10.908% 5.4713%)"
+    },
+    {
+      "ident": "yellow-200",
+      "value": "hwb(56.774 0% 18.225%)"
+    },
+    {
+      "ident": "yellow-300",
+      "value": "hwb(56.659 0% 31.41%)"
+    },
+    {
+      "ident": "yellow-400",
+      "value": "hwb(56.526 0% 44.269%)"
+    },
+    {
+      "ident": "yellow-500",
+      "value": "hwb(56.318 0% 56.607%)"
+    },
+    {
+      "ident": "yellow-600",
+      "value": "hwb(55.961 0% 68.35%)"
+    },
+    {
+      "ident": "yellow-700",
+      "value": "hwb(55.227 0% 79.39%)"
+    },
+    {
+      "ident": "yellow-800",
+      "value": "hwb(53.035 0% 89.552%)"
+    },
+    {
+      "ident": "yellow-900",
+      "value": "hwb(216.8 4.815% 105.31%)"
+    },
+    {
+      "ident": "yellow-a100",
+      "value": "hwb(60.522 0% 30.788%)"
+    },
+    {
+      "ident": "yellow-a200",
+      "value": "hwb(60.871 0% 36.08%)"
+    },
+    {
+      "ident": "yellow-a400",
+      "value": "hwb(61.625 0% 46.468%)"
+    },
+    {
+      "ident": "yellow-a700",
+      "value": "hwb(65.074 0% 60.895%)"
+    },
+    {
+      "ident": "amber",
+      "value": "hwb(47.384 0% 3.2777%)"
+    },
+    {
+      "ident": "amber-50",
+      "value": "hwb(42.518 66.429% 0%)"
+    },
+    {
+      "ident": "amber-100",
+      "value": "hwb(43.606 35.211% 0%)"
+    },
+    {
+      "ident": "amber-200",
+      "value": "hwb(48.088 0% 7.7332%)"
+    },
+    {
+      "ident": "amber-300",
+      "value": "hwb(48.007 0% 22.309%)"
+    },
+    {
+      "ident": "amber-400",
+      "value": "hwb(47.739 0% 36.565%)"
+    },
+    {
+      "ident": "amber-500",
+      "value": "hwb(47.265 0% 50.253%)"
+    },
+    {
+      "ident": "amber-600",
+      "value": "hwb(46.39 0% 63.299%)"
+    },
+    {
+      "ident": "amber-700",
+      "value": "hwb(44.554 0% 75.595%)"
+    },
+    {
+      "ident": "amber-800",
+      "value": "hwb(39.339 0% 86.975%)"
+    },
+    {
+      "ident": "amber-900",
+      "value": "hwb(25.801 0% 97.053%)"
+    },
+    {
+      "ident": "amber-a100",
+      "value": "hwb(46.695 0% 14.806%)"
+    },
+    {
+      "ident": "amber-a200",
+      "value": "hwb(46.645 0% 21.194%)"
+    },
+    {
+      "ident": "amber-a400",
+      "value": "hwb(46.998 0% 34.164%)"
+    },
+    {
+      "ident": "amber-a700",
+      "value": "hwb(57.359 0% 59.219%)"
+    },
+    {
+      "ident": "orange",
+      "value": "hwb(37.23 11.527% 2.7793%)"
+    },
+    {
+      "ident": "orange-50",
+      "value": "hwb(32.58 76.431% 0%)"
+    },
+    {
+      "ident": "orange-100",
+      "value": "hwb(33.128 57.351% 0%)"
+    },
+    {
+      "ident": "orange-200",
+      "value": "hwb(36.702 15.161% 0.7545%)"
+    },
+    {
+      "ident": "orange-300",
+      "value": "hwb(40.745 0% 14.789%)"
+    },
+    {
+      "ident": "orange-400",
+      "value": "hwb(40.488 0% 30.333%)"
+    },
+    {
+      "ident": "orange-500",
+      "value": "hwb(39.965 0% 45.171%)"
+    },
+    {
+      "ident": "orange-600",
+      "value": "hwb(38.853 0% 59.258%)"
+    },
+    {
+      "ident": "orange-700",
+      "value": "hwb(36.324 0% 72.495%)"
+    },
+    {
+      "ident": "orange-800",
+      "value": "hwb(29.14 0% 84.792%)"
+    },
+    {
+      "ident": "orange-900",
+      "value": "hwb(14.438 0% 95.985%)"
+    },
+    {
+      "ident": "orange-a100",
+      "value": "hwb(35.985 0% 0.97311%)"
+    },
+    {
+      "ident": "orange-a200",
+      "value": "hwb(35.614 0% 7.9189%)"
+    },
+    {
+      "ident": "orange-a400",
+      "value": "hwb(35.524 0% 22.283%)"
+    },
+    {
+      "ident": "orange-a700",
+      "value": "hwb(41.79 0% 47.51%)"
+    },
+    {
+      "ident": "deep-orange",
+      "value": "hwb(25.463 7.9565% 2.2452%)"
+    },
+    {
+      "ident": "deep-orange-50",
+      "value": "hwb(20.261 82.813% 0%)"
+    },
+    {
+      "ident": "deep-orange-100",
+      "value": "hwb(20.471 69.416% 0%)"
+    },
+    {
+      "ident": "deep-orange-200",
+      "value": "hwb(21.446 38.906% 0%)"
+    },
+    {
+      "ident": "deep-orange-300",
+      "value": "hwb(26.167 5.0612% 3.4661%)"
+    },
+    {
+      "ident": "deep-orange-400",
+      "value": "hwb(28.876 0% 19.794%)"
+    },
+    {
+      "ident": "deep-orange-500",
+      "value": "hwb(28.202 0% 36.691%)"
+    },
+    {
+      "ident": "deep-orange-600",
+      "value": "hwb(26.671 0% 52.612%)"
+    },
+    {
+      "ident": "deep-orange-700",
+      "value": "hwb(22.782 0% 67.401%)"
+    },
+    {
+      "ident": "deep-orange-800",
+      "value": "hwb(12.508 0% 81.248%)"
+    },
+    {
+      "ident": "deep-orange-900",
+      "value": "hwb(2.7534 0% 94.154%)"
+    },
+    {
+      "ident": "deep-orange-a100",
+      "value": "hwb(14.32 36.99% 0%)"
+    },
+    {
+      "ident": "deep-orange-a200",
+      "value": "hwb(13.761 23.559% 0%)"
+    },
+    {
+      "ident": "deep-orange-a400",
+      "value": "hwb(17.596 0% 3.2535%)"
+    },
+    {
+      "ident": "deep-orange-a700",
+      "value": "hwb(21.31 0% 30.768%)"
+    },
+    {
+      "ident": "brown",
+      "value": "hwb(14.024 39.629% 23.31%)"
+    },
+    {
+      "ident": "brown-50",
+      "value": "hwb(14.074 85.011% 0%)"
+    },
+    {
+      "ident": "brown-100",
+      "value": "hwb(14.077 73.301% 0%)"
+    },
+    {
+      "ident": "brown-200",
+      "value": "hwb(14.049 56.746% 4.1289%)"
+    },
+    {
+      "ident": "brown-300",
+      "value": "hwb(14.033 44.878% 17.391%)"
+    },
+    {
+      "ident": "brown-400",
+      "value": "hwb(14.013 33.433% 30.344%)"
+    },
+    {
+      "ident": "brown-500",
+      "value": "hwb(14.01 22.407% 42.972%)"
+    },
+    {
+      "ident": "brown-600",
+      "value": "hwb(14.16 11.645% 55.262%)"
+    },
+    {
+      "ident": "brown-700",
+      "value": "hwb(14.706 0.50387% 67.206%)"
+    },
+    {
+      "ident": "brown-800",
+      "value": "hwb(2.5522 0% 79.016%)"
+    },
+    {
+      "ident": "brown-900",
+      "value": "hwb(358.72 0% 93.438%)"
+    },
+    {
+      "ident": "brown-a100",
+      "value": "hwb(5.7028 48.611% 0%)"
+    },
+    {
+      "ident": "brown-a200",
+      "value": "hwb(3.2953 39.44% 0%)"
+    },
+    {
+      "ident": "brown-a400",
+      "value": "hwb(345.78 0% 0%)"
+    },
+    {
+      "ident": "brown-a700",
+      "value": "hwb(344.71 0% 21.506%)"
+    },
+    {
+      "ident": "gray",
+      "value": "hwb(122.82 48.973% 50.184%)"
+    },
+    {
+      "ident": "gray-50",
+      "value": "hwb(122.77 92.825% 6.2277%)"
+    },
+    {
+      "ident": "gray-100",
+      "value": "hwb(122.77 86.367% 12.698%)"
+    },
+    {
+      "ident": "gray-200",
+      "value": "hwb(122.78 73.723% 25.369%)"
+    },
+    {
+      "ident": "gray-300",
+      "value": "hwb(122.8 61.472% 37.65%)"
+    },
+    {
+      "ident": "gray-400",
+      "value": "hwb(122.81 49.654% 49.5%)"
+    },
+    {
+      "ident": "gray-500",
+      "value": "hwb(122.84 38.325% 60.867%)"
+    },
+    {
+      "ident": "gray-600",
+      "value": "hwb(122.88 27.556% 71.68%)"
+    },
+    {
+      "ident": "gray-700",
+      "value": "hwb(122.94 17.453% 81.835%)"
+    },
+    {
+      "ident": "gray-800",
+      "value": "hwb(123.07 8.1825% 91.173%)"
+    },
+    {
+      "ident": "gray-900",
+      "value": "hwb(123.25 1.1087% 98.612%)"
+    },
+    {
+      "ident": "gray-a100",
+      "value": "hwb(153.08 0% 24.627%)"
+    },
+    {
+      "ident": "gray-a200",
+      "value": "hwb(153.53 0% 30.644%)"
+    },
+    {
+      "ident": "gray-a400",
+      "value": "hwb(154.45 0% 42.34%)"
+    },
+    {
+      "ident": "gray-a700",
+      "value": "hwb(151.74 0% 58.786%)"
+    }
+  ]
+}
