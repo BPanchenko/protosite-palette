@@ -15,12 +15,11 @@
   },
   "devDependencies": {
     "adobe-aco": "0.1.1",
-    "chromatic-chandelier": "0.0.3",
+    "chromatic-chandelier": "0.0.4",
     "date-format": "4.0.14",
     "handlebars": "4.7.8",
     "lodash": "4.17.21",
-    "node-color-log": "12.0.1",
-    "palette-constructor": "1.0.0"
+    "node-color-log": "12.0.1"
   },
   "engines": {
     "node": ">=21.1.0"
