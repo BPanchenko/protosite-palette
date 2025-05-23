@@ -1,7 +1,6 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
-import { makeColorDTO } from 'chromatic-chandelier/fn.makeColorDTO.js';
-import { makePointInSpace } from 'chromatic-chandelier/fn.makePointInSpace.js';
+import { makeColorDTO } from 'chromatic-chandelier/toolkit.js';
 import Handlebars from "handlebars";
 
 import dataset from "../dataset.json" with { type: 'json' };
@@ -10,11 +9,12 @@ import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
 
 const { version } = packageJSON
 
-const list = dataset.data.map(async ({ ident, value }) => {
-	const point = await makePointInSpace('hwb', value)
-	const dto = makeColorDTO(point, ident)
-	return dto
-})
+const length = dataset.data.length
+const colorset = Array.from({ length })
+for (let idx = 0; idx < length; idx++) {
+	const { ident, value } = dataset.data[idx]
+	colorset[idx] = await makeColorDTO(value, ident)
+}
 
 const tpl = {
 	'css-stylesheet': readFileSync('template/css.stylesheet.hbs', 'utf-8'),
