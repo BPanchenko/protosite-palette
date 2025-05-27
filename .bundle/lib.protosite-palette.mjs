@@ -29,7 +29,7 @@ export const clrBlack = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [25,25,25]
+		value: new Uint8Array([25,25,25])
 	},
 	'space': {
 		value: 'hwb'
@@ -61,7 +61,7 @@ export const clrWhite = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [255,255,255]
+		value: new Uint8Array([255,255,255])
 	},
 	'space': {
 		value: 'hwb'
@@ -93,7 +93,7 @@ export const clrRed = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [83,72,72]
+		value: new Uint8Array([83,72,72])
 	},
 	'space': {
 		value: 'hwb'
@@ -125,7 +125,7 @@ export const clrRed50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [204,204,204]
+		value: new Uint8Array([204,204,204])
 	},
 	'space': {
 		value: 'hwb'
@@ -157,7 +157,7 @@ export const clrRed100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [195,195,195]
+		value: new Uint8Array([195,195,195])
 	},
 	'space': {
 		value: 'hwb'
@@ -189,7 +189,7 @@ export const clrRed200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [139,139,139]
+		value: new Uint8Array([139,139,139])
 	},
 	'space': {
 		value: 'hwb'
@@ -221,7 +221,7 @@ export const clrRed300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [100,97,97]
+		value: new Uint8Array([100,97,97])
 	},
 	'space': {
 		value: 'hwb'
@@ -253,7 +253,7 @@ export const clrRed400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [96,84,83]
+		value: new Uint8Array([96,84,83])
 	},
 	'space': {
 		value: 'hwb'
@@ -285,7 +285,7 @@ export const clrRed500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [84,72,72]
+		value: new Uint8Array([84,72,72])
 	},
 	'space': {
 		value: 'hwb'
@@ -317,7 +317,7 @@ export const clrRed600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -349,7 +349,7 @@ export const clrRed700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -381,7 +381,7 @@ export const clrRed800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [43,43,43]
+		value: new Uint8Array([43,43,43])
 	},
 	'space': {
 		value: 'hwb'
@@ -413,7 +413,7 @@ export const clrRed900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [16,16,16]
+		value: new Uint8Array([16,16,16])
 	},
 	'space': {
 		value: 'hwb'
@@ -445,7 +445,7 @@ export const clrRedA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [133,133,133]
+		value: new Uint8Array([133,133,133])
 	},
 	'space': {
 		value: 'hwb'
@@ -477,7 +477,7 @@ export const clrRedA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [110,110,110]
+		value: new Uint8Array([110,110,110])
 	},
 	'space': {
 		value: 'hwb'
@@ -509,7 +509,7 @@ export const clrRedA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [0,0,0]
+		value: new Uint8Array([0,0,0])
 	},
 	'space': {
 		value: 'hwb'
@@ -541,7 +541,7 @@ export const clrRedA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [42,42,42]
+		value: new Uint8Array([42,42,42])
 	},
 	'space': {
 		value: 'hwb'
@@ -573,7 +573,7 @@ export const clrPink = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [163,157,159]
+		value: new Uint8Array([163,157,159])
 	},
 	'space': {
 		value: 'hwb'
@@ -605,7 +605,7 @@ export const clrPink50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [225,225,225]
+		value: new Uint8Array([225,225,225])
 	},
 	'space': {
 		value: 'hwb'
@@ -637,7 +637,7 @@ export const clrPink100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [199,199,199]
+		value: new Uint8Array([199,199,199])
 	},
 	'space': {
 		value: 'hwb'
@@ -669,7 +669,7 @@ export const clrPink200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [165,161,162]
+		value: new Uint8Array([165,161,162])
 	},
 	'space': {
 		value: 'hwb'
@@ -701,7 +701,7 @@ export const clrPink300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [150,136,141]
+		value: new Uint8Array([150,136,141])
 	},
 	'space': {
 		value: 'hwb'
@@ -733,7 +733,7 @@ export const clrPink400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [132,113,121]
+		value: new Uint8Array([132,113,121])
 	},
 	'space': {
 		value: 'hwb'
@@ -765,7 +765,7 @@ export const clrPink500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [111,93,101]
+		value: new Uint8Array([111,93,101])
 	},
 	'space': {
 		value: 'hwb'
@@ -797,7 +797,7 @@ export const clrPink600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [87,76,81]
+		value: new Uint8Array([87,76,81])
 	},
 	'space': {
 		value: 'hwb'
@@ -829,7 +829,7 @@ export const clrPink700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,58,59]
+		value: new Uint8Array([60,58,59])
 	},
 	'space': {
 		value: 'hwb'
@@ -861,7 +861,7 @@ export const clrPink800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [41,41,41]
+		value: new Uint8Array([41,41,41])
 	},
 	'space': {
 		value: 'hwb'
@@ -893,7 +893,7 @@ export const clrPink900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [14,14,14]
+		value: new Uint8Array([14,14,14])
 	},
 	'space': {
 		value: 'hwb'
@@ -925,7 +925,7 @@ export const clrPinkA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [141,141,141]
+		value: new Uint8Array([141,141,141])
 	},
 	'space': {
 		value: 'hwb'
@@ -957,7 +957,7 @@ export const clrPinkA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [112,112,112]
+		value: new Uint8Array([112,112,112])
 	},
 	'space': {
 		value: 'hwb'
@@ -989,7 +989,7 @@ export const clrPinkA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [0,0,0]
+		value: new Uint8Array([0,0,0])
 	},
 	'space': {
 		value: 'hwb'
@@ -1021,7 +1021,7 @@ export const clrPinkA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [41,41,41]
+		value: new Uint8Array([41,41,41])
 	},
 	'space': {
 		value: 'hwb'
@@ -1053,7 +1053,7 @@ export const clrPurple = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [88,75,85]
+		value: new Uint8Array([88,75,85])
 	},
 	'space': {
 		value: 'hwb'
@@ -1085,7 +1085,7 @@ export const clrPurple50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [223,223,223]
+		value: new Uint8Array([223,223,223])
 	},
 	'space': {
 		value: 'hwb'
@@ -1117,7 +1117,7 @@ export const clrPurple100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [196,196,196]
+		value: new Uint8Array([196,196,196])
 	},
 	'space': {
 		value: 'hwb'
@@ -1149,7 +1149,7 @@ export const clrPurple200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [135,135,135]
+		value: new Uint8Array([135,135,135])
 	},
 	'space': {
 		value: 'hwb'
@@ -1181,7 +1181,7 @@ export const clrPurple300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [106,98,104]
+		value: new Uint8Array([106,98,104])
 	},
 	'space': {
 		value: 'hwb'
@@ -1213,7 +1213,7 @@ export const clrPurple400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [94,80,91]
+		value: new Uint8Array([94,80,91])
 	},
 	'space': {
 		value: 'hwb'
@@ -1245,7 +1245,7 @@ export const clrPurple500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,60,62]
+		value: new Uint8Array([62,60,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -1277,7 +1277,7 @@ export const clrPurple600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -1309,7 +1309,7 @@ export const clrPurple700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [57,57,57]
+		value: new Uint8Array([57,57,57])
 	},
 	'space': {
 		value: 'hwb'
@@ -1341,7 +1341,7 @@ export const clrPurple800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [39,39,39]
+		value: new Uint8Array([39,39,39])
 	},
 	'space': {
 		value: 'hwb'
@@ -1373,7 +1373,7 @@ export const clrPurple900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [13,13,13]
+		value: new Uint8Array([13,13,13])
 	},
 	'space': {
 		value: 'hwb'
@@ -1405,7 +1405,7 @@ export const clrPurpleA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [137,137,137]
+		value: new Uint8Array([137,137,137])
 	},
 	'space': {
 		value: 'hwb'
@@ -1437,7 +1437,7 @@ export const clrPurpleA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [103,103,103]
+		value: new Uint8Array([103,103,103])
 	},
 	'space': {
 		value: 'hwb'
@@ -1469,7 +1469,7 @@ export const clrPurpleA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [0,0,0]
+		value: new Uint8Array([0,0,0])
 	},
 	'space': {
 		value: 'hwb'
@@ -1501,7 +1501,7 @@ export const clrPurpleA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [44,44,44]
+		value: new Uint8Array([44,44,44])
 	},
 	'space': {
 		value: 'hwb'
@@ -1533,7 +1533,7 @@ export const clrViolet = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [50,47,52]
+		value: new Uint8Array([50,47,52])
 	},
 	'space': {
 		value: 'hwb'
@@ -1565,7 +1565,7 @@ export const clrViolet50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [212,212,212]
+		value: new Uint8Array([212,212,212])
 	},
 	'space': {
 		value: 'hwb'
@@ -1597,7 +1597,7 @@ export const clrViolet100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [202,202,202]
+		value: new Uint8Array([202,202,202])
 	},
 	'space': {
 		value: 'hwb'
@@ -1629,7 +1629,7 @@ export const clrViolet200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [160,160,160]
+		value: new Uint8Array([160,160,160])
 	},
 	'space': {
 		value: 'hwb'
@@ -1661,7 +1661,7 @@ export const clrViolet300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [107,107,107]
+		value: new Uint8Array([107,107,107])
 	},
 	'space': {
 		value: 'hwb'
@@ -1693,7 +1693,7 @@ export const clrViolet400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,60,63]
+		value: new Uint8Array([62,60,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -1725,7 +1725,7 @@ export const clrViolet500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [36,36,36]
+		value: new Uint8Array([36,36,36])
 	},
 	'space': {
 		value: 'hwb'
@@ -1757,7 +1757,7 @@ export const clrViolet600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [59,59,59]
+		value: new Uint8Array([59,59,59])
 	},
 	'space': {
 		value: 'hwb'
@@ -1789,7 +1789,7 @@ export const clrViolet700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -1821,7 +1821,7 @@ export const clrViolet800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [47,47,47]
+		value: new Uint8Array([47,47,47])
 	},
 	'space': {
 		value: 'hwb'
@@ -1853,7 +1853,7 @@ export const clrViolet900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [19,19,19]
+		value: new Uint8Array([19,19,19])
 	},
 	'space': {
 		value: 'hwb'
@@ -1885,7 +1885,7 @@ export const clrVioletA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [162,162,162]
+		value: new Uint8Array([162,162,162])
 	},
 	'space': {
 		value: 'hwb'
@@ -1917,7 +1917,7 @@ export const clrVioletA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [142,142,142]
+		value: new Uint8Array([142,142,142])
 	},
 	'space': {
 		value: 'hwb'
@@ -1949,7 +1949,7 @@ export const clrVioletA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [98,98,98]
+		value: new Uint8Array([98,98,98])
 	},
 	'space': {
 		value: 'hwb'
@@ -1981,7 +1981,7 @@ export const clrVioletA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [0,0,0]
+		value: new Uint8Array([0,0,0])
 	},
 	'space': {
 		value: 'hwb'
@@ -2013,7 +2013,7 @@ export const clrIndigo = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [70,68,75]
+		value: new Uint8Array([70,68,75])
 	},
 	'space': {
 		value: 'hwb'
@@ -2045,7 +2045,7 @@ export const clrIndigo50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [233,233,233]
+		value: new Uint8Array([233,233,233])
 	},
 	'space': {
 		value: 'hwb'
@@ -2077,7 +2077,7 @@ export const clrIndigo100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [221,221,221]
+		value: new Uint8Array([221,221,221])
 	},
 	'space': {
 		value: 'hwb'
@@ -2109,7 +2109,7 @@ export const clrIndigo200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [177,177,177]
+		value: new Uint8Array([177,177,177])
 	},
 	'space': {
 		value: 'hwb'
@@ -2141,7 +2141,7 @@ export const clrIndigo300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [145,145,150]
+		value: new Uint8Array([145,145,150])
 	},
 	'space': {
 		value: 'hwb'
@@ -2173,7 +2173,7 @@ export const clrIndigo400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [123,122,137]
+		value: new Uint8Array([123,122,137])
 	},
 	'space': {
 		value: 'hwb'
@@ -2205,7 +2205,7 @@ export const clrIndigo500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [104,101,120]
+		value: new Uint8Array([104,101,120])
 	},
 	'space': {
 		value: 'hwb'
@@ -2237,7 +2237,7 @@ export const clrIndigo600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [86,84,100]
+		value: new Uint8Array([86,84,100])
 	},
 	'space': {
 		value: 'hwb'
@@ -2269,7 +2269,7 @@ export const clrIndigo700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [70,68,75]
+		value: new Uint8Array([70,68,75])
 	},
 	'space': {
 		value: 'hwb'
@@ -2301,7 +2301,7 @@ export const clrIndigo800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [53,53,53]
+		value: new Uint8Array([53,53,53])
 	},
 	'space': {
 		value: 'hwb'
@@ -2333,7 +2333,7 @@ export const clrIndigo900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [25,25,25]
+		value: new Uint8Array([25,25,25])
 	},
 	'space': {
 		value: 'hwb'
@@ -2365,7 +2365,7 @@ export const clrIndigoA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [188,188,188]
+		value: new Uint8Array([188,188,188])
 	},
 	'space': {
 		value: 'hwb'
@@ -2397,7 +2397,7 @@ export const clrIndigoA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [160,160,160]
+		value: new Uint8Array([160,160,160])
 	},
 	'space': {
 		value: 'hwb'
@@ -2429,7 +2429,7 @@ export const clrIndigoA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [128,128,128]
+		value: new Uint8Array([128,128,128])
 	},
 	'space': {
 		value: 'hwb'
@@ -2461,7 +2461,7 @@ export const clrIndigoA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [71,71,71]
+		value: new Uint8Array([71,71,71])
 	},
 	'space': {
 		value: 'hwb'
@@ -2493,7 +2493,7 @@ export const clrBlue = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [95,96,112]
+		value: new Uint8Array([95,96,112])
 	},
 	'space': {
 		value: 'hwb'
@@ -2525,7 +2525,7 @@ export const clrBlue50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [225,225,225]
+		value: new Uint8Array([225,225,225])
 	},
 	'space': {
 		value: 'hwb'
@@ -2557,7 +2557,7 @@ export const clrBlue100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [215,215,215]
+		value: new Uint8Array([215,215,215])
 	},
 	'space': {
 		value: 'hwb'
@@ -2589,7 +2589,7 @@ export const clrBlue200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [168,168,168]
+		value: new Uint8Array([168,168,168])
 	},
 	'space': {
 		value: 'hwb'
@@ -2621,7 +2621,7 @@ export const clrBlue300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [132,132,132]
+		value: new Uint8Array([132,132,132])
 	},
 	'space': {
 		value: 'hwb'
@@ -2653,7 +2653,7 @@ export const clrBlue400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [111,112,122]
+		value: new Uint8Array([111,112,122])
 	},
 	'space': {
 		value: 'hwb'
@@ -2685,7 +2685,7 @@ export const clrBlue500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [97,97,113]
+		value: new Uint8Array([97,97,113])
 	},
 	'space': {
 		value: 'hwb'
@@ -2717,7 +2717,7 @@ export const clrBlue600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [83,83,99]
+		value: new Uint8Array([83,83,99])
 	},
 	'space': {
 		value: 'hwb'
@@ -2749,7 +2749,7 @@ export const clrBlue700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [68,67,72]
+		value: new Uint8Array([68,67,72])
 	},
 	'space': {
 		value: 'hwb'
@@ -2781,7 +2781,7 @@ export const clrBlue800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [55,55,55]
+		value: new Uint8Array([55,55,55])
 	},
 	'space': {
 		value: 'hwb'
@@ -2813,7 +2813,7 @@ export const clrBlue900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [26,26,26]
+		value: new Uint8Array([26,26,26])
 	},
 	'space': {
 		value: 'hwb'
@@ -2845,7 +2845,7 @@ export const clrBlueA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [148,148,148]
+		value: new Uint8Array([148,148,148])
 	},
 	'space': {
 		value: 'hwb'
@@ -2877,7 +2877,7 @@ export const clrBlueA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [123,123,123]
+		value: new Uint8Array([123,123,123])
 	},
 	'space': {
 		value: 'hwb'
@@ -2909,7 +2909,7 @@ export const clrBlueA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [49,49,49]
+		value: new Uint8Array([49,49,49])
 	},
 	'space': {
 		value: 'hwb'
@@ -2941,7 +2941,7 @@ export const clrBlueA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -2973,7 +2973,7 @@ export const clrLightBlue = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [75,75,75]
+		value: new Uint8Array([75,75,75])
 	},
 	'space': {
 		value: 'hwb'
@@ -3005,7 +3005,7 @@ export const clrLightBlue50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [210,210,210]
+		value: new Uint8Array([210,210,210])
 	},
 	'space': {
 		value: 'hwb'
@@ -3037,7 +3037,7 @@ export const clrLightBlue100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [175,175,175]
+		value: new Uint8Array([175,175,175])
 	},
 	'space': {
 		value: 'hwb'
@@ -3069,7 +3069,7 @@ export const clrLightBlue200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [94,94,94]
+		value: new Uint8Array([94,94,94])
 	},
 	'space': {
 		value: 'hwb'
@@ -3101,7 +3101,7 @@ export const clrLightBlue300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,65,67]
+		value: new Uint8Array([61,65,67])
 	},
 	'space': {
 		value: 'hwb'
@@ -3133,7 +3133,7 @@ export const clrLightBlue400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [43,43,43]
+		value: new Uint8Array([43,43,43])
 	},
 	'space': {
 		value: 'hwb'
@@ -3165,7 +3165,7 @@ export const clrLightBlue500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -3197,7 +3197,7 @@ export const clrLightBlue600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -3229,7 +3229,7 @@ export const clrLightBlue700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -3261,7 +3261,7 @@ export const clrLightBlue800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [37,37,37]
+		value: new Uint8Array([37,37,37])
 	},
 	'space': {
 		value: 'hwb'
@@ -3293,7 +3293,7 @@ export const clrLightBlue900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [14,14,14]
+		value: new Uint8Array([14,14,14])
 	},
 	'space': {
 		value: 'hwb'
@@ -3325,7 +3325,7 @@ export const clrLightBlueA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [34,34,34]
+		value: new Uint8Array([34,34,34])
 	},
 	'space': {
 		value: 'hwb'
@@ -3357,7 +3357,7 @@ export const clrLightBlueA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [49,49,49]
+		value: new Uint8Array([49,49,49])
 	},
 	'space': {
 		value: 'hwb'
@@ -3389,7 +3389,7 @@ export const clrLightBlueA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -3421,7 +3421,7 @@ export const clrLightBlueA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [53,53,53]
+		value: new Uint8Array([53,53,53])
 	},
 	'space': {
 		value: 'hwb'
@@ -3453,7 +3453,7 @@ export const clrCyan = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [76,88,88]
+		value: new Uint8Array([76,88,88])
 	},
 	'space': {
 		value: 'hwb'
@@ -3485,7 +3485,7 @@ export const clrCyan50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [138,138,138]
+		value: new Uint8Array([138,138,138])
 	},
 	'space': {
 		value: 'hwb'
@@ -3517,7 +3517,7 @@ export const clrCyan100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [108,111,111]
+		value: new Uint8Array([108,111,111])
 	},
 	'space': {
 		value: 'hwb'
@@ -3549,7 +3549,7 @@ export const clrCyan200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [82,94,94]
+		value: new Uint8Array([82,94,94])
 	},
 	'space': {
 		value: 'hwb'
@@ -3581,7 +3581,7 @@ export const clrCyan300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [52,52,52]
+		value: new Uint8Array([52,52,52])
 	},
 	'space': {
 		value: 'hwb'
@@ -3613,7 +3613,7 @@ export const clrCyan400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -3645,7 +3645,7 @@ export const clrCyan500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -3677,7 +3677,7 @@ export const clrCyan600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [56,56,56]
+		value: new Uint8Array([56,56,56])
 	},
 	'space': {
 		value: 'hwb'
@@ -3709,7 +3709,7 @@ export const clrCyan700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [43,43,43]
+		value: new Uint8Array([43,43,43])
 	},
 	'space': {
 		value: 'hwb'
@@ -3741,7 +3741,7 @@ export const clrCyan800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [25,25,25]
+		value: new Uint8Array([25,25,25])
 	},
 	'space': {
 		value: 'hwb'
@@ -3773,7 +3773,7 @@ export const clrCyan900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [5,5,5]
+		value: new Uint8Array([5,5,5])
 	},
 	'space': {
 		value: 'hwb'
@@ -3805,7 +3805,7 @@ export const clrCyanA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [50,50,50]
+		value: new Uint8Array([50,50,50])
 	},
 	'space': {
 		value: 'hwb'
@@ -3837,7 +3837,7 @@ export const clrCyanA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [56,56,56]
+		value: new Uint8Array([56,56,56])
 	},
 	'space': {
 		value: 'hwb'
@@ -3869,7 +3869,7 @@ export const clrCyanA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -3901,7 +3901,7 @@ export const clrCyanA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -3933,7 +3933,7 @@ export const clrTeal = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [75,88,86]
+		value: new Uint8Array([75,88,86])
 	},
 	'space': {
 		value: 'hwb'
@@ -3965,7 +3965,7 @@ export const clrTeal50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [157,157,157]
+		value: new Uint8Array([157,157,157])
 	},
 	'space': {
 		value: 'hwb'
@@ -3997,7 +3997,7 @@ export const clrTeal100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [142,147,146]
+		value: new Uint8Array([142,147,146])
 	},
 	'space': {
 		value: 'hwb'
@@ -4029,7 +4029,7 @@ export const clrTeal200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [117,132,129]
+		value: new Uint8Array([117,132,129])
 	},
 	'space': {
 		value: 'hwb'
@@ -4061,7 +4061,7 @@ export const clrTeal300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [95,113,109]
+		value: new Uint8Array([95,113,109])
 	},
 	'space': {
 		value: 'hwb'
@@ -4093,7 +4093,7 @@ export const clrTeal400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [74,86,84]
+		value: new Uint8Array([74,86,84])
 	},
 	'space': {
 		value: 'hwb'
@@ -4125,7 +4125,7 @@ export const clrTeal500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -4157,7 +4157,7 @@ export const clrTeal600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [57,57,57]
+		value: new Uint8Array([57,57,57])
 	},
 	'space': {
 		value: 'hwb'
@@ -4189,7 +4189,7 @@ export const clrTeal700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [44,44,44]
+		value: new Uint8Array([44,44,44])
 	},
 	'space': {
 		value: 'hwb'
@@ -4221,7 +4221,7 @@ export const clrTeal800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [26,26,26]
+		value: new Uint8Array([26,26,26])
 	},
 	'space': {
 		value: 'hwb'
@@ -4253,7 +4253,7 @@ export const clrTeal900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [8,8,8]
+		value: new Uint8Array([8,8,8])
 	},
 	'space': {
 		value: 'hwb'
@@ -4285,7 +4285,7 @@ export const clrTealA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [49,49,49]
+		value: new Uint8Array([49,49,49])
 	},
 	'space': {
 		value: 'hwb'
@@ -4317,7 +4317,7 @@ export const clrTealA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [55,55,55]
+		value: new Uint8Array([55,55,55])
 	},
 	'space': {
 		value: 'hwb'
@@ -4349,7 +4349,7 @@ export const clrTealA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -4381,7 +4381,7 @@ export const clrTealA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -4413,7 +4413,7 @@ export const clrGreen = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [31,31,31]
+		value: new Uint8Array([31,31,31])
 	},
 	'space': {
 		value: 'hwb'
@@ -4445,7 +4445,7 @@ export const clrGreen50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [177,177,177]
+		value: new Uint8Array([177,177,177])
 	},
 	'space': {
 		value: 'hwb'
@@ -4477,7 +4477,7 @@ export const clrGreen100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [71,71,71]
+		value: new Uint8Array([71,71,71])
 	},
 	'space': {
 		value: 'hwb'
@@ -4509,7 +4509,7 @@ export const clrGreen200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [23,23,23]
+		value: new Uint8Array([23,23,23])
 	},
 	'space': {
 		value: 'hwb'
@@ -4541,7 +4541,7 @@ export const clrGreen300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [47,47,47]
+		value: new Uint8Array([47,47,47])
 	},
 	'space': {
 		value: 'hwb'
@@ -4573,7 +4573,7 @@ export const clrGreen400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -4605,7 +4605,7 @@ export const clrGreen500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -4637,7 +4637,7 @@ export const clrGreen600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [58,58,58]
+		value: new Uint8Array([58,58,58])
 	},
 	'space': {
 		value: 'hwb'
@@ -4669,7 +4669,7 @@ export const clrGreen700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [45,45,45]
+		value: new Uint8Array([45,45,45])
 	},
 	'space': {
 		value: 'hwb'
@@ -4701,7 +4701,7 @@ export const clrGreen800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [26,26,26]
+		value: new Uint8Array([26,26,26])
 	},
 	'space': {
 		value: 'hwb'
@@ -4733,7 +4733,7 @@ export const clrGreen900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [10,10,10]
+		value: new Uint8Array([10,10,10])
 	},
 	'space': {
 		value: 'hwb'
@@ -4765,7 +4765,7 @@ export const clrGreenA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [47,47,47]
+		value: new Uint8Array([47,47,47])
 	},
 	'space': {
 		value: 'hwb'
@@ -4797,7 +4797,7 @@ export const clrGreenA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -4829,7 +4829,7 @@ export const clrGreenA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -4861,7 +4861,7 @@ export const clrGreenA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -4893,7 +4893,7 @@ export const clrLightGreen = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [116,125,116]
+		value: new Uint8Array([116,125,116])
 	},
 	'space': {
 		value: 'hwb'
@@ -4925,7 +4925,7 @@ export const clrLightGreen50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [178,178,178]
+		value: new Uint8Array([178,178,178])
 	},
 	'space': {
 		value: 'hwb'
@@ -4957,7 +4957,7 @@ export const clrLightGreen100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [131,132,131]
+		value: new Uint8Array([131,132,131])
 	},
 	'space': {
 		value: 'hwb'
@@ -4989,7 +4989,7 @@ export const clrLightGreen200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [109,121,109]
+		value: new Uint8Array([109,121,109])
 	},
 	'space': {
 		value: 'hwb'
@@ -5021,7 +5021,7 @@ export const clrLightGreen300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [88,104,88]
+		value: new Uint8Array([88,104,88])
 	},
 	'space': {
 		value: 'hwb'
@@ -5053,7 +5053,7 @@ export const clrLightGreen400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [65,70,65]
+		value: new Uint8Array([65,70,65])
 	},
 	'space': {
 		value: 'hwb'
@@ -5085,7 +5085,7 @@ export const clrLightGreen500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -5117,7 +5117,7 @@ export const clrLightGreen600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [58,58,58]
+		value: new Uint8Array([58,58,58])
 	},
 	'space': {
 		value: 'hwb'
@@ -5149,7 +5149,7 @@ export const clrLightGreen700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [45,45,45]
+		value: new Uint8Array([45,45,45])
 	},
 	'space': {
 		value: 'hwb'
@@ -5181,7 +5181,7 @@ export const clrLightGreen800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [26,26,26]
+		value: new Uint8Array([26,26,26])
 	},
 	'space': {
 		value: 'hwb'
@@ -5213,7 +5213,7 @@ export const clrLightGreen900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [9,9,9]
+		value: new Uint8Array([9,9,9])
 	},
 	'space': {
 		value: 'hwb'
@@ -5245,7 +5245,7 @@ export const clrLightGreenA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [46,46,46]
+		value: new Uint8Array([46,46,46])
 	},
 	'space': {
 		value: 'hwb'
@@ -5277,7 +5277,7 @@ export const clrLightGreenA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [53,53,53]
+		value: new Uint8Array([53,53,53])
 	},
 	'space': {
 		value: 'hwb'
@@ -5309,7 +5309,7 @@ export const clrLightGreenA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -5341,7 +5341,7 @@ export const clrLightGreenA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -5373,7 +5373,7 @@ export const clrLime = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [76,81,70]
+		value: new Uint8Array([76,81,70])
 	},
 	'space': {
 		value: 'hwb'
@@ -5405,7 +5405,7 @@ export const clrLime50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [121,121,121]
+		value: new Uint8Array([121,121,121])
 	},
 	'space': {
 		value: 'hwb'
@@ -5437,7 +5437,7 @@ export const clrLime100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [99,100,97]
+		value: new Uint8Array([99,100,97])
 	},
 	'space': {
 		value: 'hwb'
@@ -5469,7 +5469,7 @@ export const clrLime200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [81,85,74]
+		value: new Uint8Array([81,85,74])
 	},
 	'space': {
 		value: 'hwb'
@@ -5501,7 +5501,7 @@ export const clrLime300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [52,52,52]
+		value: new Uint8Array([52,52,52])
 	},
 	'space': {
 		value: 'hwb'
@@ -5533,7 +5533,7 @@ export const clrLime400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -5565,7 +5565,7 @@ export const clrLime500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -5597,7 +5597,7 @@ export const clrLime600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [56,56,56]
+		value: new Uint8Array([56,56,56])
 	},
 	'space': {
 		value: 'hwb'
@@ -5629,7 +5629,7 @@ export const clrLime700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [42,42,42]
+		value: new Uint8Array([42,42,42])
 	},
 	'space': {
 		value: 'hwb'
@@ -5661,7 +5661,7 @@ export const clrLime800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [24,24,24]
+		value: new Uint8Array([24,24,24])
 	},
 	'space': {
 		value: 'hwb'
@@ -5693,7 +5693,7 @@ export const clrLime900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [4,4,4]
+		value: new Uint8Array([4,4,4])
 	},
 	'space': {
 		value: 'hwb'
@@ -5725,7 +5725,7 @@ export const clrLimeA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [46,46,46]
+		value: new Uint8Array([46,46,46])
 	},
 	'space': {
 		value: 'hwb'
@@ -5757,7 +5757,7 @@ export const clrLimeA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [52,52,52]
+		value: new Uint8Array([52,52,52])
 	},
 	'space': {
 		value: 'hwb'
@@ -5789,7 +5789,7 @@ export const clrLimeA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -5821,7 +5821,7 @@ export const clrLimeA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -5853,7 +5853,7 @@ export const clrYellow = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [19,19,19]
+		value: new Uint8Array([19,19,19])
 	},
 	'space': {
 		value: 'hwb'
@@ -5885,7 +5885,7 @@ export const clrYellow50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -5917,7 +5917,7 @@ export const clrYellow100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [40,40,38]
+		value: new Uint8Array([40,40,38])
 	},
 	'space': {
 		value: 'hwb'
@@ -5949,7 +5949,7 @@ export const clrYellow200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [38,38,38]
+		value: new Uint8Array([38,38,38])
 	},
 	'space': {
 		value: 'hwb'
@@ -5981,7 +5981,7 @@ export const clrYellow300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -6013,7 +6013,7 @@ export const clrYellow400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -6045,7 +6045,7 @@ export const clrYellow500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -6077,7 +6077,7 @@ export const clrYellow600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [55,55,55]
+		value: new Uint8Array([55,55,55])
 	},
 	'space': {
 		value: 'hwb'
@@ -6109,7 +6109,7 @@ export const clrYellow700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [41,41,41]
+		value: new Uint8Array([41,41,41])
 	},
 	'space': {
 		value: 'hwb'
@@ -6141,7 +6141,7 @@ export const clrYellow800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [23,23,23]
+		value: new Uint8Array([23,23,23])
 	},
 	'space': {
 		value: 'hwb'
@@ -6173,7 +6173,7 @@ export const clrYellow900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [11,11,11]
+		value: new Uint8Array([11,11,11])
 	},
 	'space': {
 		value: 'hwb'
@@ -6205,7 +6205,7 @@ export const clrYellowA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -6237,7 +6237,7 @@ export const clrYellowA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [58,58,58]
+		value: new Uint8Array([58,58,58])
 	},
 	'space': {
 		value: 'hwb'
@@ -6269,7 +6269,7 @@ export const clrYellowA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -6301,7 +6301,7 @@ export const clrYellowA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -6333,7 +6333,7 @@ export const clrAmber = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [8,8,8]
+		value: new Uint8Array([8,8,8])
 	},
 	'space': {
 		value: 'hwb'
@@ -6365,7 +6365,7 @@ export const clrAmber50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [169,169,169]
+		value: new Uint8Array([169,169,169])
 	},
 	'space': {
 		value: 'hwb'
@@ -6397,7 +6397,7 @@ export const clrAmber100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [89,89,89]
+		value: new Uint8Array([89,89,89])
 	},
 	'space': {
 		value: 'hwb'
@@ -6429,7 +6429,7 @@ export const clrAmber200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [18,18,18]
+		value: new Uint8Array([18,18,18])
 	},
 	'space': {
 		value: 'hwb'
@@ -6461,7 +6461,7 @@ export const clrAmber300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [44,44,44]
+		value: new Uint8Array([44,44,44])
 	},
 	'space': {
 		value: 'hwb'
@@ -6493,7 +6493,7 @@ export const clrAmber400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [59,59,59]
+		value: new Uint8Array([59,59,59])
 	},
 	'space': {
 		value: 'hwb'
@@ -6525,7 +6525,7 @@ export const clrAmber500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -6557,7 +6557,7 @@ export const clrAmber600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [59,59,59]
+		value: new Uint8Array([59,59,59])
 	},
 	'space': {
 		value: 'hwb'
@@ -6589,7 +6589,7 @@ export const clrAmber700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [47,47,47]
+		value: new Uint8Array([47,47,47])
 	},
 	'space': {
 		value: 'hwb'
@@ -6621,7 +6621,7 @@ export const clrAmber800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [28,28,28]
+		value: new Uint8Array([28,28,28])
 	},
 	'space': {
 		value: 'hwb'
@@ -6653,7 +6653,7 @@ export const clrAmber900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [7,7,7]
+		value: new Uint8Array([7,7,7])
 	},
 	'space': {
 		value: 'hwb'
@@ -6685,7 +6685,7 @@ export const clrAmberA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [32,32,32]
+		value: new Uint8Array([32,32,32])
 	},
 	'space': {
 		value: 'hwb'
@@ -6717,7 +6717,7 @@ export const clrAmberA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [42,42,42]
+		value: new Uint8Array([42,42,42])
 	},
 	'space': {
 		value: 'hwb'
@@ -6749,7 +6749,7 @@ export const clrAmberA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [57,57,57]
+		value: new Uint8Array([57,57,57])
 	},
 	'space': {
 		value: 'hwb'
@@ -6781,7 +6781,7 @@ export const clrAmberA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -6813,7 +6813,7 @@ export const clrOrange = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [36,35,34]
+		value: new Uint8Array([36,35,34])
 	},
 	'space': {
 		value: 'hwb'
@@ -6845,7 +6845,7 @@ export const clrOrange50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [194,194,194]
+		value: new Uint8Array([194,194,194])
 	},
 	'space': {
 		value: 'hwb'
@@ -6877,7 +6877,7 @@ export const clrOrange100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [146,146,146]
+		value: new Uint8Array([146,146,146])
 	},
 	'space': {
 		value: 'hwb'
@@ -6909,7 +6909,7 @@ export const clrOrange200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [40,40,40]
+		value: new Uint8Array([40,40,40])
 	},
 	'space': {
 		value: 'hwb'
@@ -6941,7 +6941,7 @@ export const clrOrange300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [32,32,32]
+		value: new Uint8Array([32,32,32])
 	},
 	'space': {
 		value: 'hwb'
@@ -6973,7 +6973,7 @@ export const clrOrange400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [53,53,53]
+		value: new Uint8Array([53,53,53])
 	},
 	'space': {
 		value: 'hwb'
@@ -7005,7 +7005,7 @@ export const clrOrange500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -7037,7 +7037,7 @@ export const clrOrange600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
@@ -7069,7 +7069,7 @@ export const clrOrange700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [50,50,50]
+		value: new Uint8Array([50,50,50])
 	},
 	'space': {
 		value: 'hwb'
@@ -7101,7 +7101,7 @@ export const clrOrange800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [32,32,32]
+		value: new Uint8Array([32,32,32])
 	},
 	'space': {
 		value: 'hwb'
@@ -7133,7 +7133,7 @@ export const clrOrange900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [9,9,9]
+		value: new Uint8Array([9,9,9])
 	},
 	'space': {
 		value: 'hwb'
@@ -7165,7 +7165,7 @@ export const clrOrangeA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [2,2,2]
+		value: new Uint8Array([2,2,2])
 	},
 	'space': {
 		value: 'hwb'
@@ -7197,7 +7197,7 @@ export const clrOrangeA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [18,18,18]
+		value: new Uint8Array([18,18,18])
 	},
 	'space': {
 		value: 'hwb'
@@ -7229,7 +7229,7 @@ export const clrOrangeA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [44,44,44]
+		value: new Uint8Array([44,44,44])
 	},
 	'space': {
 		value: 'hwb'
@@ -7261,7 +7261,7 @@ export const clrOrangeA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -7293,7 +7293,7 @@ export const clrDeepOrange = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [25,25,25]
+		value: new Uint8Array([25,25,25])
 	},
 	'space': {
 		value: 'hwb'
@@ -7325,7 +7325,7 @@ export const clrDeepOrange50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [211,211,211]
+		value: new Uint8Array([211,211,211])
 	},
 	'space': {
 		value: 'hwb'
@@ -7357,7 +7357,7 @@ export const clrDeepOrange100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [177,177,177]
+		value: new Uint8Array([177,177,177])
 	},
 	'space': {
 		value: 'hwb'
@@ -7389,7 +7389,7 @@ export const clrDeepOrange200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [99,99,99]
+		value: new Uint8Array([99,99,99])
 	},
 	'space': {
 		value: 'hwb'
@@ -7421,7 +7421,7 @@ export const clrDeepOrange300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [21,20,20]
+		value: new Uint8Array([21,20,20])
 	},
 	'space': {
 		value: 'hwb'
@@ -7453,7 +7453,7 @@ export const clrDeepOrange400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [40,40,40]
+		value: new Uint8Array([40,40,40])
 	},
 	'space': {
 		value: 'hwb'
@@ -7485,7 +7485,7 @@ export const clrDeepOrange500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [59,59,59]
+		value: new Uint8Array([59,59,59])
 	},
 	'space': {
 		value: 'hwb'
@@ -7517,7 +7517,7 @@ export const clrDeepOrange600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [63,63,63]
+		value: new Uint8Array([63,63,63])
 	},
 	'space': {
 		value: 'hwb'
@@ -7549,7 +7549,7 @@ export const clrDeepOrange700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [56,56,56]
+		value: new Uint8Array([56,56,56])
 	},
 	'space': {
 		value: 'hwb'
@@ -7581,7 +7581,7 @@ export const clrDeepOrange800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [38,38,38]
+		value: new Uint8Array([38,38,38])
 	},
 	'space': {
 		value: 'hwb'
@@ -7613,7 +7613,7 @@ export const clrDeepOrange900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [14,14,14]
+		value: new Uint8Array([14,14,14])
 	},
 	'space': {
 		value: 'hwb'
@@ -7645,7 +7645,7 @@ export const clrDeepOrangeA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [94,94,94]
+		value: new Uint8Array([94,94,94])
 	},
 	'space': {
 		value: 'hwb'
@@ -7677,7 +7677,7 @@ export const clrDeepOrangeA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [60,60,60]
+		value: new Uint8Array([60,60,60])
 	},
 	'space': {
 		value: 'hwb'
@@ -7709,7 +7709,7 @@ export const clrDeepOrangeA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [8,8,8]
+		value: new Uint8Array([8,8,8])
 	},
 	'space': {
 		value: 'hwb'
@@ -7741,7 +7741,7 @@ export const clrDeepOrangeA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -7773,7 +7773,7 @@ export const clrBrown = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [131,118,114]
+		value: new Uint8Array([131,118,114])
 	},
 	'space': {
 		value: 'hwb'
@@ -7805,7 +7805,7 @@ export const clrBrown50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [216,216,216]
+		value: new Uint8Array([216,216,216])
 	},
 	'space': {
 		value: 'hwb'
@@ -7837,7 +7837,7 @@ export const clrBrown100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [186,186,186]
+		value: new Uint8Array([186,186,186])
 	},
 	'space': {
 		value: 'hwb'
@@ -7869,7 +7869,7 @@ export const clrBrown200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [151,147,146]
+		value: new Uint8Array([151,147,146])
 	},
 	'space': {
 		value: 'hwb'
@@ -7901,7 +7901,7 @@ export const clrBrown300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [138,127,123]
+		value: new Uint8Array([138,127,123])
 	},
 	'space': {
 		value: 'hwb'
@@ -7933,7 +7933,7 @@ export const clrBrown400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [122,108,103]
+		value: new Uint8Array([122,108,103])
 	},
 	'space': {
 		value: 'hwb'
@@ -7965,7 +7965,7 @@ export const clrBrown500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [103,90,86]
+		value: new Uint8Array([103,90,86])
 	},
 	'space': {
 		value: 'hwb'
@@ -7997,7 +7997,7 @@ export const clrBrown600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [80,74,71]
+		value: new Uint8Array([80,74,71])
 	},
 	'space': {
 		value: 'hwb'
@@ -8029,7 +8029,7 @@ export const clrBrown700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [56,56,56]
+		value: new Uint8Array([56,56,56])
 	},
 	'space': {
 		value: 'hwb'
@@ -8061,7 +8061,7 @@ export const clrBrown800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [42,42,42]
+		value: new Uint8Array([42,42,42])
 	},
 	'space': {
 		value: 'hwb'
@@ -8093,7 +8093,7 @@ export const clrBrown900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [15,15,15]
+		value: new Uint8Array([15,15,15])
 	},
 	'space': {
 		value: 'hwb'
@@ -8125,7 +8125,7 @@ export const clrBrownA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [123,123,123]
+		value: new Uint8Array([123,123,123])
 	},
 	'space': {
 		value: 'hwb'
@@ -8157,7 +8157,7 @@ export const clrBrownA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [100,100,100]
+		value: new Uint8Array([100,100,100])
 	},
 	'space': {
 		value: 'hwb'
@@ -8189,7 +8189,7 @@ export const clrBrownA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [0,0,0]
+		value: new Uint8Array([0,0,0])
 	},
 	'space': {
 		value: 'hwb'
@@ -8221,7 +8221,7 @@ export const clrBrownA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [43,43,43]
+		value: new Uint8Array([43,43,43])
 	},
 	'space': {
 		value: 'hwb'
@@ -8253,7 +8253,7 @@ export const clrGray = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [125,126,125]
+		value: new Uint8Array([125,126,125])
 	},
 	'space': {
 		value: 'hwb'
@@ -8285,7 +8285,7 @@ export const clrGray50 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [236,237,236]
+		value: new Uint8Array([236,237,236])
 	},
 	'space': {
 		value: 'hwb'
@@ -8317,7 +8317,7 @@ export const clrGray100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [220,220,220]
+		value: new Uint8Array([220,220,220])
 	},
 	'space': {
 		value: 'hwb'
@@ -8349,7 +8349,7 @@ export const clrGray200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [188,189,188]
+		value: new Uint8Array([188,189,188])
 	},
 	'space': {
 		value: 'hwb'
@@ -8381,7 +8381,7 @@ export const clrGray300 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [157,158,157]
+		value: new Uint8Array([157,158,157])
 	},
 	'space': {
 		value: 'hwb'
@@ -8413,7 +8413,7 @@ export const clrGray400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [127,128,127]
+		value: new Uint8Array([127,128,127])
 	},
 	'space': {
 		value: 'hwb'
@@ -8445,7 +8445,7 @@ export const clrGray500 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [98,99,98]
+		value: new Uint8Array([98,99,98])
 	},
 	'space': {
 		value: 'hwb'
@@ -8477,7 +8477,7 @@ export const clrGray600 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [71,71,71]
+		value: new Uint8Array([71,71,71])
 	},
 	'space': {
 		value: 'hwb'
@@ -8509,7 +8509,7 @@ export const clrGray700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [45,46,45]
+		value: new Uint8Array([45,46,45])
 	},
 	'space': {
 		value: 'hwb'
@@ -8541,7 +8541,7 @@ export const clrGray800 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [22,22,22]
+		value: new Uint8Array([22,22,22])
 	},
 	'space': {
 		value: 'hwb'
@@ -8573,7 +8573,7 @@ export const clrGray900 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [3,3,3]
+		value: new Uint8Array([3,3,3])
 	},
 	'space': {
 		value: 'hwb'
@@ -8605,7 +8605,7 @@ export const clrGrayA100 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [47,47,47]
+		value: new Uint8Array([47,47,47])
 	},
 	'space': {
 		value: 'hwb'
@@ -8637,7 +8637,7 @@ export const clrGrayA200 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [54,54,54]
+		value: new Uint8Array([54,54,54])
 	},
 	'space': {
 		value: 'hwb'
@@ -8669,7 +8669,7 @@ export const clrGrayA400 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [62,62,62]
+		value: new Uint8Array([62,62,62])
 	},
 	'space': {
 		value: 'hwb'
@@ -8701,7 +8701,7 @@ export const clrGrayA700 = Object.create(null, {
 	},
 	'rgb': {
 		enumerable: true,
-		value: [61,61,61]
+		value: new Uint8Array([61,61,61])
 	},
 	'space': {
 		value: 'hwb'
