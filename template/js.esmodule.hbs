@@ -1,3 +1,46 @@
+/**
+ * @typedef ColorDTO
+ * @type {Object}
+ * @prop {string} ident
+ * @prop {string} name
+ * @prop {string} hex
+ * @prop {Uint8Array} rgb
+ * @prop {string} space
+ * @prop {() => string} toString
+ * @prop {() => number} valueOf
+ */
+
 {{#each colorset}}
-export const {{'esm-name'}} = "{{'css-value'}}";
+/**
+ * @constant {{'esm-name'}}
+ * @type {ColorDTO}
+ */
+export const {{'esm-name'}} = Object.create(null, {
+	'ident': {
+		enumerable: true,
+		value: '{{ident}}'
+	},
+	'name': {
+		enumerable: true,
+		value: '{{name}}'
+	},
+	'hex': {
+		enumerable: true,
+		value: '{{hex}}'
+	},
+	'rgb': {
+		enumerable: true,
+		value: [{{rgb}}]
+	},
+	'space': {
+		value: '{{space}}'
+	},
+	toString() {
+		return '{{'css-value'}}'
+	},
+	valueOf() {
+		return {{digihex}}
+	}
+});
+
 {{/each}}
