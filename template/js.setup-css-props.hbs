@@ -1,6 +1,10 @@
-window.CSS.registerProperty({
-  name: "--clr",
+window.CSS.registerProperty(
+{{#each colorset}}
+{
+  name: "{{'css-name'}}",
   syntax: "<color>",
   inherits: false,
-  initialValue: "magenta",
-});
+  initialValue: "{{'css-value'}}",
+},
+{{/each}}
+)

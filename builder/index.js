@@ -5,7 +5,7 @@ import Handlebars from "handlebars";
 
 import dataset from "../dataset.json" with { type: 'json' };
 import packageJSON from "../package.json" with { type: 'json' };
-import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
+import { debug, logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
 
 const { version } = packageJSON
 
@@ -40,7 +40,7 @@ const entryPoints = [
 const assets = entryPoints.map(([specifier, { template, outfile }]) => {
 	try {
 		const result = template({
-			list,
+			colorset,
 			meta: dataset.meta,
 			version,
 		})
