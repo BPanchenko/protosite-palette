@@ -3,20 +3,10 @@
   "version": "3.5.9",
   "homepage": "https://palette.protosite.xyz",
   "type": "module",
-  "private": true,
-  "main": "./.bundle/lib.protosite-palette.mjs",
-  "devDependencies": {
-    "adobe-aco": "0.1.1",
-    "chromatic-chandelier": "0.1.10",
-    "date-format": "4.0.14",
-    "gl-matrix": "3.4.3",
-    "handlebars": "4.7.8",
-    "lodash": "4.17.21",
-    "node-color-log": "12.0.1"
-  },
-  "engines": {
-    "node": ">=21.1.0"
-  },
+  "main": "./lib.protosite-palette.mjs",
+  "files": [
+    "./*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-palette.git"

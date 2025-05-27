@@ -1,8 +1,8 @@
 
-{{#each list as |item|}}
-@property {{item['css-name']}} {
+{{#each colorset}}
+@property {{'css-name'}} {
   syntax: "<color>";
   inherits: false;
-  initial-value: {{item['css-value']}};
+  initial-value: {{'css-value'}};
 }
 {{/each}}
