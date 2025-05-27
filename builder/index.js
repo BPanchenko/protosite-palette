@@ -5,7 +5,7 @@ import Handlebars from "handlebars";
 
 import dataset from "../dataset.json" with { type: 'json' };
 import packageJSON from "../package.json" with { type: 'json' };
-import { debug, logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
+import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
 
 const { version } = packageJSON
 
@@ -14,6 +14,7 @@ const colorset = Array.from({ length })
 for (let idx = 0; idx < length; idx++) {
 	const { ident, value } = dataset.data[idx]
 	colorset[idx] = await makeColorDTO(value, ident)
+	colorset[idx]['digihex'] = colorset[idx]['hex'].replace('#', '0x')
 }
 
 const tpl = {

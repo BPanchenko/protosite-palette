@@ -1,6 +1,6 @@
 {
   "name": "@bpanchenko/palette",
-  "version": "3.5.10",
+  "version": "3.6.11",
   "homepage": "https://palette.protosite.xyz",
   "type": "module",
   "main": "./lib.protosite-palette.mjs",
