@@ -9,7 +9,6 @@
     "adobe-aco": "0.1.1",
     "chromatic-chandelier": "0.1.10",
     "date-format": "4.0.14",
-    "gl-matrix": "3.4.3",
     "handlebars": "4.7.8",
     "lodash": "4.17.21",
     "node-color-log": "12.0.1"
