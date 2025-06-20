@@ -40,7 +40,7 @@ const entryPoints = [
 	}],
 	['js.setup-css-props', {
 		template:Handlebars.compile(tpl['setup-css-props']),
-		outfile: '.bundle/setup.protosite-palette.js'
+		outfile: '.bundle/register-css-properties.js'
 	}],
 ];
 
