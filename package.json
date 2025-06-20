@@ -1,13 +1,10 @@
 {
-  "name": "@bpanchenko/palette",
-  "version": "3.6.11",
-  "homepage": "https://palette.protosite.xyz",
-  "type": "module",
   "private": true,
+  "type": "module",
   "main": "./.bundle/lib.protosite-palette.mjs",
   "devDependencies": {
     "adobe-aco": "0.1.1",
-    "chromatic-chandelier": "0.1.10",
+    "chromatic-chandelier": "0.2.17",
     "date-format": "4.0.14",
     "handlebars": "4.7.8",
     "lodash": "4.17.21",

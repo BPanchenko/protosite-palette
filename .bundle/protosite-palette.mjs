@@ -25,7 +25,7 @@ export const clrBlack = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#191919'
+		value: '#1a1a1aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -35,10 +35,10 @@ export const clrBlack = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.8851rad 8.84% 89.75% / 1)'
+		return 'hwb(3.8851rad 8.8365% 89.748% / none)'
 	},
 	valueOf() {
-		return 0x191919
+		return 0x1a1a1aff
 	}
 });
 
@@ -57,7 +57,7 @@ export const clrWhite = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#ffffff'
+		value: '#ffffffff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -67,10 +67,10 @@ export const clrWhite = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.0944rad 100% none / 1)'
+		return 'hwb(2.0944rad 100% none / none)'
 	},
 	valueOf() {
-		return 0xffffff
+		return 0xffffffff
 	}
 });
 
@@ -89,7 +89,7 @@ export const clrRed = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#534848'
+		value: '#544948ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -99,10 +99,10 @@ export const clrRed = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.03948rad 13.33% 31.06% / 1)'
+		return 'hwb(0.0394811rad 13.335% 31.062% / none)'
 	},
 	valueOf() {
-		return 0x534848
+		return 0x544948ff
 	}
 });
 
@@ -121,20 +121,20 @@ export const clrRed50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#cccccc'
+		value: '#67787aff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([204,204,204])
+		value: new Uint8Array([103,119,121])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.25277rad 132.89% 32.48% / 1)'
+		return 'hwb(3.25277rad 32.89% 32.484% / none)'
 	},
 	valueOf() {
-		return 0xcccccc
+		return 0x67787aff
 	}
 });
 
@@ -153,7 +153,7 @@ export const clrRed100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#c3c3c3'
+		value: '#c3c3c3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -163,10 +163,10 @@ export const clrRed100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.13078rad 76.51% none / 1)'
+		return 'hwb(0.130783rad 76.514% none / none)'
 	},
 	valueOf() {
-		return 0xc3c3c3
+		return 0xc3c3c3ff
 	}
 });
 
@@ -185,7 +185,7 @@ export const clrRed200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8b8b8b'
+		value: '#8c8c8cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -195,10 +195,10 @@ export const clrRed200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.1138rad 54.73% none / 1)'
+		return 'hwb(0.113801rad 54.73% none / none)'
 	},
 	valueOf() {
-		return 0x8b8b8b
+		return 0x8c8c8cff
 	}
 });
 
@@ -217,7 +217,7 @@ export const clrRed300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#646161'
+		value: '#656262ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -227,10 +227,10 @@ export const clrRed300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.09173rad 37.15% 2.94% / 1)'
+		return 'hwb(0.091731rad 37.148% 2.9442% / none)'
 	},
 	valueOf() {
-		return 0x646161
+		return 0x656262ff
 	}
 });
 
@@ -249,7 +249,7 @@ export const clrRed400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#605453'
+		value: '#605454ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -259,10 +259,10 @@ export const clrRed400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.07521rad 25.5% 16.9% / 1)'
+		return 'hwb(0.075215rad 25.502% 16.897% / none)'
 	},
 	valueOf() {
-		return 0x605453
+		return 0x605454ff
 	}
 });
 
@@ -281,7 +281,7 @@ export const clrRed500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#544848'
+		value: '#544948ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -291,10 +291,10 @@ export const clrRed500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.04121rad 13.72% 30.64% / 1)'
+		return 'hwb(0.041216rad 13.718% 30.638% / none)'
 	},
 	valueOf() {
-		return 0x544848
+		return 0x544948ff
 	}
 });
 
@@ -313,7 +313,7 @@ export const clrRed600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -323,10 +323,10 @@ export const clrRed600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.1954rad none 44.18% / 1)'
+		return 'hwb(6.1954rad none 44.178% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -345,7 +345,7 @@ export const clrRed700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3c3c3cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -355,10 +355,10 @@ export const clrRed700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.19121rad none 61.4% / 1)'
+		return 'hwb(6.19121rad none 61.402% / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3c3c3cff
 	}
 });
 
@@ -377,7 +377,7 @@ export const clrRed800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2b2b2b'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -387,10 +387,10 @@ export const clrRed800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.20709rad none 78.31% / 1)'
+		return 'hwb(6.20709rad none 78.312% / none)'
 	},
 	valueOf() {
-		return 0x2b2b2b
+		return 0x2b2b2bff
 	}
 });
 
@@ -409,7 +409,7 @@ export const clrRed900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#101010'
+		value: '#101010ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -419,10 +419,10 @@ export const clrRed900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.21826rad none 93.27% / 1)'
+		return 'hwb(6.21826rad none 93.271% / none)'
 	},
 	valueOf() {
-		return 0x101010
+		return 0x101010ff
 	}
 });
 
@@ -441,7 +441,7 @@ export const clrRedA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#858585'
+		value: '#868686ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -451,10 +451,10 @@ export const clrRedA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.038rad 52.46% none / 1)'
+		return 'hwb(0.0379993rad 52.463% none / none)'
 	},
 	valueOf() {
-		return 0x858585
+		return 0x868686ff
 	}
 });
 
@@ -473,7 +473,7 @@ export const clrRedA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6e6e6e'
+		value: '#6f6f6fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -483,10 +483,10 @@ export const clrRedA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.2769rad 43.5% none / 1)'
+		return 'hwb(6.2769rad 43.503% none / none)'
 	},
 	valueOf() {
-		return 0x6e6e6e
+		return 0x6f6f6fff
 	}
 });
 
@@ -505,7 +505,7 @@ export const clrRedA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#000000'
+		value: '#000000ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -515,10 +515,10 @@ export const clrRedA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.97688rad none none / 1)'
+		return 'hwb(5.97688rad none none / none)'
 	},
 	valueOf() {
-		return 0x000000
+		return 0x000000ff
 	}
 });
 
@@ -537,7 +537,7 @@ export const clrRedA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2a2a2a'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -547,10 +547,10 @@ export const clrRedA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.93028rad none 21.39% / 1)'
+		return 'hwb(5.93028rad none 21.393% / none)'
 	},
 	valueOf() {
-		return 0x2a2a2a
+		return 0x2b2b2bff
 	}
 });
 
@@ -569,7 +569,7 @@ export const clrPink = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a39d9f'
+		value: '#a39d9fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -579,10 +579,10 @@ export const clrPink = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.88717rad 60.87% 5.71% / 1)'
+		return 'hwb(5.88717rad 60.871% 5.7094% / none)'
 	},
 	valueOf() {
-		return 0xa39d9f
+		return 0xa39d9fff
 	}
 });
 
@@ -601,7 +601,7 @@ export const clrPink50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#e1e1e1'
+		value: '#e1e1e1ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -611,10 +611,10 @@ export const clrPink50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.92627rad 88.27% none / 1)'
+		return 'hwb(5.92627rad 88.272% none / none)'
 	},
 	valueOf() {
-		return 0xe1e1e1
+		return 0xe1e1e1ff
 	}
 });
 
@@ -633,7 +633,7 @@ export const clrPink100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#c7c7c7'
+		value: '#c8c8c8ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -643,10 +643,10 @@ export const clrPink100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.90899rad 78.43% none / 1)'
+		return 'hwb(5.90899rad 78.431% none / none)'
 	},
 	valueOf() {
-		return 0xc7c7c7
+		return 0xc8c8c8ff
 	}
 });
 
@@ -665,7 +665,7 @@ export const clrPink200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a5a1a2'
+		value: '#a5a1a3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -675,10 +675,10 @@ export const clrPink200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.88839rad 62.78% 3.62% / 1)'
+		return 'hwb(5.88839rad 62.783% 3.6194% / none)'
 	},
 	valueOf() {
-		return 0xa5a1a2
+		return 0xa5a1a3ff
 	}
 });
 
@@ -697,7 +697,7 @@ export const clrPink300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#96888d'
+		value: '#96888eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -707,10 +707,10 @@ export const clrPink300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.87949rad 50.64% 16.95% / 1)'
+		return 'hwb(5.87949rad 50.638% 16.947% / none)'
 	},
 	valueOf() {
-		return 0x96888d
+		return 0x96888eff
 	}
 });
 
@@ -729,7 +729,7 @@ export const clrPink400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#847179'
+		value: '#847279ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -739,10 +739,10 @@ export const clrPink400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.8671rad 38.88% 29.98% / 1)'
+		return 'hwb(5.8671rad 38.877% 29.975% / none)'
 	},
 	valueOf() {
-		return 0x847179
+		return 0x847279ff
 	}
 });
 
@@ -761,7 +761,7 @@ export const clrPink500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6f5d65'
+		value: '#6f5e65ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -771,10 +771,10 @@ export const clrPink500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.8493rad 27.49% 42.69% / 1)'
+		return 'hwb(5.8493rad 27.488% 42.688% / none)'
 	},
 	valueOf() {
-		return 0x6f5d65
+		return 0x6f5e65ff
 	}
 });
 
@@ -793,7 +793,7 @@ export const clrPink600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#574c51'
+		value: '#574c51ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -803,10 +803,10 @@ export const clrPink600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.8198rad 16.34% 55.08% / 1)'
+		return 'hwb(5.8198rad 16.342% 55.076% / none)'
 	},
 	valueOf() {
-		return 0x574c51
+		return 0x574c51ff
 	}
 });
 
@@ -825,7 +825,7 @@ export const clrPink700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3a3b'
+		value: '#3d3b3cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -835,10 +835,10 @@ export const clrPink700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.75365rad 4.36% 67.14% / 1)'
+		return 'hwb(5.75365rad 4.364% 67.136% / none)'
 	},
 	valueOf() {
-		return 0x3c3a3b
+		return 0x3d3b3cff
 	}
 });
 
@@ -857,7 +857,7 @@ export const clrPink800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#292929'
+		value: '#2a2a2aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -867,10 +867,10 @@ export const clrPink800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.73777rad none 79.46% / 1)'
+		return 'hwb(5.73777rad none 79.46% / none)'
 	},
 	valueOf() {
-		return 0x292929
+		return 0x2a2a2aff
 	}
 });
 
@@ -889,7 +889,7 @@ export const clrPink900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0e0e0e'
+		value: '#0f0f0fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -899,10 +899,10 @@ export const clrPink900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.95rad none 93.76% / 1)'
+		return 'hwb(5.95rad none 93.76% / none)'
 	},
 	valueOf() {
-		return 0x0e0e0e
+		return 0x0f0f0fff
 	}
 });
 
@@ -921,7 +921,7 @@ export const clrPinkA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8d8d8d'
+		value: '#8e8e8eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -931,10 +931,10 @@ export const clrPinkA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.85837rad 55.58% none / 1)'
+		return 'hwb(5.85837rad 55.58% none / none)'
 	},
 	valueOf() {
-		return 0x8d8d8d
+		return 0x8e8e8eff
 	}
 });
 
@@ -953,7 +953,7 @@ export const clrPinkA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#707070'
+		value: '#717171ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -963,10 +963,10 @@ export const clrPinkA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.82678rad 44.31% none / 1)'
+		return 'hwb(5.82678rad 44.306% none / none)'
 	},
 	valueOf() {
-		return 0x707070
+		return 0x717171ff
 	}
 });
 
@@ -985,7 +985,7 @@ export const clrPinkA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#000000'
+		value: '#000000ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -995,10 +995,10 @@ export const clrPinkA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.6334rad none none / 1)'
+		return 'hwb(5.6334rad none none / none)'
 	},
 	valueOf() {
-		return 0x000000
+		return 0x000000ff
 	}
 });
 
@@ -1017,7 +1017,7 @@ export const clrPinkA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#292929'
+		value: '#2a2a2aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1027,10 +1027,10 @@ export const clrPinkA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.62973rad none 20.52% / 1)'
+		return 'hwb(5.62973rad none 20.517% / none)'
 	},
 	valueOf() {
-		return 0x292929
+		return 0x2a2a2aff
 	}
 });
 
@@ -1049,7 +1049,7 @@ export const clrPurple = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#584b55'
+		value: '#584b56ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1059,10 +1059,10 @@ export const clrPurple = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.42832rad 17.8% 24.84% / 1)'
+		return 'hwb(5.42832rad 17.795% 24.837% / none)'
 	},
 	valueOf() {
-		return 0x584b55
+		return 0x584b56ff
 	}
 });
 
@@ -1081,7 +1081,7 @@ export const clrPurple50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#dfdfdf'
+		value: '#e0e0e0ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1091,10 +1091,10 @@ export const clrPurple50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.54439rad 87.73% none / 1)'
+		return 'hwb(5.54439rad 87.726% none / none)'
 	},
 	valueOf() {
-		return 0xdfdfdf
+		return 0xe0e0e0ff
 	}
 });
 
@@ -1113,7 +1113,7 @@ export const clrPurple100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#c4c4c4'
+		value: '#c5c5c5ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1123,10 +1123,10 @@ export const clrPurple100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.52519rad 77.18% none / 1)'
+		return 'hwb(5.52519rad 77.179% none / none)'
 	},
 	valueOf() {
-		return 0xc4c4c4
+		return 0xc5c5c5ff
 	}
 });
 
@@ -1145,7 +1145,7 @@ export const clrPurple200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#878787'
+		value: '#878787ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1155,10 +1155,10 @@ export const clrPurple200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.47894rad 53.04% none / 1)'
+		return 'hwb(5.47894rad 53.042% none / none)'
 	},
 	valueOf() {
-		return 0x878787
+		return 0x878787ff
 	}
 });
 
@@ -1177,7 +1177,7 @@ export const clrPurple300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6a6268'
+		value: '#6a6369ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1187,10 +1187,10 @@ export const clrPurple300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.45538rad 36.24% 6.93% / 1)'
+		return 'hwb(5.45538rad 36.237% 6.9276% / none)'
 	},
 	valueOf() {
-		return 0x6a6268
+		return 0x6a6369ff
 	}
 });
 
@@ -1209,7 +1209,7 @@ export const clrPurple400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#5e505b'
+		value: '#5e515bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1219,10 +1219,10 @@ export const clrPurple400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.43635rad 22.49% 20.66% / 1)'
+		return 'hwb(5.43635rad 22.492% 20.663% / none)'
 	},
 	valueOf() {
-		return 0x5e505b
+		return 0x5e515bff
 	}
 });
 
@@ -1241,7 +1241,7 @@ export const clrPurple500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3c3e'
+		value: '#3f3c3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1251,10 +1251,10 @@ export const clrPurple500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.39621rad 2.37% 34.17% / 1)'
+		return 'hwb(5.39621rad 2.3711% 34.165% / none)'
 	},
 	valueOf() {
-		return 0x3e3c3e
+		return 0x3f3c3eff
 	}
 });
 
@@ -1273,7 +1273,7 @@ export const clrPurple600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1283,10 +1283,10 @@ export const clrPurple600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.37509rad none 49.28% / 1)'
+		return 'hwb(5.37509rad none 49.279% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -1305,7 +1305,7 @@ export const clrPurple700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#393939'
+		value: '#393939ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1315,10 +1315,10 @@ export const clrPurple700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.38329rad none 65.79% / 1)'
+		return 'hwb(5.38329rad none 65.788% / none)'
 	},
 	valueOf() {
-		return 0x393939
+		return 0x393939ff
 	}
 });
 
@@ -1337,7 +1337,7 @@ export const clrPurple800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#272727'
+		value: '#272727ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1347,10 +1347,10 @@ export const clrPurple800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.40616rad none 81.02% / 1)'
+		return 'hwb(5.40616rad none 81.024% / none)'
 	},
 	valueOf() {
-		return 0x272727
+		return 0x272727ff
 	}
 });
 
@@ -1369,7 +1369,7 @@ export const clrPurple900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0d0d0d'
+		value: '#0d0d0dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1379,10 +1379,10 @@ export const clrPurple900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.5135rad none 94.53% / 1)'
+		return 'hwb(5.5135rad none 94.532% / none)'
 	},
 	valueOf() {
-		return 0x0d0d0d
+		return 0x0d0d0dff
 	}
 });
 
@@ -1401,7 +1401,7 @@ export const clrPurpleA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#898989'
+		value: '#898989ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1411,10 +1411,10 @@ export const clrPurpleA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.48121rad 53.76% none / 1)'
+		return 'hwb(5.48121rad 53.762% none / none)'
 	},
 	valueOf() {
-		return 0x898989
+		return 0x898989ff
 	}
 });
 
@@ -1433,7 +1433,7 @@ export const clrPurpleA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#676767'
+		value: '#686868ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1443,10 +1443,10 @@ export const clrPurpleA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.45625rad 40.74% none / 1)'
+		return 'hwb(5.45625rad 40.738% none / none)'
 	},
 	valueOf() {
-		return 0x676767
+		return 0x686868ff
 	}
 });
 
@@ -1465,7 +1465,7 @@ export const clrPurpleA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#000000'
+		value: '#000000ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1475,10 +1475,10 @@ export const clrPurpleA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.36828rad none none / 1)'
+		return 'hwb(5.36828rad none none / none)'
 	},
 	valueOf() {
-		return 0x000000
+		return 0x000000ff
 	}
 });
 
@@ -1497,7 +1497,7 @@ export const clrPurpleA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2c2c2c'
+		value: '#2d2d2dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1507,10 +1507,10 @@ export const clrPurpleA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.37108rad none 22.79% / 1)'
+		return 'hwb(5.37108rad none 22.787% / none)'
 	},
 	valueOf() {
-		return 0x2c2c2c
+		return 0x2d2d2dff
 	}
 });
 
@@ -1529,7 +1529,7 @@ export const clrViolet = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#322f34'
+		value: '#322f34ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1539,10 +1539,10 @@ export const clrViolet = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.85079rad 10.86% 11.01% / 1)'
+		return 'hwb(4.85079rad 10.859% 11.012% / none)'
 	},
 	valueOf() {
-		return 0x322f34
+		return 0x322f34ff
 	}
 });
 
@@ -1561,20 +1561,20 @@ export const clrViolet50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#d4d4d4'
+		value: '#889180ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([212,212,212])
+		value: new Uint8Array([135,145,128])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.61939rad 146.53% 29.07% / 1)'
+		return 'hwb(1.61939rad 46.53% 29.071% / none)'
 	},
 	valueOf() {
-		return 0xd4d4d4
+		return 0x889180ff
 	}
 });
 
@@ -1593,20 +1593,20 @@ export const clrViolet100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#cacaca'
+		value: '#7a8472ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([202,202,202])
+		value: new Uint8Array([121,131,113])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.62398rad 139.23% 35.81% / 1)'
+		return 'hwb(1.62398rad 39.23% 35.808% / none)'
 	},
 	valueOf() {
-		return 0xcacaca
+		return 0x7a8472ff
 	}
 });
 
@@ -1625,7 +1625,7 @@ export const clrViolet200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a0a0a0'
+		value: '#a1a1a1ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1635,10 +1635,10 @@ export const clrViolet200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.73752rad 63.13% none / 1)'
+		return 'hwb(4.73752rad 63.134% none / none)'
 	},
 	valueOf() {
-		return 0xa0a0a0
+		return 0xa1a1a1ff
 	}
 });
 
@@ -1657,7 +1657,7 @@ export const clrViolet300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6b6b6b'
+		value: '#6c6c6cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1667,10 +1667,10 @@ export const clrViolet300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.77644rad 42.26% none / 1)'
+		return 'hwb(4.77644rad 42.255% none / none)'
 	},
 	valueOf() {
-		return 0x6b6b6b
+		return 0x6c6c6cff
 	}
 });
 
@@ -1689,7 +1689,7 @@ export const clrViolet400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3c3f'
+		value: '#3f3d40ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1699,10 +1699,10 @@ export const clrViolet400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.82077rad 21.89% 3.37% / 1)'
+		return 'hwb(4.82077rad 21.89% 3.3675% / none)'
 	},
 	valueOf() {
-		return 0x3e3c3f
+		return 0x3f3d40ff
 	}
 });
 
@@ -1721,7 +1721,7 @@ export const clrViolet500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#242424'
+		value: '#242424ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1731,10 +1731,10 @@ export const clrViolet500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.90752rad none 17.08% / 1)'
+		return 'hwb(4.90752rad none 17.079% / none)'
 	},
 	valueOf() {
-		return 0x242424
+		return 0x242424ff
 	}
 });
 
@@ -1753,7 +1753,7 @@ export const clrViolet600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3b3b3b'
+		value: '#3c3c3cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1763,10 +1763,10 @@ export const clrViolet600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.90734rad none 37.31% / 1)'
+		return 'hwb(4.90734rad none 37.31% / none)'
 	},
 	valueOf() {
-		return 0x3b3b3b
+		return 0x3c3c3cff
 	}
 });
 
@@ -1785,7 +1785,7 @@ export const clrViolet700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1795,10 +1795,10 @@ export const clrViolet700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.89163rad none 57.04% / 1)'
+		return 'hwb(4.89163rad none 57.037% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3e3e3eff
 	}
 });
 
@@ -1817,7 +1817,7 @@ export const clrViolet800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2f2f2f'
+		value: '#303030ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1827,10 +1827,10 @@ export const clrViolet800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.84835rad none 75.24% / 1)'
+		return 'hwb(4.84835rad none 75.24% / none)'
 	},
 	valueOf() {
-		return 0x2f2f2f
+		return 0x303030ff
 	}
 });
 
@@ -1849,7 +1849,7 @@ export const clrViolet900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#131313'
+		value: '#141414ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1859,10 +1859,10 @@ export const clrViolet900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.66788rad none 91.52% / 1)'
+		return 'hwb(4.66788rad none 91.521% / none)'
 	},
 	valueOf() {
-		return 0x131313
+		return 0x141414ff
 	}
 });
 
@@ -1881,7 +1881,7 @@ export const clrVioletA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a2a2a2'
+		value: '#a3a3a3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1891,10 +1891,10 @@ export const clrVioletA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.73805rad 63.87% none / 1)'
+		return 'hwb(4.73805rad 63.872% none / none)'
 	},
 	valueOf() {
-		return 0xa2a2a2
+		return 0xa3a3a3ff
 	}
 });
 
@@ -1913,7 +1913,7 @@ export const clrVioletA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8e8e8e'
+		value: '#8f8f8fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1923,10 +1923,10 @@ export const clrVioletA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.73874rad 55.94% none / 1)'
+		return 'hwb(4.73874rad 55.943% none / none)'
 	},
 	valueOf() {
-		return 0x8e8e8e
+		return 0x8f8f8fff
 	}
 });
 
@@ -1945,7 +1945,7 @@ export const clrVioletA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#626262'
+		value: '#626262ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1955,10 +1955,10 @@ export const clrVioletA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.74642rad 38.57% none / 1)'
+		return 'hwb(4.74642rad 38.568% none / none)'
 	},
 	valueOf() {
-		return 0x626262
+		return 0x626262ff
 	}
 });
 
@@ -1977,7 +1977,7 @@ export const clrVioletA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#000000'
+		value: '#000000ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -1987,10 +1987,10 @@ export const clrVioletA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.84783rad none none / 1)'
+		return 'hwb(4.84783rad none none / none)'
 	},
 	valueOf() {
-		return 0x000000
+		return 0x000000ff
 	}
 });
 
@@ -2009,7 +2009,7 @@ export const clrIndigo = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#46444b'
+		value: '#46454bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2019,10 +2019,10 @@ export const clrIndigo = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.46141rad 7.98% 55.91% / 1)'
+		return 'hwb(4.46141rad 7.9752% 55.905% / none)'
 	},
 	valueOf() {
-		return 0x46444b
+		return 0x46454bff
 	}
 });
 
@@ -2041,20 +2041,20 @@ export const clrIndigo50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#e9e9e9'
+		value: '#646459ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([233,233,233])
+		value: new Uint8Array([99,100,89])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.09764rad 130.13% 12.13% / 1)'
+		return 'hwb(1.09764rad 30.13% 12.127% / none)'
 	},
 	valueOf() {
-		return 0xe9e9e9
+		return 0x646459ff
 	}
 });
 
@@ -2073,20 +2073,20 @@ export const clrIndigo100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#dddddd'
+		value: '#5c5d50ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([221,221,221])
+		value: new Uint8Array([92,92,80])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.10209rad 123.1% 18.63% / 1)'
+		return 'hwb(1.10209rad 23.1% 18.632% / none)'
 	},
 	valueOf() {
-		return 0xdddddd
+		return 0x5c5d50ff
 	}
 });
 
@@ -2105,7 +2105,7 @@ export const clrIndigo200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#b1b1b1'
+		value: '#b1b1b1ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2115,10 +2115,10 @@ export const clrIndigo200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.24324rad 69.51% none / 1)'
+		return 'hwb(4.24324rad 69.506% none / none)'
 	},
 	valueOf() {
-		return 0xb1b1b1
+		return 0xb1b1b1ff
 	}
 });
 
@@ -2137,7 +2137,7 @@ export const clrIndigo300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#919196'
+		value: '#929196ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2147,10 +2147,10 @@ export const clrIndigo300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.26873rad 56.17% 4.37% / 1)'
+		return 'hwb(4.26873rad 56.168% 4.3666% / none)'
 	},
 	valueOf() {
-		return 0x919196
+		return 0x929196ff
 	}
 });
 
@@ -2169,7 +2169,7 @@ export const clrIndigo400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7b7a89'
+		value: '#7b7a89ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2179,10 +2179,10 @@ export const clrIndigo400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.28845rad 44.07% 17.67% / 1)'
+		return 'hwb(4.28845rad 44.071% 17.672% / none)'
 	},
 	valueOf() {
-		return 0x7b7a89
+		return 0x7b7a89ff
 	}
 });
 
@@ -2201,7 +2201,7 @@ export const clrIndigo500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#686578'
+		value: '#686679ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2211,10 +2211,10 @@ export const clrIndigo500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.31742rad 32.28% 30.67% / 1)'
+		return 'hwb(4.31742rad 32.28% 30.672% / none)'
 	},
 	valueOf() {
-		return 0x686578
+		return 0x686679ff
 	}
 });
 
@@ -2233,7 +2233,7 @@ export const clrIndigo600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#565464'
+		value: '#575465ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2243,10 +2243,10 @@ export const clrIndigo600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.36472rad 20.64% 43.35% / 1)'
+		return 'hwb(4.36472rad 20.64% 43.35% / none)'
 	},
 	valueOf() {
-		return 0x565464
+		return 0x575465ff
 	}
 });
 
@@ -2265,7 +2265,7 @@ export const clrIndigo700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#46444b'
+		value: '#47454cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2275,10 +2275,10 @@ export const clrIndigo700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.45879rad 8.23% 55.69% / 1)'
+		return 'hwb(4.45879rad 8.2278% 55.688% / none)'
 	},
 	valueOf() {
-		return 0x46444b
+		return 0x47454cff
 	}
 });
 
@@ -2297,7 +2297,7 @@ export const clrIndigo800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#353535'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2307,10 +2307,10 @@ export const clrIndigo800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.57433rad none 69.59% / 1)'
+		return 'hwb(4.57433rad none 69.586% / none)'
 	},
 	valueOf() {
-		return 0x353535
+		return 0x363636ff
 	}
 });
 
@@ -2329,7 +2329,7 @@ export const clrIndigo900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#191919'
+		value: '#191919ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2339,10 +2339,10 @@ export const clrIndigo900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.41446rad none 88.91% / 1)'
+		return 'hwb(4.41446rad none 88.912% / none)'
 	},
 	valueOf() {
-		return 0x191919
+		return 0x191919ff
 	}
 });
 
@@ -2361,20 +2361,20 @@ export const clrIndigoA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#bcbcbc'
+		value: '#838383ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([188,188,188])
+		value: new Uint8Array([131,131,131])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.32851rad 160.32% 56.7% / 1)'
+		return 'hwb(1.32851rad 60.32% 56.696% / none)'
 	},
 	valueOf() {
-		return 0xbcbcbc
+		return 0x838383ff
 	}
 });
 
@@ -2393,7 +2393,7 @@ export const clrIndigoA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a0a0a0'
+		value: '#a0a0a0ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2403,10 +2403,10 @@ export const clrIndigoA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.26419rad 62.94% none / 1)'
+		return 'hwb(4.26419rad 62.94% none / none)'
 	},
 	valueOf() {
-		return 0xa0a0a0
+		return 0xa0a0a0ff
 	}
 });
 
@@ -2425,7 +2425,7 @@ export const clrIndigoA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#808080'
+		value: '#808080ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2435,10 +2435,10 @@ export const clrIndigoA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.23574rad 50.21% none / 1)'
+		return 'hwb(4.23574rad 50.209% none / none)'
 	},
 	valueOf() {
-		return 0x808080
+		return 0x808080ff
 	}
 });
 
@@ -2457,7 +2457,7 @@ export const clrIndigoA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#474747'
+		value: '#474747ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2467,10 +2467,10 @@ export const clrIndigoA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.16889rad 27.97% none / 1)'
+		return 'hwb(4.16889rad 27.971% none / none)'
 	},
 	valueOf() {
-		return 0x474747
+		return 0x474747ff
 	}
 });
 
@@ -2489,7 +2489,7 @@ export const clrBlue = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#5f6070'
+		value: '#606071ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2499,10 +2499,10 @@ export const clrBlue = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.1565rad 29.4% 25.25% / 1)'
+		return 'hwb(4.1565rad 29.397% 25.247% / none)'
 	},
 	valueOf() {
-		return 0x5f6070
+		return 0x606071ff
 	}
 });
 
@@ -2521,20 +2521,20 @@ export const clrBlue50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#e1e1e1'
+		value: '#7e7c6eff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([225,225,225])
+		value: new Uint8Array([125,123,110])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.91906rad 138.38% 18.07% / 1)'
+		return 'hwb(0.919055rad 38.38% 18.074% / none)'
 	},
 	valueOf() {
-		return 0xe1e1e1
+		return 0x7e7c6eff
 	}
 });
 
@@ -2553,20 +2553,20 @@ export const clrBlue100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#d7d7d7'
+		value: '#747263ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([215,215,215])
+		value: new Uint8Array([115,113,98])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.92342rad 131.22% 24.3% / 1)'
+		return 'hwb(0.923419rad 31.22% 24.302% / none)'
 	},
 	valueOf() {
-		return 0xd7d7d7
+		return 0x747263ff
 	}
 });
 
@@ -2585,7 +2585,7 @@ export const clrBlue200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a8a8a8'
+		value: '#a9a9a9ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2595,10 +2595,10 @@ export const clrBlue200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.05004rad 66.21% none / 1)'
+		return 'hwb(4.05004rad 66.211% none / none)'
 	},
 	valueOf() {
-		return 0xa8a8a8
+		return 0xa9a9a9ff
 	}
 });
 
@@ -2617,7 +2617,7 @@ export const clrBlue300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#848484'
+		value: '#848484ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2627,10 +2627,10 @@ export const clrBlue300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.09123rad 51.93% none / 1)'
+		return 'hwb(4.09123rad 51.926% none / none)'
 	},
 	valueOf() {
-		return 0x848484
+		return 0x848484ff
 	}
 });
 
@@ -2649,7 +2649,7 @@ export const clrBlue400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6f707a'
+		value: '#70717aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2659,10 +2659,10 @@ export const clrBlue400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.11392rad 40.86% 10.42% / 1)'
+		return 'hwb(4.11392rad 40.858% 10.42% / none)'
 	},
 	valueOf() {
-		return 0x6f707a
+		return 0x70717aff
 	}
 });
 
@@ -2681,7 +2681,7 @@ export const clrBlue500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#616171'
+		value: '#616272ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2691,10 +2691,10 @@ export const clrBlue500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.15074rad 30.51% 23.76% / 1)'
+		return 'hwb(4.15074rad 30.509% 23.76% / none)'
 	},
 	valueOf() {
-		return 0x616171
+		return 0x616272ff
 	}
 });
 
@@ -2713,7 +2713,7 @@ export const clrBlue600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#535363'
+		value: '#545363ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2723,10 +2723,10 @@ export const clrBlue600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.22021rad 19.84% 36.81% / 1)'
+		return 'hwb(4.22021rad 19.842% 36.811% / none)'
 	},
 	valueOf() {
-		return 0x535363
+		return 0x545363ff
 	}
 });
 
@@ -2745,7 +2745,7 @@ export const clrBlue700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#444348'
+		value: '#444349ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2755,10 +2755,10 @@ export const clrBlue700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.3806rad 4.96% 49.56% / 1)'
+		return 'hwb(4.3806rad 4.9643% 49.559% / none)'
 	},
 	valueOf() {
-		return 0x444348
+		return 0x444349ff
 	}
 });
 
@@ -2777,7 +2777,7 @@ export const clrBlue800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#373737'
+		value: '#383838ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2787,10 +2787,10 @@ export const clrBlue800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.46403rad none 67.61% / 1)'
+		return 'hwb(4.46403rad none 67.614% / none)'
 	},
 	valueOf() {
-		return 0x373737
+		return 0x383838ff
 	}
 });
 
@@ -2809,7 +2809,7 @@ export const clrBlue900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1a1a1a'
+		value: '#1b1b1bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2819,10 +2819,10 @@ export const clrBlue900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(4.34273rad none 88.21% / 1)'
+		return 'hwb(4.34273rad none 88.208% / none)'
 	},
 	valueOf() {
-		return 0x1a1a1a
+		return 0x1b1b1bff
 	}
 });
 
@@ -2841,7 +2841,7 @@ export const clrBlueA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#949494'
+		value: '#959595ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2851,10 +2851,10 @@ export const clrBlueA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.86782rad 58.37% none / 1)'
+		return 'hwb(3.86782rad 58.373% none / none)'
 	},
 	valueOf() {
-		return 0x949494
+		return 0x959595ff
 	}
 });
 
@@ -2873,7 +2873,7 @@ export const clrBlueA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7b7b7b'
+		value: '#7b7b7bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2883,10 +2883,10 @@ export const clrBlueA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.83658rad 48.36% none / 1)'
+		return 'hwb(3.83658rad 48.362% none / none)'
 	},
 	valueOf() {
-		return 0x7b7b7b
+		return 0x7b7b7bff
 	}
 });
 
@@ -2905,7 +2905,7 @@ export const clrBlueA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#313131'
+		value: '#313131ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2915,10 +2915,10 @@ export const clrBlueA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.72453rad 19.31% none / 1)'
+		return 'hwb(3.72453rad 19.307% none / none)'
 	},
 	valueOf() {
-		return 0x313131
+		return 0x313131ff
 	}
 });
 
@@ -2937,7 +2937,7 @@ export const clrBlueA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2947,10 +2947,10 @@ export const clrBlueA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.45907rad none 30.62% / 1)'
+		return 'hwb(3.45907rad none 30.618% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x363636ff
 	}
 });
 
@@ -2969,7 +2969,7 @@ export const clrLightBlue = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#4b4b4b'
+		value: '#4b4b4bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -2979,10 +2979,10 @@ export const clrLightBlue = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.52225rad 29.42% none / 1)'
+		return 'hwb(3.52225rad 29.416% none / none)'
 	},
 	valueOf() {
-		return 0x4b4b4b
+		return 0x4b4b4bff
 	}
 });
 
@@ -3001,7 +3001,7 @@ export const clrLightBlue50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#d2d2d2'
+		value: '#d3d3d3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3011,10 +3011,10 @@ export const clrLightBlue50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.56571rad 82.57% none / 1)'
+		return 'hwb(3.56571rad 82.571% none / none)'
 	},
 	valueOf() {
-		return 0xd2d2d2
+		return 0xd3d3d3ff
 	}
 });
 
@@ -3033,7 +3033,7 @@ export const clrLightBlue100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#afafaf'
+		value: '#b0b0b0ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3043,10 +3043,10 @@ export const clrLightBlue100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.5596rad 68.92% none / 1)'
+		return 'hwb(3.5596rad 68.916% none / none)'
 	},
 	valueOf() {
-		return 0xafafaf
+		return 0xb0b0b0ff
 	}
 });
 
@@ -3065,7 +3065,7 @@ export const clrLightBlue200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#5e5e5e'
+		value: '#5e5e5eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3075,10 +3075,10 @@ export const clrLightBlue200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.5315rad 36.89% none / 1)'
+		return 'hwb(3.5315rad 36.889% none / none)'
 	},
 	valueOf() {
-		return 0x5e5e5e
+		return 0x5e5e5eff
 	}
 });
 
@@ -3097,7 +3097,7 @@ export const clrLightBlue300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d4143'
+		value: '#3e4244ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3107,10 +3107,10 @@ export const clrLightBlue300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.50724rad 19.34% 8.34% / 1)'
+		return 'hwb(3.50724rad 19.335% 8.3358% / none)'
 	},
 	valueOf() {
-		return 0x3d4143
+		return 0x3e4244ff
 	}
 });
 
@@ -3129,7 +3129,7 @@ export const clrLightBlue400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2b2b2b'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3139,10 +3139,10 @@ export const clrLightBlue400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.43481rad none 21.48% / 1)'
+		return 'hwb(3.43481rad none 21.479% / none)'
 	},
 	valueOf() {
-		return 0x2b2b2b
+		return 0x2b2b2bff
 	}
 });
 
@@ -3161,7 +3161,7 @@ export const clrLightBlue500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3c3c3cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3171,10 +3171,10 @@ export const clrLightBlue500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.44004rad none 38.12% / 1)'
+		return 'hwb(3.44004rad none 38.118% / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3c3c3cff
 	}
 });
 
@@ -3193,7 +3193,7 @@ export const clrLightBlue600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3203,10 +3203,10 @@ export const clrLightBlue600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.45121rad none 53.86% / 1)'
+		return 'hwb(3.45121rad none 53.862% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -3225,7 +3225,7 @@ export const clrLightBlue700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#373737ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3235,10 +3235,10 @@ export const clrLightBlue700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.47757rad none 68.54% / 1)'
+		return 'hwb(3.47757rad none 68.538% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x373737ff
 	}
 });
 
@@ -3257,7 +3257,7 @@ export const clrLightBlue800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#252525'
+		value: '#262626ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3267,10 +3267,10 @@ export const clrLightBlue800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.55541rad none 81.89% / 1)'
+		return 'hwb(3.55541rad none 81.895% / none)'
 	},
 	valueOf() {
-		return 0x252525
+		return 0x262626ff
 	}
 });
 
@@ -3289,7 +3289,7 @@ export const clrLightBlue900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0e0e0e'
+		value: '#0e0e0eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3299,10 +3299,10 @@ export const clrLightBlue900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.82524rad none 94.04% / 1)'
+		return 'hwb(3.82524rad none 94.043% / none)'
 	},
 	valueOf() {
-		return 0x0e0e0e
+		return 0x0e0e0eff
 	}
 });
 
@@ -3321,7 +3321,7 @@ export const clrLightBlueA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#222222'
+		value: '#222222ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3331,10 +3331,10 @@ export const clrLightBlueA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.24527rad none 16.03% / 1)'
+		return 'hwb(3.24527rad none 16.034% / none)'
 	},
 	valueOf() {
-		return 0x222222
+		return 0x222222ff
 	}
 });
 
@@ -3353,7 +3353,7 @@ export const clrLightBlueA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#313131'
+		value: '#323232ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3363,10 +3363,10 @@ export const clrLightBlueA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.21769rad none 26.45% / 1)'
+		return 'hwb(3.21769rad none 26.446% / none)'
 	},
 	valueOf() {
-		return 0x313131
+		return 0x323232ff
 	}
 });
 
@@ -3385,7 +3385,7 @@ export const clrLightBlueA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3395,10 +3395,10 @@ export const clrLightBlueA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.13025rad none 56.24% / 1)'
+		return 'hwb(3.13025rad none 56.235% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -3417,7 +3417,7 @@ export const clrLightBlueA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#353535'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3427,10 +3427,10 @@ export const clrLightBlueA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.1313rad none 69.85% / 1)'
+		return 'hwb(3.1313rad none 69.845% / none)'
 	},
 	valueOf() {
-		return 0x353535
+		return 0x363636ff
 	}
 });
 
@@ -3449,7 +3449,7 @@ export const clrCyan = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#4c5858'
+		value: '#4c5858ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3459,10 +3459,10 @@ export const clrCyan = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.11838rad 20.79% 19.14% / 1)'
+		return 'hwb(3.11838rad 20.79% 19.143% / none)'
 	},
 	valueOf() {
-		return 0x4c5858
+		return 0x4c5858ff
 	}
 });
 
@@ -3481,7 +3481,7 @@ export const clrCyan50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8a8a8a'
+		value: '#8b8b8bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3491,10 +3491,10 @@ export const clrCyan50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.10773rad 54.47% none / 1)'
+		return 'hwb(3.10773rad 54.473% none / none)'
 	},
 	valueOf() {
-		return 0x8a8a8a
+		return 0x8b8b8bff
 	}
 });
 
@@ -3513,7 +3513,7 @@ export const clrCyan100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6c6f6f'
+		value: '#6c7070ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3523,10 +3523,10 @@ export const clrCyan100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.11245rad 41.58% 2.89% / 1)'
+		return 'hwb(3.11245rad 41.579% 2.8876% / none)'
 	},
 	valueOf() {
-		return 0x6c6f6f
+		return 0x6c7070ff
 	}
 });
 
@@ -3545,7 +3545,7 @@ export const clrCyan200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#525e5e'
+		value: '#535f5fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3555,10 +3555,10 @@ export const clrCyan200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.11698rad 25.48% 15.98% / 1)'
+		return 'hwb(3.11698rad 25.479% 15.978% / none)'
 	},
 	valueOf() {
-		return 0x525e5e
+		return 0x535f5fff
 	}
 });
 
@@ -3577,7 +3577,7 @@ export const clrCyan300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#343434'
+		value: '#343434ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3587,10 +3587,10 @@ export const clrCyan300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.12588rad none 28.73% / 1)'
+		return 'hwb(3.12588rad none 28.73% / none)'
 	},
 	valueOf() {
-		return 0x343434
+		return 0x343434ff
 	}
 });
 
@@ -3609,7 +3609,7 @@ export const clrCyan400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3619,10 +3619,10 @@ export const clrCyan400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.1292rad none 41.13% / 1)'
+		return 'hwb(3.1292rad none 41.128% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -3641,7 +3641,7 @@ export const clrCyan500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3651,10 +3651,10 @@ export const clrCyan500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.12938rad none 54.06% / 1)'
+		return 'hwb(3.12938rad none 54.064% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -3673,7 +3673,7 @@ export const clrCyan600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#383838'
+		value: '#393939ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3683,10 +3683,10 @@ export const clrCyan600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.12938rad none 66.38% / 1)'
+		return 'hwb(3.12938rad none 66.376% / none)'
 	},
 	valueOf() {
-		return 0x383838
+		return 0x393939ff
 	}
 });
 
@@ -3705,7 +3705,7 @@ export const clrCyan700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2b2b2b'
+		value: '#2c2c2cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3715,10 +3715,10 @@ export const clrCyan700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.12955rad none 77.96% / 1)'
+		return 'hwb(3.12955rad none 77.956% / none)'
 	},
 	valueOf() {
-		return 0x2b2b2b
+		return 0x2c2c2cff
 	}
 });
 
@@ -3737,7 +3737,7 @@ export const clrCyan800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#191919'
+		value: '#1a1a1aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3747,10 +3747,10 @@ export const clrCyan800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.1299rad none 88.63% / 1)'
+		return 'hwb(3.1299rad none 88.631% / none)'
 	},
 	valueOf() {
-		return 0x191919
+		return 0x1a1a1aff
 	}
 });
 
@@ -3769,7 +3769,7 @@ export const clrCyan900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#050505'
+		value: '#050505ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3779,10 +3779,10 @@ export const clrCyan900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.14002rad none 97.8% / 1)'
+		return 'hwb(3.14002rad none 97.797% / none)'
 	},
 	valueOf() {
-		return 0x050505
+		return 0x050505ff
 	}
 });
 
@@ -3801,7 +3801,7 @@ export const clrCyanA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#323232'
+		value: '#333333ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3811,10 +3811,10 @@ export const clrCyanA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.13671rad none 27.32% / 1)'
+		return 'hwb(3.13671rad none 27.316% / none)'
 	},
 	valueOf() {
-		return 0x323232
+		return 0x333333ff
 	}
 });
 
@@ -3833,7 +3833,7 @@ export const clrCyanA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#383838'
+		value: '#393939ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3843,10 +3843,10 @@ export const clrCyanA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.13723rad none 33.16% / 1)'
+		return 'hwb(3.13723rad none 33.162% / none)'
 	},
 	valueOf() {
-		return 0x383838
+		return 0x393939ff
 	}
 });
 
@@ -3865,7 +3865,7 @@ export const clrCyanA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3875,10 +3875,10 @@ export const clrCyanA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.13845rad none 44.56% / 1)'
+		return 'hwb(3.13845rad none 44.562% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -3897,7 +3897,7 @@ export const clrCyanA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3d3d3dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3907,10 +3907,10 @@ export const clrCyanA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.1402rad none 60.88% / 1)'
+		return 'hwb(3.1402rad none 60.882% / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3d3d3dff
 	}
 });
 
@@ -3929,7 +3929,7 @@ export const clrTeal = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#4b5856'
+		value: '#4c5956ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3939,10 +3939,10 @@ export const clrTeal = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.95327rad 13.71% 41.02% / 1)'
+		return 'hwb(2.95327rad 13.714% 41.016% / none)'
 	},
 	valueOf() {
-		return 0x4b5856
+		return 0x4c5956ff
 	}
 });
 
@@ -3961,7 +3961,7 @@ export const clrTeal50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#9d9d9d'
+		value: '#9e9e9eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -3971,10 +3971,10 @@ export const clrTeal50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.89794rad 61.85% none / 1)'
+		return 'hwb(2.89794rad 61.852% none / none)'
 	},
 	valueOf() {
-		return 0x9d9d9d
+		return 0x9e9e9eff
 	}
 });
 
@@ -3993,7 +3993,7 @@ export const clrTeal100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8e9392'
+		value: '#8f9392ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4003,10 +4003,10 @@ export const clrTeal100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.90213rad 55.26% 3.96% / 1)'
+		return 'hwb(2.90213rad 55.263% 3.9612% / none)'
 	},
 	valueOf() {
-		return 0x8e9392
+		return 0x8f9392ff
 	}
 });
 
@@ -4025,7 +4025,7 @@ export const clrTeal200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#758481'
+		value: '#768481ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4035,10 +4035,10 @@ export const clrTeal200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.91243rad 42.06% 16.98% / 1)'
+		return 'hwb(2.91243rad 42.062% 16.977% / none)'
 	},
 	valueOf() {
-		return 0x758481
+		return 0x768481ff
 	}
 });
 
@@ -4057,7 +4057,7 @@ export const clrTeal300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#5f716d'
+		value: '#5f716eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4067,10 +4067,10 @@ export const clrTeal300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.92779rad 28.43% 29.64% / 1)'
+		return 'hwb(2.92779rad 28.427% 29.644% / none)'
 	},
 	valueOf() {
-		return 0x5f716d
+		return 0x5f716eff
 	}
 });
 
@@ -4089,7 +4089,7 @@ export const clrTeal400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#4a5654'
+		value: '#4a5654ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4099,10 +4099,10 @@ export const clrTeal400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.95659rad 12.19% 41.93% / 1)'
+		return 'hwb(2.95659rad 12.194% 41.933% / none)'
 	},
 	valueOf() {
-		return 0x4a5654
+		return 0x4a5654ff
 	}
 });
 
@@ -4121,7 +4121,7 @@ export const clrTeal500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4131,10 +4131,10 @@ export const clrTeal500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.00598rad none 53.81% / 1)'
+		return 'hwb(3.00598rad none 53.81% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -4153,7 +4153,7 @@ export const clrTeal600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#393939'
+		value: '#393939ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4163,10 +4163,10 @@ export const clrTeal600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.00092rad none 65.87% / 1)'
+		return 'hwb(3.00092rad none 65.874% / none)'
 	},
 	valueOf() {
-		return 0x393939
+		return 0x393939ff
 	}
 });
 
@@ -4185,7 +4185,7 @@ export const clrTeal700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2c2c2c'
+		value: '#2c2c2cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4195,10 +4195,10 @@ export const clrTeal700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.98591rad none 77.58% / 1)'
+		return 'hwb(2.98591rad none 77.58% / none)'
 	},
 	valueOf() {
-		return 0x2c2c2c
+		return 0x2c2c2cff
 	}
 });
 
@@ -4217,7 +4217,7 @@ export const clrTeal800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1a1a1a'
+		value: '#1a1a1aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4227,10 +4227,10 @@ export const clrTeal800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.94297rad none 88.37% / 1)'
+		return 'hwb(2.94297rad none 88.367% / none)'
 	},
 	valueOf() {
-		return 0x1a1a1a
+		return 0x1a1a1aff
 	}
 });
 
@@ -4249,20 +4249,20 @@ export const clrTeal900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#080808'
+		value: '#141313ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([8,8,8])
+		value: new Uint8Array([19,19,19])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.95227rad 3.72% 104.31% / 1)'
+		return 'hwb(5.95227rad 3.7247% 4.31% / none)'
 	},
 	valueOf() {
-		return 0x080808
+		return 0x141313ff
 	}
 });
 
@@ -4281,7 +4281,7 @@ export const clrTealA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#313131'
+		value: '#323232ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4291,10 +4291,10 @@ export const clrTealA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.01279rad none 26.66% / 1)'
+		return 'hwb(3.01279rad none 26.659% / none)'
 	},
 	valueOf() {
-		return 0x313131
+		return 0x323232ff
 	}
 });
 
@@ -4313,7 +4313,7 @@ export const clrTealA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#373737'
+		value: '#383838ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4323,10 +4323,10 @@ export const clrTealA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.01174rad none 32.5% / 1)'
+		return 'hwb(3.01174rad none 32.499% / none)'
 	},
 	valueOf() {
-		return 0x373737
+		return 0x383838ff
 	}
 });
 
@@ -4345,7 +4345,7 @@ export const clrTealA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4355,10 +4355,10 @@ export const clrTealA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.0086rad none 43.85% / 1)'
+		return 'hwb(3.0086rad none 43.855% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -4377,7 +4377,7 @@ export const clrTealA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3d3d3dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4387,10 +4387,10 @@ export const clrTealA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.9997rad none 59.95% / 1)'
+		return 'hwb(2.9997rad none 59.947% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3d3d3dff
 	}
 });
 
@@ -4409,7 +4409,7 @@ export const clrGreen = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1f1f1f'
+		value: '#1f1f1fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4419,10 +4419,10 @@ export const clrGreen = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.58152rad none 14.34% / 1)'
+		return 'hwb(2.58152rad none 14.342% / none)'
 	},
 	valueOf() {
-		return 0x1f1f1f
+		return 0x1f1f1fff
 	}
 });
 
@@ -4441,7 +4441,7 @@ export const clrGreen50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#b1b1b1'
+		value: '#b2b2b2ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4451,10 +4451,10 @@ export const clrGreen50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.23926rad 69.78% none / 1)'
+		return 'hwb(2.23926rad 69.783% none / none)'
 	},
 	valueOf() {
-		return 0xb1b1b1
+		return 0xb2b2b2ff
 	}
 });
 
@@ -4473,7 +4473,7 @@ export const clrGreen100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#474747'
+		value: '#474747ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4483,10 +4483,10 @@ export const clrGreen100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.37976rad 28.02% none / 1)'
+		return 'hwb(2.37976rad 28.025% none / none)'
 	},
 	valueOf() {
-		return 0x474747
+		return 0x474747ff
 	}
 });
 
@@ -4505,7 +4505,7 @@ export const clrGreen200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#171717'
+		value: '#181818ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4515,10 +4515,10 @@ export const clrGreen200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.58256rad none 10.36% / 1)'
+		return 'hwb(2.58256rad none 10.361% / none)'
 	},
 	valueOf() {
-		return 0x171717
+		return 0x181818ff
 	}
 });
 
@@ -4537,7 +4537,7 @@ export const clrGreen300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2f2f2f'
+		value: '#303030ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4547,10 +4547,10 @@ export const clrGreen300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.57785rad none 24.86% / 1)'
+		return 'hwb(2.57785rad none 24.861% / none)'
 	},
 	valueOf() {
-		return 0x2f2f2f
+		return 0x303030ff
 	}
 });
 
@@ -4569,7 +4569,7 @@ export const clrGreen400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3d3d3dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4579,10 +4579,10 @@ export const clrGreen400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.56843rad none 38.84% / 1)'
+		return 'hwb(2.56843rad none 38.84% / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3d3d3dff
 	}
 });
 
@@ -4601,7 +4601,7 @@ export const clrGreen500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4611,10 +4611,10 @@ export const clrGreen500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.54958rad none 52.23% / 1)'
+		return 'hwb(2.54958rad none 52.231% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -4633,7 +4633,7 @@ export const clrGreen600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3a3a3a'
+		value: '#3a3a3aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4643,10 +4643,10 @@ export const clrGreen600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.50961rad none 64.94% / 1)'
+		return 'hwb(2.50961rad none 64.945% / none)'
 	},
 	valueOf() {
-		return 0x3a3a3a
+		return 0x3a3a3aff
 	}
 });
 
@@ -4665,7 +4665,7 @@ export const clrGreen700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2d2d2d'
+		value: '#2d2d2dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4675,10 +4675,10 @@ export const clrGreen700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.41588rad none 76.88% / 1)'
+		return 'hwb(2.41588rad none 76.881% / none)'
 	},
 	valueOf() {
-		return 0x2d2d2d
+		return 0x2d2d2dff
 	}
 });
 
@@ -4697,7 +4697,7 @@ export const clrGreen800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1a1a1a'
+		value: '#1b1b1bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4707,10 +4707,10 @@ export const clrGreen800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.32216rad none 88.05% / 1)'
+		return 'hwb(2.32216rad none 88.051% / none)'
 	},
 	valueOf() {
-		return 0x1a1a1a
+		return 0x1b1b1bff
 	}
 });
 
@@ -4729,20 +4729,20 @@ export const clrGreen900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0a0a0a'
+		value: '#191819ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([10,10,10])
+		value: new Uint8Array([25,24,24])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.6416rad 4.75% 105.54% / 1)'
+		return 'hwb(5.6416rad 4.7493% 5.54% / none)'
 	},
 	valueOf() {
-		return 0x0a0a0a
+		return 0x191819ff
 	}
 });
 
@@ -4761,7 +4761,7 @@ export const clrGreenA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2f2f2f'
+		value: '#2f2f2fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4771,10 +4771,10 @@ export const clrGreenA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.65883rad none 24.53% / 1)'
+		return 'hwb(2.65883rad none 24.529% / none)'
 	},
 	valueOf() {
-		return 0x2f2f2f
+		return 0x2f2f2fff
 	}
 });
 
@@ -4793,7 +4793,7 @@ export const clrGreenA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4803,10 +4803,10 @@ export const clrGreenA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.66826rad none 30.56% / 1)'
+		return 'hwb(2.66826rad none 30.556% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x363636ff
 	}
 });
 
@@ -4825,7 +4825,7 @@ export const clrGreenA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4835,10 +4835,10 @@ export const clrGreenA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.68571rad none 42.27% / 1)'
+		return 'hwb(2.68571rad none 42.269% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3e3e3eff
 	}
 });
 
@@ -4857,7 +4857,7 @@ export const clrGreenA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4867,10 +4867,10 @@ export const clrGreenA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.63091rad none 58.72% / 1)'
+		return 'hwb(2.63091rad none 58.722% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -4889,7 +4889,7 @@ export const clrLightGreen = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#747d74'
+		value: '#747e74ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4899,10 +4899,10 @@ export const clrLightGreen = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.08235rad 43.07% 9.22% / 1)'
+		return 'hwb(2.08235rad 43.073% 9.2249% / none)'
 	},
 	valueOf() {
-		return 0x747d74
+		return 0x747e74ff
 	}
 });
 
@@ -4921,7 +4921,7 @@ export const clrLightGreen50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#b2b2b2'
+		value: '#b3b3b3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4931,10 +4931,10 @@ export const clrLightGreen50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.04727rad 70.13% none / 1)'
+		return 'hwb(2.04727rad 70.129% none / none)'
 	},
 	valueOf() {
-		return 0xb2b2b2
+		return 0xb3b3b3ff
 	}
 });
 
@@ -4953,7 +4953,7 @@ export const clrLightGreen100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#838483'
+		value: '#848484ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4963,10 +4963,10 @@ export const clrLightGreen100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.0738rad 51.65% 0.3% / 1)'
+		return 'hwb(2.0738rad 51.65% 0.30123% / none)'
 	},
 	valueOf() {
-		return 0x838483
+		return 0x848484ff
 	}
 });
 
@@ -4985,7 +4985,7 @@ export const clrLightGreen200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#6d796d'
+		value: '#6d7a6dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -4995,10 +4995,10 @@ export const clrLightGreen200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.08759rad 38.85% 13.56% / 1)'
+		return 'hwb(2.08759rad 38.852% 13.559% / none)'
 	},
 	valueOf() {
-		return 0x6d796d
+		return 0x6d7a6dff
 	}
 });
 
@@ -5017,7 +5017,7 @@ export const clrLightGreen300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#586858'
+		value: '#586958ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5027,10 +5027,10 @@ export const clrLightGreen300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.11202rad 24.94% 26.5% / 1)'
+		return 'hwb(2.11202rad 24.937% 26.497% / none)'
 	},
 	valueOf() {
-		return 0x586858
+		return 0x586958ff
 	}
 });
 
@@ -5049,7 +5049,7 @@ export const clrLightGreen400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#414641'
+		value: '#414642ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5059,10 +5059,10 @@ export const clrLightGreen400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.20487rad 4.43% 39.09% / 1)'
+		return 'hwb(2.20487rad 4.4327% 39.095% / none)'
 	},
 	valueOf() {
-		return 0x414641
+		return 0x414642ff
 	}
 });
 
@@ -5081,7 +5081,7 @@ export const clrLightGreen500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5091,10 +5091,10 @@ export const clrLightGreen500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.17835rad none 51.6% / 1)'
+		return 'hwb(2.17835rad none 51.595% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -5113,7 +5113,7 @@ export const clrLightGreen600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3a3a3a'
+		value: '#3a3a3aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5123,10 +5123,10 @@ export const clrLightGreen600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.17869rad none 64.6% / 1)'
+		return 'hwb(2.17869rad none 64.6% / none)'
 	},
 	valueOf() {
-		return 0x3a3a3a
+		return 0x3a3a3aff
 	}
 });
 
@@ -5145,7 +5145,7 @@ export const clrLightGreen700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2d2d2d'
+		value: '#2d2d2dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5155,10 +5155,10 @@ export const clrLightGreen700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.18323rad none 76.83% / 1)'
+		return 'hwb(2.18323rad none 76.83% / none)'
 	},
 	valueOf() {
-		return 0x2d2d2d
+		return 0x2d2d2dff
 	}
 });
 
@@ -5177,7 +5177,7 @@ export const clrLightGreen800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1a1a1a'
+		value: '#1b1b1bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5187,10 +5187,10 @@ export const clrLightGreen800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.17032rad none 88.06% / 1)'
+		return 'hwb(2.17032rad none 88.058% / none)'
 	},
 	valueOf() {
-		return 0x1a1a1a
+		return 0x1b1b1bff
 	}
 });
 
@@ -5209,20 +5209,20 @@ export const clrLightGreen900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#090909'
+		value: '#141414ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([9,9,9])
+		value: new Uint8Array([20,19,20])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(5.61141rad 3.99% 104.23% / 1)'
+		return 'hwb(5.61141rad 3.987% 4.23% / none)'
 	},
 	valueOf() {
-		return 0x090909
+		return 0x141414ff
 	}
 });
 
@@ -5241,7 +5241,7 @@ export const clrLightGreenA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2e2e2e'
+		value: '#2f2f2fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5251,10 +5251,10 @@ export const clrLightGreenA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.59705rad none 24.06% / 1)'
+		return 'hwb(2.59705rad none 24.056% / none)'
 	},
 	valueOf() {
-		return 0x2e2e2e
+		return 0x2f2f2fff
 	}
 });
 
@@ -5273,7 +5273,7 @@ export const clrLightGreenA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#353535'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5283,10 +5283,10 @@ export const clrLightGreenA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.61433rad none 30.14% / 1)'
+		return 'hwb(2.61433rad none 30.141% / none)'
 	},
 	valueOf() {
-		return 0x353535
+		return 0x363636ff
 	}
 });
 
@@ -5305,7 +5305,7 @@ export const clrLightGreenA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5315,10 +5315,10 @@ export const clrLightGreenA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.633rad none 41.92% / 1)'
+		return 'hwb(2.633rad none 41.916% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3e3e3eff
 	}
 });
 
@@ -5337,7 +5337,7 @@ export const clrLightGreenA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5347,10 +5347,10 @@ export const clrLightGreenA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.52985rad none 58.38% / 1)'
+		return 'hwb(2.52985rad none 58.384% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -5369,7 +5369,7 @@ export const clrLime = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#4c5146'
+		value: '#4d5146ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5379,10 +5379,10 @@ export const clrLime = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.45927rad 17.66% 19.01% / 1)'
+		return 'hwb(1.45927rad 17.663% 19.009% / none)'
 	},
 	valueOf() {
-		return 0x4c5146
+		return 0x4d5146ff
 	}
 });
 
@@ -5401,7 +5401,7 @@ export const clrLime50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#797979'
+		value: '#797979ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5411,10 +5411,10 @@ export const clrLime50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.51933rad 47.54% none / 1)'
+		return 'hwb(1.51933rad 47.542% none / none)'
 	},
 	valueOf() {
-		return 0x797979
+		return 0x797979ff
 	}
 });
 
@@ -5433,20 +5433,20 @@ export const clrLime100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#636461'
+		value: '#636561ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([99,100,97])
+		value: new Uint8Array([99,100,96])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.50091rad 36.74% 3.44% / 1)'
+		return 'hwb(1.50091rad 36.737% 3.4407% / none)'
 	},
 	valueOf() {
-		return 0x636461
+		return 0x636561ff
 	}
 });
 
@@ -5465,7 +5465,7 @@ export const clrLime200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#51554a'
+		value: '#51564bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5475,10 +5475,10 @@ export const clrLime200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.46894rad 21.12% 16.6% / 1)'
+		return 'hwb(1.46894rad 21.119% 16.602% / none)'
 	},
 	valueOf() {
-		return 0x51554a
+		return 0x51564bff
 	}
 });
 
@@ -5497,7 +5497,7 @@ export const clrLime300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#343434'
+		value: '#353535ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5507,10 +5507,10 @@ export const clrLime300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.36558rad none 29.44% / 1)'
+		return 'hwb(1.36558rad none 29.436% / none)'
 	},
 	valueOf() {
-		return 0x343434
+		return 0x353535ff
 	}
 });
 
@@ -5529,7 +5529,7 @@ export const clrLime400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5539,10 +5539,10 @@ export const clrLime400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.36181rad none 42.44% / 1)'
+		return 'hwb(1.36181rad none 42.437% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3e3e3eff
 	}
 });
 
@@ -5561,7 +5561,7 @@ export const clrLime500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5571,10 +5571,10 @@ export const clrLime500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.37312rad none 55.17% / 1)'
+		return 'hwb(1.37312rad none 55.172% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -5593,7 +5593,7 @@ export const clrLime600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#383838'
+		value: '#383838ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5603,10 +5603,10 @@ export const clrLime600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.39422rad none 67.29% / 1)'
+		return 'hwb(1.39422rad none 67.292% / none)'
 	},
 	valueOf() {
-		return 0x383838
+		return 0x383838ff
 	}
 });
 
@@ -5625,7 +5625,7 @@ export const clrLime700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2a2a2a'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5635,10 +5635,10 @@ export const clrLime700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.44014rad none 78.68% / 1)'
+		return 'hwb(1.44014rad none 78.681% / none)'
 	},
 	valueOf() {
-		return 0x2a2a2a
+		return 0x2b2b2bff
 	}
 });
 
@@ -5657,7 +5657,7 @@ export const clrLime800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#181818'
+		value: '#191919ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5667,10 +5667,10 @@ export const clrLime800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.57956rad none 89.17% / 1)'
+		return 'hwb(1.57956rad none 89.169% / none)'
 	},
 	valueOf() {
-		return 0x181818
+		return 0x191919ff
 	}
 });
 
@@ -5689,7 +5689,7 @@ export const clrLime900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#040404'
+		value: '#050505ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5699,10 +5699,10 @@ export const clrLime900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.72805rad none 98.06% / 1)'
+		return 'hwb(1.72805rad none 98.057% / none)'
 	},
 	valueOf() {
-		return 0x040404
+		return 0x050505ff
 	}
 });
 
@@ -5721,7 +5721,7 @@ export const clrLimeA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2e2e2e'
+		value: '#2e2e2eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5731,10 +5731,10 @@ export const clrLimeA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.64494rad none 23.62% / 1)'
+		return 'hwb(1.64494rad none 23.619% / none)'
 	},
 	valueOf() {
-		return 0x2e2e2e
+		return 0x2e2e2eff
 	}
 });
 
@@ -5753,7 +5753,7 @@ export const clrLimeA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#343434'
+		value: '#353535ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5763,10 +5763,10 @@ export const clrLimeA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.68777rad none 29.35% / 1)'
+		return 'hwb(1.68777rad none 29.353% / none)'
 	},
 	valueOf() {
-		return 0x343434
+		return 0x353535ff
 	}
 });
 
@@ -5785,7 +5785,7 @@ export const clrLimeA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5795,10 +5795,10 @@ export const clrLimeA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.74952rad none 40.91% / 1)'
+		return 'hwb(1.74952rad none 40.91% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -5817,7 +5817,7 @@ export const clrLimeA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5827,10 +5827,10 @@ export const clrLimeA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.5103rad none 59.22% / 1)'
+		return 'hwb(1.5103rad none 59.223% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -5849,7 +5849,7 @@ export const clrYellow = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#131313'
+		value: '#141414ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5859,10 +5859,10 @@ export const clrYellow = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.98808rad none 8.57% / 1)'
+		return 'hwb(0.988083rad none 8.5678% / none)'
 	},
 	valueOf() {
-		return 0x131313
+		return 0x141414ff
 	}
 });
 
@@ -5881,7 +5881,7 @@ export const clrYellow50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3d3d3dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5891,10 +5891,10 @@ export const clrYellow50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.97697rad 23.78% none / 1)'
+		return 'hwb(0.976966rad 23.78% none / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3d3d3dff
 	}
 });
 
@@ -5913,7 +5913,7 @@ export const clrYellow100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#282826'
+		value: '#292926ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5923,10 +5923,10 @@ export const clrYellow100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.98105rad 10.91% 5.47% / 1)'
+		return 'hwb(0.98105rad 10.908% 5.4713% / none)'
 	},
 	valueOf() {
-		return 0x282826
+		return 0x292926ff
 	}
 });
 
@@ -5945,7 +5945,7 @@ export const clrYellow200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#262626'
+		value: '#262626ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5955,10 +5955,10 @@ export const clrYellow200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.99089rad none 18.23% / 1)'
+		return 'hwb(0.990893rad none 18.225% / none)'
 	},
 	valueOf() {
-		return 0x262626
+		return 0x262626ff
 	}
 });
 
@@ -5977,7 +5977,7 @@ export const clrYellow300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#373737ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -5987,10 +5987,10 @@ export const clrYellow300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.98889rad none 31.41% / 1)'
+		return 'hwb(0.988886rad none 31.41% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x373737ff
 	}
 });
 
@@ -6009,7 +6009,7 @@ export const clrYellow400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6019,10 +6019,10 @@ export const clrYellow400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.98656rad none 44.27% / 1)'
+		return 'hwb(0.986565rad none 44.269% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -6041,7 +6041,7 @@ export const clrYellow500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6051,10 +6051,10 @@ export const clrYellow500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.98293rad none 56.61% / 1)'
+		return 'hwb(0.982935rad none 56.607% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3f3f3fff
 	}
 });
 
@@ -6073,7 +6073,7 @@ export const clrYellow600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#373737'
+		value: '#373737ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6083,10 +6083,10 @@ export const clrYellow600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.9767rad none 68.35% / 1)'
+		return 'hwb(0.976704rad none 68.35% / none)'
 	},
 	valueOf() {
-		return 0x373737
+		return 0x373737ff
 	}
 });
 
@@ -6105,7 +6105,7 @@ export const clrYellow700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#292929'
+		value: '#2a2a2aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6115,10 +6115,10 @@ export const clrYellow700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.96389rad none 79.39% / 1)'
+		return 'hwb(0.963893rad none 79.39% / none)'
 	},
 	valueOf() {
-		return 0x292929
+		return 0x2a2a2aff
 	}
 });
 
@@ -6137,7 +6137,7 @@ export const clrYellow800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#171717'
+		value: '#181818ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6147,10 +6147,10 @@ export const clrYellow800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.92564rad none 89.55% / 1)'
+		return 'hwb(0.925635rad none 89.552% / none)'
 	},
 	valueOf() {
-		return 0x171717
+		return 0x181818ff
 	}
 });
 
@@ -6169,20 +6169,20 @@ export const clrYellow900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0b0b0b'
+		value: '#181819ff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([11,11,11])
+		value: new Uint8Array([23,24,25])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(3.78387rad 4.82% 105.31% / 1)'
+		return 'hwb(3.78387rad 4.815% 5.31% / none)'
 	},
 	valueOf() {
-		return 0x0b0b0b
+		return 0x181819ff
 	}
 });
 
@@ -6201,7 +6201,7 @@ export const clrYellowA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6211,10 +6211,10 @@ export const clrYellowA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.05631rad none 30.79% / 1)'
+		return 'hwb(1.05631rad none 30.788% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x363636ff
 	}
 });
 
@@ -6233,7 +6233,7 @@ export const clrYellowA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3a3a3a'
+		value: '#3b3b3bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6243,10 +6243,10 @@ export const clrYellowA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.0624rad none 36.08% / 1)'
+		return 'hwb(1.0624rad none 36.08% / none)'
 	},
 	valueOf() {
-		return 0x3a3a3a
+		return 0x3b3b3bff
 	}
 });
 
@@ -6265,7 +6265,7 @@ export const clrYellowA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6275,10 +6275,10 @@ export const clrYellowA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.07556rad none 46.47% / 1)'
+		return 'hwb(1.07556rad none 46.468% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -6297,7 +6297,7 @@ export const clrYellowA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3d3d3dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6307,10 +6307,10 @@ export const clrYellowA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.13576rad none 60.89% / 1)'
+		return 'hwb(1.13576rad none 60.895% / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3d3d3dff
 	}
 });
 
@@ -6329,7 +6329,7 @@ export const clrAmber = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#080808'
+		value: '#080808ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6339,10 +6339,10 @@ export const clrAmber = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.82701rad none 3.28% / 1)'
+		return 'hwb(0.827007rad none 3.2777% / none)'
 	},
 	valueOf() {
-		return 0x080808
+		return 0x080808ff
 	}
 });
 
@@ -6361,7 +6361,7 @@ export const clrAmber50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#a9a9a9'
+		value: '#a9a9a9ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6371,10 +6371,10 @@ export const clrAmber50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.74208rad 66.43% none / 1)'
+		return 'hwb(0.742079rad 66.429% none / none)'
 	},
 	valueOf() {
-		return 0xa9a9a9
+		return 0xa9a9a9ff
 	}
 });
 
@@ -6393,7 +6393,7 @@ export const clrAmber100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#595959'
+		value: '#5a5a5aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6403,10 +6403,10 @@ export const clrAmber100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.76107rad 35.21% none / 1)'
+		return 'hwb(0.761068rad 35.211% none / none)'
 	},
 	valueOf() {
-		return 0x595959
+		return 0x5a5a5aff
 	}
 });
 
@@ -6425,7 +6425,7 @@ export const clrAmber200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#121212'
+		value: '#121212ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6435,10 +6435,10 @@ export const clrAmber200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.83929rad none 7.73% / 1)'
+		return 'hwb(0.839294rad none 7.7332% / none)'
 	},
 	valueOf() {
-		return 0x121212
+		return 0x121212ff
 	}
 });
 
@@ -6457,7 +6457,7 @@ export const clrAmber300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2c2c2c'
+		value: '#2c2c2cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6467,10 +6467,10 @@ export const clrAmber300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.83788rad none 22.31% / 1)'
+		return 'hwb(0.83788rad none 22.309% / none)'
 	},
 	valueOf() {
-		return 0x2c2c2c
+		return 0x2c2c2cff
 	}
 });
 
@@ -6489,7 +6489,7 @@ export const clrAmber400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3b3b3b'
+		value: '#3b3b3bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6499,10 +6499,10 @@ export const clrAmber400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.8332rad none 36.56% / 1)'
+		return 'hwb(0.833203rad none 36.565% / none)'
 	},
 	valueOf() {
-		return 0x3b3b3b
+		return 0x3b3b3bff
 	}
 });
 
@@ -6521,7 +6521,7 @@ export const clrAmber500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6531,10 +6531,10 @@ export const clrAmber500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.82493rad none 50.25% / 1)'
+		return 'hwb(0.82493rad none 50.253% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -6553,7 +6553,7 @@ export const clrAmber600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3b3b3b'
+		value: '#3b3b3bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6563,10 +6563,10 @@ export const clrAmber600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.80966rad none 63.3% / 1)'
+		return 'hwb(0.809658rad none 63.299% / none)'
 	},
 	valueOf() {
-		return 0x3b3b3b
+		return 0x3b3b3bff
 	}
 });
 
@@ -6585,7 +6585,7 @@ export const clrAmber700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2f2f2f'
+		value: '#2f2f2fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6595,10 +6595,10 @@ export const clrAmber700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.77761rad none 75.6% / 1)'
+		return 'hwb(0.777614rad none 75.595% / none)'
 	},
 	valueOf() {
-		return 0x2f2f2f
+		return 0x2f2f2fff
 	}
 });
 
@@ -6617,7 +6617,7 @@ export const clrAmber800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#1c1c1c'
+		value: '#1d1d1dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6627,10 +6627,10 @@ export const clrAmber800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.6866rad none 86.97% / 1)'
+		return 'hwb(0.686595rad none 86.975% / none)'
 	},
 	valueOf() {
-		return 0x1c1c1c
+		return 0x1d1d1dff
 	}
 });
 
@@ -6649,7 +6649,7 @@ export const clrAmber900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#070707'
+		value: '#070707ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6659,10 +6659,10 @@ export const clrAmber900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.45031rad none 97.05% / 1)'
+		return 'hwb(0.450312rad none 97.053% / none)'
 	},
 	valueOf() {
-		return 0x070707
+		return 0x070707ff
 	}
 });
 
@@ -6681,7 +6681,7 @@ export const clrAmberA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#202020'
+		value: '#202020ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6691,10 +6691,10 @@ export const clrAmberA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.81498rad none 14.81% / 1)'
+		return 'hwb(0.814981rad none 14.806% / none)'
 	},
 	valueOf() {
-		return 0x202020
+		return 0x202020ff
 	}
 });
 
@@ -6713,7 +6713,7 @@ export const clrAmberA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2a2a2a'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6723,10 +6723,10 @@ export const clrAmberA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.81411rad none 21.19% / 1)'
+		return 'hwb(0.814109rad none 21.194% / none)'
 	},
 	valueOf() {
-		return 0x2a2a2a
+		return 0x2b2b2bff
 	}
 });
 
@@ -6745,7 +6745,7 @@ export const clrAmberA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#393939'
+		value: '#393939ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6755,10 +6755,10 @@ export const clrAmberA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.82027rad none 34.16% / 1)'
+		return 'hwb(0.82027rad none 34.164% / none)'
 	},
 	valueOf() {
-		return 0x393939
+		return 0x393939ff
 	}
 });
 
@@ -6777,7 +6777,7 @@ export const clrAmberA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6787,10 +6787,10 @@ export const clrAmberA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(1.0011rad none 59.22% / 1)'
+		return 'hwb(1.0011rad none 59.219% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -6809,7 +6809,7 @@ export const clrOrange = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#242322'
+		value: '#242423ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6819,10 +6819,10 @@ export const clrOrange = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.64979rad 11.53% 2.78% / 1)'
+		return 'hwb(0.649786rad 11.527% 2.7793% / none)'
 	},
 	valueOf() {
-		return 0x242322
+		return 0x242423ff
 	}
 });
 
@@ -6841,7 +6841,7 @@ export const clrOrange50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#c2c2c2'
+		value: '#c3c3c3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6851,10 +6851,10 @@ export const clrOrange50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.56863rad 76.43% none / 1)'
+		return 'hwb(0.568628rad 76.431% none / none)'
 	},
 	valueOf() {
-		return 0xc2c2c2
+		return 0xc3c3c3ff
 	}
 });
 
@@ -6873,7 +6873,7 @@ export const clrOrange100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#929292'
+		value: '#929292ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6883,10 +6883,10 @@ export const clrOrange100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.57819rad 57.35% none / 1)'
+		return 'hwb(0.578193rad 57.351% none / none)'
 	},
 	valueOf() {
-		return 0x929292
+		return 0x929292ff
 	}
 });
 
@@ -6905,7 +6905,7 @@ export const clrOrange200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#282828'
+		value: '#292828ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6915,10 +6915,10 @@ export const clrOrange200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.64057rad 15.16% 0.75% / 1)'
+		return 'hwb(0.640571rad 15.161% 0.7545% / none)'
 	},
 	valueOf() {
-		return 0x282828
+		return 0x292828ff
 	}
 });
 
@@ -6937,7 +6937,7 @@ export const clrOrange300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#202020'
+		value: '#202020ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6947,10 +6947,10 @@ export const clrOrange300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.71113rad none 14.79% / 1)'
+		return 'hwb(0.711134rad none 14.789% / none)'
 	},
 	valueOf() {
-		return 0x202020
+		return 0x202020ff
 	}
 });
 
@@ -6969,7 +6969,7 @@ export const clrOrange400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#353535'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -6979,10 +6979,10 @@ export const clrOrange400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.70665rad none 30.33% / 1)'
+		return 'hwb(0.706649rad none 30.333% / none)'
 	},
 	valueOf() {
-		return 0x353535
+		return 0x363636ff
 	}
 });
 
@@ -7001,7 +7001,7 @@ export const clrOrange500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#3f3f3fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7011,10 +7011,10 @@ export const clrOrange500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.69752rad none 45.17% / 1)'
+		return 'hwb(0.697521rad none 45.171% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x3f3f3fff
 	}
 });
 
@@ -7033,7 +7033,7 @@ export const clrOrange600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7043,10 +7043,10 @@ export const clrOrange600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.67811rad none 59.26% / 1)'
+		return 'hwb(0.678113rad none 59.258% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
@@ -7065,7 +7065,7 @@ export const clrOrange700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#323232'
+		value: '#333333ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7075,10 +7075,10 @@ export const clrOrange700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.63397rad none 72.5% / 1)'
+		return 'hwb(0.633973rad none 72.495% / none)'
 	},
 	valueOf() {
-		return 0x323232
+		return 0x333333ff
 	}
 });
 
@@ -7097,7 +7097,7 @@ export const clrOrange800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#202020'
+		value: '#212121ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7107,10 +7107,10 @@ export const clrOrange800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.50859rad none 84.79% / 1)'
+		return 'hwb(0.508589rad none 84.792% / none)'
 	},
 	valueOf() {
-		return 0x202020
+		return 0x212121ff
 	}
 });
 
@@ -7129,7 +7129,7 @@ export const clrOrange900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#090909'
+		value: '#0a0a0aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7139,10 +7139,10 @@ export const clrOrange900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.25199rad none 95.98% / 1)'
+		return 'hwb(0.251991rad none 95.985% / none)'
 	},
 	valueOf() {
-		return 0x090909
+		return 0x0a0a0aff
 	}
 });
 
@@ -7161,7 +7161,7 @@ export const clrOrangeA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#020202'
+		value: '#020202ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7171,10 +7171,10 @@ export const clrOrangeA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.62806rad none 0.97% / 1)'
+		return 'hwb(0.628057rad none 0.97311% / none)'
 	},
 	valueOf() {
-		return 0x020202
+		return 0x020202ff
 	}
 });
 
@@ -7193,7 +7193,7 @@ export const clrOrangeA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#121212'
+		value: '#131313ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7203,10 +7203,10 @@ export const clrOrangeA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.62158rad none 7.92% / 1)'
+		return 'hwb(0.621582rad none 7.9189% / none)'
 	},
 	valueOf() {
-		return 0x121212
+		return 0x131313ff
 	}
 });
 
@@ -7225,7 +7225,7 @@ export const clrOrangeA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2c2c2c'
+		value: '#2c2c2cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7235,10 +7235,10 @@ export const clrOrangeA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.62001rad none 22.28% / 1)'
+		return 'hwb(0.620011rad none 22.283% / none)'
 	},
 	valueOf() {
-		return 0x2c2c2c
+		return 0x2c2c2cff
 	}
 });
 
@@ -7257,7 +7257,7 @@ export const clrOrangeA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7267,10 +7267,10 @@ export const clrOrangeA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.72937rad none 47.51% / 1)'
+		return 'hwb(0.729373rad none 47.51% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -7289,7 +7289,7 @@ export const clrDeepOrange = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#191919'
+		value: '#1a1919ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7299,10 +7299,10 @@ export const clrDeepOrange = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.44441rad 7.96% 2.25% / 1)'
+		return 'hwb(0.444413rad 7.9565% 2.2452% / none)'
 	},
 	valueOf() {
-		return 0x191919
+		return 0x1a1919ff
 	}
 });
 
@@ -7321,7 +7321,7 @@ export const clrDeepOrange50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#d3d3d3'
+		value: '#d3d3d3ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7331,10 +7331,10 @@ export const clrDeepOrange50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.35362rad 82.81% none / 1)'
+		return 'hwb(0.353621rad 82.813% none / none)'
 	},
 	valueOf() {
-		return 0xd3d3d3
+		return 0xd3d3d3ff
 	}
 });
 
@@ -7353,7 +7353,7 @@ export const clrDeepOrange100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#b1b1b1'
+		value: '#b1b1b1ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7363,10 +7363,10 @@ export const clrDeepOrange100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.35729rad 69.42% none / 1)'
+		return 'hwb(0.357286rad 69.416% none / none)'
 	},
 	valueOf() {
-		return 0xb1b1b1
+		return 0xb1b1b1ff
 	}
 });
 
@@ -7385,7 +7385,7 @@ export const clrDeepOrange200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#636363'
+		value: '#636363ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7395,10 +7395,10 @@ export const clrDeepOrange200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.3743rad 38.91% none / 1)'
+		return 'hwb(0.374303rad 38.906% none / none)'
 	},
 	valueOf() {
-		return 0x636363
+		return 0x636363ff
 	}
 });
 
@@ -7417,7 +7417,7 @@ export const clrDeepOrange300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#151414'
+		value: '#151515ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7427,10 +7427,10 @@ export const clrDeepOrange300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.4567rad 5.06% 3.47% / 1)'
+		return 'hwb(0.4567rad 5.0612% 3.4661% / none)'
 	},
 	valueOf() {
-		return 0x151414
+		return 0x151515ff
 	}
 });
 
@@ -7449,7 +7449,7 @@ export const clrDeepOrange400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#282828'
+		value: '#282828ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7459,10 +7459,10 @@ export const clrDeepOrange400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.50398rad none 19.79% / 1)'
+		return 'hwb(0.503981rad none 19.794% / none)'
 	},
 	valueOf() {
-		return 0x282828
+		return 0x282828ff
 	}
 });
 
@@ -7481,7 +7481,7 @@ export const clrDeepOrange500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3b3b3b'
+		value: '#3b3b3bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7491,10 +7491,10 @@ export const clrDeepOrange500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.49222rad none 36.69% / 1)'
+		return 'hwb(0.492218rad none 36.691% / none)'
 	},
 	valueOf() {
-		return 0x3b3b3b
+		return 0x3b3b3bff
 	}
 });
 
@@ -7513,7 +7513,7 @@ export const clrDeepOrange600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3f3f3f'
+		value: '#404040ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7523,10 +7523,10 @@ export const clrDeepOrange600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.4655rad none 52.61% / 1)'
+		return 'hwb(0.465497rad none 52.612% / none)'
 	},
 	valueOf() {
-		return 0x3f3f3f
+		return 0x404040ff
 	}
 });
 
@@ -7545,7 +7545,7 @@ export const clrDeepOrange700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#383838'
+		value: '#383838ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7555,10 +7555,10 @@ export const clrDeepOrange700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.39762rad none 67.4% / 1)'
+		return 'hwb(0.397621rad none 67.401% / none)'
 	},
 	valueOf() {
-		return 0x383838
+		return 0x383838ff
 	}
 });
 
@@ -7577,7 +7577,7 @@ export const clrDeepOrange800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#262626'
+		value: '#272727ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7587,10 +7587,10 @@ export const clrDeepOrange800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.21831rad none 81.25% / 1)'
+		return 'hwb(0.218306rad none 81.248% / none)'
 	},
 	valueOf() {
-		return 0x262626
+		return 0x272727ff
 	}
 });
 
@@ -7609,7 +7609,7 @@ export const clrDeepOrange900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0e0e0e'
+		value: '#0e0e0eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7619,10 +7619,10 @@ export const clrDeepOrange900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.04805rad none 94.15% / 1)'
+		return 'hwb(0.0480559rad none 94.154% / none)'
 	},
 	valueOf() {
-		return 0x0e0e0e
+		return 0x0e0e0eff
 	}
 });
 
@@ -7641,7 +7641,7 @@ export const clrDeepOrangeA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#5e5e5e'
+		value: '#5e5e5eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7651,10 +7651,10 @@ export const clrDeepOrangeA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24993rad 36.99% none / 1)'
+		return 'hwb(0.249931rad 36.99% none / none)'
 	},
 	valueOf() {
-		return 0x5e5e5e
+		return 0x5e5e5eff
 	}
 });
 
@@ -7673,7 +7673,7 @@ export const clrDeepOrangeA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3c3c3c'
+		value: '#3c3c3cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7683,10 +7683,10 @@ export const clrDeepOrangeA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24017rad 23.56% none / 1)'
+		return 'hwb(0.240175rad 23.559% none / none)'
 	},
 	valueOf() {
-		return 0x3c3c3c
+		return 0x3c3c3cff
 	}
 });
 
@@ -7705,7 +7705,7 @@ export const clrDeepOrangeA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#080808'
+		value: '#080808ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7715,10 +7715,10 @@ export const clrDeepOrangeA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.30711rad none 3.25% / 1)'
+		return 'hwb(0.307108rad none 3.2535% / none)'
 	},
 	valueOf() {
-		return 0x080808
+		return 0x080808ff
 	}
 });
 
@@ -7737,7 +7737,7 @@ export const clrDeepOrangeA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7747,10 +7747,10 @@ export const clrDeepOrangeA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.37193rad none 30.77% / 1)'
+		return 'hwb(0.37193rad none 30.768% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x363636ff
 	}
 });
 
@@ -7769,7 +7769,7 @@ export const clrBrown = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#837672'
+		value: '#847672ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7779,10 +7779,10 @@ export const clrBrown = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24476rad 39.63% 23.31% / 1)'
+		return 'hwb(0.244765rad 39.629% 23.31% / none)'
 	},
 	valueOf() {
-		return 0x837672
+		return 0x847672ff
 	}
 });
 
@@ -7801,7 +7801,7 @@ export const clrBrown50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#d8d8d8'
+		value: '#d9d9d9ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7811,10 +7811,10 @@ export const clrBrown50 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24564rad 85.01% none / 1)'
+		return 'hwb(0.245638rad 85.011% none / none)'
 	},
 	valueOf() {
-		return 0xd8d8d8
+		return 0xd9d9d9ff
 	}
 });
 
@@ -7833,7 +7833,7 @@ export const clrBrown100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#bababa'
+		value: '#bbbbbbff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7843,10 +7843,10 @@ export const clrBrown100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24569rad 73.3% none / 1)'
+		return 'hwb(0.24569rad 73.301% none / none)'
 	},
 	valueOf() {
-		return 0xbababa
+		return 0xbbbbbbff
 	}
 });
 
@@ -7865,7 +7865,7 @@ export const clrBrown200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#979392'
+		value: '#979492ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7875,10 +7875,10 @@ export const clrBrown200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.2452rad 56.75% 4.13% / 1)'
+		return 'hwb(0.245201rad 56.746% 4.1289% / none)'
 	},
 	valueOf() {
-		return 0x979392
+		return 0x979492ff
 	}
 });
 
@@ -7897,7 +7897,7 @@ export const clrBrown300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#8a7f7b'
+		value: '#8b7f7cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7907,10 +7907,10 @@ export const clrBrown300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24492rad 44.88% 17.39% / 1)'
+		return 'hwb(0.244922rad 44.878% 17.391% / none)'
 	},
 	valueOf() {
-		return 0x8a7f7b
+		return 0x8b7f7cff
 	}
 });
 
@@ -7929,7 +7929,7 @@ export const clrBrown400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7a6c67'
+		value: '#7b6c68ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7939,10 +7939,10 @@ export const clrBrown400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24457rad 33.43% 30.34% / 1)'
+		return 'hwb(0.244573rad 33.433% 30.344% / none)'
 	},
 	valueOf() {
-		return 0x7a6c67
+		return 0x7b6c68ff
 	}
 });
 
@@ -7961,7 +7961,7 @@ export const clrBrown500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#675a56'
+		value: '#685b57ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -7971,10 +7971,10 @@ export const clrBrown500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24452rad 22.41% 42.97% / 1)'
+		return 'hwb(0.244521rad 22.407% 42.972% / none)'
 	},
 	valueOf() {
-		return 0x675a56
+		return 0x685b57ff
 	}
 });
 
@@ -7993,7 +7993,7 @@ export const clrBrown600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#504a47'
+		value: '#514a48ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8003,10 +8003,10 @@ export const clrBrown600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.24714rad 11.64% 55.26% / 1)'
+		return 'hwb(0.247139rad 11.645% 55.262% / none)'
 	},
 	valueOf() {
-		return 0x504a47
+		return 0x514a48ff
 	}
 });
 
@@ -8025,7 +8025,7 @@ export const clrBrown700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#383838'
+		value: '#393938ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8035,10 +8035,10 @@ export const clrBrown700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.25667rad 0.5% 67.21% / 1)'
+		return 'hwb(0.256668rad 0.50387% 67.206% / none)'
 	},
 	valueOf() {
-		return 0x383838
+		return 0x393938ff
 	}
 });
 
@@ -8057,7 +8057,7 @@ export const clrBrown800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2a2a2a'
+		value: '#2a2a2aff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8067,10 +8067,10 @@ export const clrBrown800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.04454rad none 79.02% / 1)'
+		return 'hwb(0.0445443rad none 79.016% / none)'
 	},
 	valueOf() {
-		return 0x2a2a2a
+		return 0x2a2a2aff
 	}
 });
 
@@ -8089,7 +8089,7 @@ export const clrBrown900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#0f0f0f'
+		value: '#101010ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8099,10 +8099,10 @@ export const clrBrown900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.26085rad none 93.44% / 1)'
+		return 'hwb(6.26085rad none 93.438% / none)'
 	},
 	valueOf() {
-		return 0x0f0f0f
+		return 0x101010ff
 	}
 });
 
@@ -8121,7 +8121,7 @@ export const clrBrownA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7b7b7b'
+		value: '#7c7c7cff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8131,10 +8131,10 @@ export const clrBrownA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.09954rad 48.61% none / 1)'
+		return 'hwb(0.0995326rad 48.611% none / none)'
 	},
 	valueOf() {
-		return 0x7b7b7b
+		return 0x7c7c7cff
 	}
 });
 
@@ -8153,7 +8153,7 @@ export const clrBrownA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#646464'
+		value: '#656565ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8163,10 +8163,10 @@ export const clrBrownA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(0.05751rad 39.44% none / 1)'
+		return 'hwb(0.0575138rad 39.44% none / none)'
 	},
 	valueOf() {
-		return 0x646464
+		return 0x656565ff
 	}
 });
 
@@ -8185,7 +8185,7 @@ export const clrBrownA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#000000'
+		value: '#000000ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8195,10 +8195,10 @@ export const clrBrownA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.035rad none none / 1)'
+		return 'hwb(6.035rad none none / none)'
 	},
 	valueOf() {
-		return 0x000000
+		return 0x000000ff
 	}
 });
 
@@ -8217,7 +8217,7 @@ export const clrBrownA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2b2b2b'
+		value: '#2b2b2bff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8227,10 +8227,10 @@ export const clrBrownA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(6.01632rad none 21.51% / 1)'
+		return 'hwb(6.01632rad none 21.506% / none)'
 	},
 	valueOf() {
-		return 0x2b2b2b
+		return 0x2b2b2bff
 	}
 });
 
@@ -8249,7 +8249,7 @@ export const clrGray = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7d7e7d'
+		value: '#7d7e7dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8259,10 +8259,10 @@ export const clrGray = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14361rad 48.97% 50.18% / 1)'
+		return 'hwb(2.14361rad 48.973% 50.184% / none)'
 	},
 	valueOf() {
-		return 0x7d7e7d
+		return 0x7d7e7dff
 	}
 });
 
@@ -8281,20 +8281,20 @@ export const clrGray50 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#ecedec'
+		value: '#edededff'
 	},
 	'rgb': {
 		enumerable: true,
-		value: new Uint8Array([236,237,236])
+		value: new Uint8Array([236,236,236])
 	},
 	'space': {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14274rad 92.83% 6.23% / 1)'
+		return 'hwb(2.14274rad 92.825% 6.2277% / none)'
 	},
 	valueOf() {
-		return 0xecedec
+		return 0xedededff
 	}
 });
 
@@ -8313,7 +8313,7 @@ export const clrGray100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#dcdcdc'
+		value: '#dcdddcff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8323,10 +8323,10 @@ export const clrGray100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14274rad 86.37% 12.7% / 1)'
+		return 'hwb(2.14274rad 86.367% 12.698% / none)'
 	},
 	valueOf() {
-		return 0xdcdcdc
+		return 0xdcdddcff
 	}
 });
 
@@ -8345,7 +8345,7 @@ export const clrGray200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#bcbdbc'
+		value: '#bcbdbcff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8355,10 +8355,10 @@ export const clrGray200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14292rad 73.72% 25.37% / 1)'
+		return 'hwb(2.14292rad 73.723% 25.369% / none)'
 	},
 	valueOf() {
-		return 0xbcbdbc
+		return 0xbcbdbcff
 	}
 });
 
@@ -8377,7 +8377,7 @@ export const clrGray300 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#9d9e9d'
+		value: '#9d9e9dff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8387,10 +8387,10 @@ export const clrGray300 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14326rad 61.47% 37.65% / 1)'
+		return 'hwb(2.14326rad 61.472% 37.65% / none)'
 	},
 	valueOf() {
-		return 0x9d9e9d
+		return 0x9d9e9dff
 	}
 });
 
@@ -8409,7 +8409,7 @@ export const clrGray400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#7f807f'
+		value: '#7f807fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8419,10 +8419,10 @@ export const clrGray400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14344rad 49.65% 49.5% / 1)'
+		return 'hwb(2.14344rad 49.654% 49.5% / none)'
 	},
 	valueOf() {
-		return 0x7f807f
+		return 0x7f807fff
 	}
 });
 
@@ -8441,7 +8441,7 @@ export const clrGray500 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#626362'
+		value: '#636363ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8451,10 +8451,10 @@ export const clrGray500 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14396rad 38.33% 60.87% / 1)'
+		return 'hwb(2.14396rad 38.325% 60.867% / none)'
 	},
 	valueOf() {
-		return 0x626362
+		return 0x636363ff
 	}
 });
 
@@ -8473,7 +8473,7 @@ export const clrGray600 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#474747'
+		value: '#484848ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8483,10 +8483,10 @@ export const clrGray600 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14466rad 27.56% 71.68% / 1)'
+		return 'hwb(2.14466rad 27.556% 71.68% / none)'
 	},
 	valueOf() {
-		return 0x474747
+		return 0x484848ff
 	}
 });
 
@@ -8505,7 +8505,7 @@ export const clrGray700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2d2e2d'
+		value: '#2e2e2eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8515,10 +8515,10 @@ export const clrGray700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14571rad 17.45% 81.83% / 1)'
+		return 'hwb(2.14571rad 17.453% 81.835% / none)'
 	},
 	valueOf() {
-		return 0x2d2e2d
+		return 0x2e2e2eff
 	}
 });
 
@@ -8537,7 +8537,7 @@ export const clrGray800 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#161616'
+		value: '#161616ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8547,10 +8547,10 @@ export const clrGray800 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.14798rad 8.18% 91.17% / 1)'
+		return 'hwb(2.14798rad 8.1825% 91.173% / none)'
 	},
 	valueOf() {
-		return 0x161616
+		return 0x161616ff
 	}
 });
 
@@ -8569,7 +8569,7 @@ export const clrGray900 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#030303'
+		value: '#040404ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8579,10 +8579,10 @@ export const clrGray900 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.15112rad 1.11% 98.61% / 1)'
+		return 'hwb(2.15112rad 1.1087% 98.612% / none)'
 	},
 	valueOf() {
-		return 0x030303
+		return 0x040404ff
 	}
 });
 
@@ -8601,7 +8601,7 @@ export const clrGrayA100 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#2f2f2f'
+		value: '#2f2f2fff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8611,10 +8611,10 @@ export const clrGrayA100 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.67175rad none 24.63% / 1)'
+		return 'hwb(2.67175rad none 24.627% / none)'
 	},
 	valueOf() {
-		return 0x2f2f2f
+		return 0x2f2f2fff
 	}
 });
 
@@ -8633,7 +8633,7 @@ export const clrGrayA200 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#363636'
+		value: '#363636ff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8643,10 +8643,10 @@ export const clrGrayA200 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.6796rad none 30.64% / 1)'
+		return 'hwb(2.6796rad none 30.644% / none)'
 	},
 	valueOf() {
-		return 0x363636
+		return 0x363636ff
 	}
 });
 
@@ -8665,7 +8665,7 @@ export const clrGrayA400 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3e3e3e'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8675,10 +8675,10 @@ export const clrGrayA400 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.69566rad none 42.34% / 1)'
+		return 'hwb(2.69566rad none 42.34% / none)'
 	},
 	valueOf() {
-		return 0x3e3e3e
+		return 0x3e3e3eff
 	}
 });
 
@@ -8697,7 +8697,7 @@ export const clrGrayA700 = Object.create(null, {
 	},
 	'hex': {
 		enumerable: true,
-		value: '#3d3d3d'
+		value: '#3e3e3eff'
 	},
 	'rgb': {
 		enumerable: true,
@@ -8707,10 +8707,10 @@ export const clrGrayA700 = Object.create(null, {
 		value: 'hwb'
 	},
 	toString() {
-		return 'hwb(2.64836rad none 58.79% / 1)'
+		return 'hwb(2.64836rad none 58.786% / none)'
 	},
 	valueOf() {
-		return 0x3d3d3d
+		return 0x3e3e3eff
 	}
 });
 
