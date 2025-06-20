@@ -1,10 +1,17 @@
-window.CSS.registerProperty(
+/**
+ * Инициализация коллекции цвета через типизированные CSS-свойства.
+ * Пользовательские свойства CSS не могут наследовать значение родительского элемента.
+ * Скрипт не использует возможности импорта/экспорта модулей,
+ * может быть загружен и выполнен на веб-странице в первую очередь.
+ *
+ * @module '@bpanchenko/palette/register-css-properties'
+ */
+
 {{#each colorset}}
-{
+window.CSS.registerProperty({
   name: "{{'css-name'}}",
   syntax: "<color>",
   inherits: false,
   initialValue: "{{'css-value'}}",
-},
+});
 {{/each}}
-)

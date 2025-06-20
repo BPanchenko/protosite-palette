@@ -1,11 +1,11 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 import Handlebars from "handlebars";
-import { makeColorDTO } from '../../Constructor.Package/.public/toolkit.js';
+import { makeColorDTO } from '../Constructor.Package/.public/toolkit.js';
 
-import dataset from "../dataset.json" with { type: 'json' };
-import packageJSON from "../package.json" with { type: 'json' };
+import dataset from "./dataset.json" with { type: 'json' };
 import { logError, logSavedFile, totalSavedFiles } from "./logger.cjs";
+import packageJSON from "./package.json" with { type: 'json' };
 
 const { version } = packageJSON
 
@@ -28,19 +28,19 @@ const tpl = {
 const entryPoints = [
 	['css.stylesheet', {
 		template: Handlebars.compile(tpl['css-stylesheet']),
-		outfile: '.bundle/protosite-palette.css'
+		outfile: 'assets/protosite-palette.css'
 	}],
 	['js.esmodule', {
 		template: Handlebars.compile(tpl['esmodule']),
-		outfile: '.bundle/protosite-palette.mjs'
+		outfile: 'assets/protosite-palette.mjs'
 	}],
 	['xml.android-recources', {
 		template: Handlebars.compile(tpl['xml']),
-		outfile: '.bundle/protosite-palette.xml'
+		outfile: 'assets/protosite-palette.xml'
 	}],
 	['js.setup-css-props', {
 		template:Handlebars.compile(tpl['setup-css-props']),
-		outfile: '.bundle/setup.protosite-palette.js'
+		outfile: 'assets/register-css-properties.js'
 	}],
 ];
 
