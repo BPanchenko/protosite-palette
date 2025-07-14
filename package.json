@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "main": "./.bundle/lib.protosite-palette.mjs",
+  "main": "./assets/lib.protosite-palette.mjs",
   "devDependencies": {
     "adobe-aco": "0.1.1",
     "chromatic-chandelier": "0.2.17",
