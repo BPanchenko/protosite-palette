@@ -1,14 +1,15 @@
 {
   "private": true,
+  "name": "@bpanchenko/palette",
   "type": "module",
   "main": "./assets/lib.protosite-palette.mjs",
   "devDependencies": {
     "adobe-aco": "0.1.1",
-    "chromatic-chandelier": "0.2.17",
+    "chromatic-chandelier": "0.19.61",
     "date-format": "4.0.14",
     "handlebars": "4.7.8",
     "lodash": "4.17.21",
-    "node-color-log": "12.0.1"
+    "node-color-log": "13.0.3"
   },
   "engines": {
     "node": ">=21.1.0"
