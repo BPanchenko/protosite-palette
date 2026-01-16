@@ -5,7 +5,7 @@
   "main": "./assets/lib.protosite-palette.mjs",
   "devDependencies": {
     "adobe-aco": "0.1.1",
-    "chromatic-chandelier": "0.19.61",
+    "chromatic-chandelier": "0.22.69",
     "date-format": "4.0.14",
     "handlebars": "4.7.8",
     "lodash": "4.17.21",

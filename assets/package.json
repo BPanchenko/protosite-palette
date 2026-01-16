@@ -1,7 +1,7 @@
 {
   "name": "@bpanchenko/palette",
-  "version": "3.7.15",
-  "homepage": "https://palette.protosite.xyz",
+  "version": "3.8.15",
+  "homepage": "http://palette.protosite.xyz",
   "type": "module",
   "main": "./lib.protosite-palette.mjs",
   "files": [
@@ -11,6 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-palette.git"
   },
-  "author": "Boris Panchenko <boris.v.panchenko@mail.ru> (https://bp-studio.ru)",
+  "author": "Boris Panchenko <boris.v.panchenko@mail.ru> (http://bp-studio.ru)",
   "license": "LGPL-3.0-only"
 }
