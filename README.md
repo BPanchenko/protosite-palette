@@ -1,8 +1,8 @@
 # Адаптер цветовой палитры Протосайта
 
-[![npm](https://img.shields.io/npm/v/@bpanchenko/palette.svg)](https://www.npmjs.com/package/@bpanchenko/palette)
+[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)
 
-Пакет `@bpanchenko/palette` обеспечивает доступ к палитре проектам отличающимся
+Пакет `protosite-palette` обеспечивает доступ к палитре проектам отличающимся
 своими требованиями к интерфейсам подключаемых модулей и возможностями цветопередачи.
 Поддерживаемые форматы файлов:
  - CSS (регистрация св-тв CSS);
@@ -13,7 +13,7 @@
 ### Установка пакета NPM
 
 ```bash
-npm install @bpanchenko/palette -D
+npm install protosite-palette -D
 ```
 
 ## Использование модулей из комплекта файлов интеграции

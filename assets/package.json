@@ -1,12 +1,16 @@
 {
-  "name": "@bpanchenko/palette",
-  "version": "3.8.15",
+  "name": "protosite-palette",
+  "version": "3.8.16",
   "homepage": "http://palette.protosite.xyz",
   "type": "module",
-  "main": "./lib.protosite-palette.mjs",
+  "main": "./protosite-palette.mjs",
   "files": [
     "./*"
   ],
+  "exports": {
+    ".": "./protosite-palette.mjs",
+    "./design-tokens": "./protosite-palette.tokens"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-palette.git"
