@@ -1,15 +1,22 @@
 {
   "name": "protosite-palette",
-  "version": "3.8.16",
+  "version": "3.8.17",
   "homepage": "http://palette.protosite.xyz",
   "type": "module",
-  "main": "./protosite-palette.mjs",
   "files": [
     "./*"
   ],
   "exports": {
-    ".": "./protosite-palette.mjs",
-    "./design-tokens": "./protosite-palette.tokens"
+    ".": {
+      "import": "./protosite-palette.mjs",
+      "require": "./protosite-palette.cjs",
+      "types": "./protosite-palette.d.ts"
+    },
+    "./design-tokens": {
+      "module-sync": "./protosite-palette.tokens",
+      "types": "./protosite-palette.tokens.d.ts",
+      "default": "./protosite-palette.tokens"
+    }
   },
   "repository": {
     "type": "git",
