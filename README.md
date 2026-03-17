@@ -1,7 +1,5 @@
 # Адаптер цветовой палитры Протосайта
 
-[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)
-
 Пакет `protosite-palette` обеспечивает доступ к палитре проектам отличающимся
 своими требованиями к интерфейсам подключаемых модулей и возможностями цветопередачи.
 Поддерживаемые форматы файлов:
@@ -10,10 +8,4 @@
  - JS (регистрация св-тв CSS);
  - файл импорта цветовых образцов в Photoshop.
 
-### Установка пакета NPM
-
-```bash
-npm install protosite-palette -D
-```
-
-## Использование модулей из комплекта файлов интеграции
+[![npm](https://img.shields.io/npm/v/protosite-palette.svg)](https://www.npmjs.com/package/protosite-palette)
